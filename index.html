@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7">
+<![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8">
+<![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>whoru</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory-->
+    <link rel="stylesheet" href="styles/1eb0bca1.main.css">
+    <script type="text/javascript">document.write('<base href="' + document.location + '" />');</script>
+  </head>
+  <body ng-app="whoruApp" ng-controller="MainCtrl" ng-cloak="">
+    <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an<strong>outdated</strong>browser. Please<a href="http://browsehappy.com/">upgrade your browser</a>to improve your experience.</p>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+    <!-- Add your site or application content here-->
+    <div class="header-container">
+      <header class="wh-header wrapper">
+        <h1 class="title wh-header-intro-fullname">
+          <div class="wh-header-intro-name">{{header.intro.name}}</div>
+          <div ng-if="header.intro.surname1" class="wh-header-intro-surname1">{{header.intro.surname1}}</div>
+          <div ng-if="header.intro.surname2" class="wh-header-intro-surname2">{{header.intro.surname2}}</div>
+        </h1>
+        <nav class="wh-header-nav">
+          <ul class="wh-header-options ul">
+            <li ng-repeat="option in header.nav.options | orderBy: 'order'" ng-class="{current: option.current}" class="wh-header-option"><a ng-click="smoothScroll(option)" href="javascript:void(0)" title="{{option.title}}">{{option.title}}</a></li>
+          </ul>
+          <div class="wh-header-options select">
+            <select data-ng-model="header.nav.current" data-ng-options="option.title for option in header.nav.options | orderBy:'order'" ng-change="smoothScroll(header.nav.current)"></select>
+          </div>
+          <ul ng-if="locales.length &gt; 1" class="wh-header-locales">
+            <li ng-repeat="locale in locales" ng-class="{current: locale.current}" class="wh-header-locale"><a ng-click="setCurrentLocale(locale)" href="javascript:void(0)" title="{{locale.text}}"><img ng-src="{{locale.image}}" title="{{locale.text}}"></a></li>
+          </ul>
+        </nav><a id="to-top" href="javascript:void(0)" ng-click="smoothScroll(header.nav.init)" title="top">TOP</a>
+      </header>
+    </div>
+    <div class="main-container">
+      <div class="wh-main wrapper">
+        <section ng-controller="IntroCtrl" id="{{id}}" header-current-section="" height-as-window="" ng-class="intro.name.length? &quot;wh-intro-loaded&quot; : &quot;&quot; " class="wh-intro wh-generic-section">
+          <div class="wh-intro-fullname">
+            <div class="wh-intro-name">{{intro.name}}</div>
+            <div ng-if="intro.surname1" class="wh-intro-surname1">{{intro.surname1}}</div>
+            <div ng-if="intro.surname2" class="wh-intro-surname2">{{intro.surname2}}</div>
+          </div>
+          <h2 class="wh-intro-summary">{{intro.summary}}</h2>
+          <div class="wh-intro-image-wrapper"><img ng-src="{{intro.image}}" title="{{intro.fullname()}}" class="wh-intro-image"></div>
+          <p ng-show="intro.description" ng-bind-html="intro.description" class="wh-intro-description"></p>
+        </section>
+        <section ng-controller="CvCtrl" ng-show="cv.parts.length" class="wh-cv">
+          <article ng-repeat="part in cv.parts" id="{{part.id}}" ng-class="part.cssClass" header-current-section="" height-as-window="header" class="wh-cv-part wh-generic-section when-shown background-y-position-scroll">
+            <h3 ng-if="part.title" class="wh-generic-section-title">{{part.title}}</h3>
+            <div class="wh-generic-section-content">
+              <p ng-if="part.description" ng-bind-html="part.description" class="wh-cv-part-description"></p>
+              <ol ng-if="part.content">
+                <li ng-repeat="item in part.content" class="wh-part-item">
+                  <h4 ng-if="item.title" class="wh-cv-part-item-title">{{item.title}}</h4>
+                  <div ng-if="item.when || item.from || item.until" class="wh-cv-part-item-dates"><span ng-if="item.when" class="wh-cv-part-item-date when">{{item.when}}</span><span ng-if="item.from" class="wh-cv-part-item-date from">{{item.from}}</span><span ng-if="item.until" class="wh-cv-part-item-date until">{{item.until}}</span></div>
+                  <div ng-if="item.images" class="wh-cv-part-item-images-wrapper wh-slider">
+                    <div ng-if="item.images.length &gt; 1" data-list="item.images" class="wh-slider-selector"></div>
+                    <ul class="wh-cv-part-item-images wh-slider-list">
+                      <li ng-repeat="image in item.images" ng-class="image.current || $parent.item.images.length == 1? &quot;current&quot; : &quot;&quot; " style="background-image:url({{image.src}})" class="wh-cv-part-item-image wh-slider-item"><a ng-if="image.link" ng-href="{{image.link}}" title="{{image.link}}" target="_blank">
+                          <h5 ng-if="image.description" class="desc">{{image.description}}</h5></a>
+                        <h5 ng-if="!image.link &amp;&amp; image.description" class="desc">{{image.description}}</h5>
+                      </li>
+                    </ul>
+                  </div>
+                  <p ng-if="item.description" ng-bind-html="item.description" class="wh-cv-part-item-description"></p>
+                  <ol ng-if="item.content" class="wh-part-item-content">
+                    <li ng-repeat="content in item.content" class="wh-part-item-content-element">{{content}}</li>
+                  </ol>
+                </li>
+              </ol>
+            </div>
+          </article>
+        </section>
+        <section ng-controller="QuestionsCtrl" id="{{id}}" ng-show="questions.length" header-current-section="" height-as-window="header" class="wh-questions wh-generic-section when-shown">
+          <h3 class="wh-generic-section-title">{{ title }}</h3>
+          <div class="wh-generic-section-content">
+            <p ng-if="description" class="wh-questions-description">{{ description }}</p>
+            <ol>
+              <li ng-repeat="question in questions" class="wh-question">
+                <h4 class="wh-question-statement">{{ question.question }}</h4>
+                <ol>
+                  <li ng-repeat="option in question.options" class="wh-question-option">
+                    <input type="{{question.type}}" id="{{option.id}}" name="{{option.name}}" ng-model="option.checked" ng-change="questionsSubmit()">
+                    <label for="{{option.id}}">{{option.title}}</label>
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </div>
+        </section>
+      </div>
+      <div class="wh-background-image background-y-position-scroll"></div>
+    </div>
+    <div class="footer-container">
+      <footer class="wh-footer wrapper">
+        <div ng-controller="ContactsCtrl" id="{{id}}" header-current-section="" height-as-window="header" class="wh-contacts wh-generic-section when-shown">
+          <ul ng-if="contacts.length" class="wh-generic-section-content">
+            <li ng-repeat="contact in contacts" class="wh-contact"><a ng-href="{{contact.type=='phone'?'tel:':contact.type=='mail'?'mailto:':''}}{{contact.value}}" title="{{contact.value}}" data-wh-icon="{{contact.icon}}" ng-class="contact.type" class="wh-contact-icon"><span>{{contact.value}}</span></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID-->
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-XXXXX-X');
+      ga('send', 'pageview');
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="scripts/45f7bb09.modules.js"></script>
+    <script src="scripts/e9f48eec.scripts.js"></script>
+  </body>
+</html>

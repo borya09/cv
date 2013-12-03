@@ -1,0 +1,10 @@
+<section ng-controller="IntroCtrl" id="{{id}}" header-current-section="header-current-section" height-as-window="height-as-window" ng-class="intro.name.length? &quot;wh-intro-loaded&quot; : &quot;&quot; " class="wh-intro wh-generic-section">
+  <div class="wh-intro-fullname">
+    <div class="wh-intro-name">{{intro.name}}</div>
+    <div ng-if="intro.surname1" class="wh-intro-surname1">{{intro.surname1}}</div>
+    <div ng-if="intro.surname2" class="wh-intro-surname2">{{intro.surname2}}</div>
+  </div>
+  <h2 class="wh-intro-summary">{{intro.summary}}</h2>
+  <div class="wh-intro-image-wrapper"><img ng-src="{{intro.image}}" title="{{intro.fullname()}}" class="wh-intro-image"></div>
+  <p ng-show="intro.description" ng-bind-html="intro.description" class="wh-intro-description"></p>
+</section>
