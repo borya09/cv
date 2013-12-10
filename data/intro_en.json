@@ -1,12 +1,12 @@
 {
 	"version": "0.0.1",
-	"header":"Intro",
+	"header":"me",
 	"intro":{
-		"name": "John",
-		"surname1": "Doe",
-		"surname2": "II",
-		"summary": "Nameless Dev",
-		"image": "http://huelva24.com/upload/img/periodico/img_68805.jpg",
-		"description": "Developer Developer Developer"
+		"name": "Borja",
+		"surname1": "Andrés",
+		"surname2": "Marroquín",
+		"summary": "Frontender",
+		"image": "img/borja.jpg",
+		"description": "#developer #geek #bilbao #barça #running #btt"
 	}
 }

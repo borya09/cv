@@ -1,30 +1,50 @@
 {
 	"version": "0.0.1",
-	"header":"Contact",
+	"header":"contact",
 	"contacts": [
 		{
 			"type": "web",
-			"value": "http://www.JohnDoe.com",
+			"value": "http://borja.upplication.com",
 			"icon": "Z"
 		},
 		{
 			"type": "web",
-			"value": "https://github.com/JohnDoe/",
+			"value": "http://www.linkedin.com/in/borjaandres",
+			"icon": "G"
+		},
+		{
+			"type": "web",
+			"value": "https://plus.google.com/u/0/+BorjaAndres",
+			"icon": "3"
+		},
+		{
+			"type": "mail",
+			"value": "borya09@hotmail.com",
+			"icon": "F"
+		},
+		{
+			"type": "web",
+			"value": "http://www.lastfm.es/user/borya09",
+			"icon": "I"
+		},
+		{
+			"type": "web",
+			"value": "https://github.com/borya09/",
 			"icon": "t"
 		},
 		{
 			"type": "web",
-			"value": "https://twitter.com/JohnDoe",
+			"value": "https://twitter.com/borya09",
 			"icon": "b"
 		},
 		{
 			"type": "phone",
-			"value": "666999666",
+			"value": "+34679699965",
 			"icon": "U"
 		},
 		{
 			"type": "mail",
-			"value": "john.doe@gmail.com",
+			"value": "borya09@gmail.com",
 			"icon": "1"
 		}
 	]
