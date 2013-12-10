@@ -508,7 +508,6 @@ module.exports = function (grunt) {
 	]);
 
 	grunt.registerTask('dist', [
-		'gitcheckout:demo',
 		'build',
 		'gh-pages'
 	]);
