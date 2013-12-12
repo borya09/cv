@@ -377,7 +377,7 @@ module.exports = function (grunt) {
 		minjson: {
 			dist: {
 				files: {
-					'<%= yeoman.dist %>/data/cv.json': '<%= yeoman.dist %>/data/cv_es.json'
+					'<%= yeoman.dist %>/data/*.json': '<%= yeoman.dist %>/data/*.json'
 				}
 			}
 		},
@@ -508,6 +508,7 @@ module.exports = function (grunt) {
 	]);
 
 	grunt.registerTask('dist', [
+//		'gitcheckout:demo',
 		'build',
 		'gh-pages'
 	]);
