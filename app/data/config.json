@@ -5,13 +5,13 @@
 			{
 				"default": true,
 				"key": "es",
-				"image": "img/spain.gif",
+				"image": "images/spain.gif",
 				"text": "ES"
 			},
 			{
 
 				"key": "en",
-				"image": "img/england.gif",
+				"image": "images/england.gif",
 				"text": "EN"
 			}
 		]
