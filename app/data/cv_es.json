@@ -1,0 +1,238 @@
+{
+	"version": "0.0.1",
+	"parts": [
+		{
+			"header": "Aupa",
+			"title": "Aupa",
+			"key": "presentation",
+			"description": "<p>Soy Borja Andrés, bilbaino, del Barça, y residente en Madrid.</p><p>Mis aficiones se pueden resumir en:</p><ul><li>Andar en bici (por el monte, nada de carretera)​​</li><li>Correr (por el monte, nada de carretera, aunque viviendo en ciudad está jodido)</li><li>Frikear... frikear mucho, por mi cuenta, sobre todo investigando y acudiendo a charlas, meetups, conferencias, ... nuevas tecnologías relacionadas con lo que me gusta, mi trabajo (soy un <s>yonki</s> apasionado de mi trabajo)</li></ul><p>Estudié Informática en la Universidad de Deusto (Bilbao), aunque antes de ello ya me gustaba hacer mis propias páginas web (la temática te la cuento en privado)</p><p>Cuando estaba acabando, la compatibilicé con un trabajo de desarrollador web.</p><p>Una vez que terminé (2008), decidí venirme a Madrid a buscar trabajo, con mi novía, hasta hoy ...</p><p>Primero trabajé como desarrollador web en <a href=\"http://www.virtualsw.com/\">Virtual Software</a>, haciendo cosas en back, front, base de datos, análisis,... un poco de todo. Aunque sobre todo especializandome en front.</p><p>En enero (2013) entré a formar parte del equipo de <a href=\"http://upplication.com\">Upplication</a>, como desarrollador front-end exclusivamente, con la reponsabilidad de elegir la arquitectura, frameworks, lenguajes,... a usar en esta parte; aunque cuando puedo me escapo al back en node.js o a la automatización con grunt.js, que también me interesa bastante.</p><p>Y esto es todo ... de momento.</p>"
+		},
+		{
+			"header": "Trabajos",
+			"title": "Trabajos",
+			"key": "work",
+			"content": [
+				{
+					"title": "Upplication templates",
+					"description": "Maquetación de los templates responsive disponibles para las webapps/apps.",
+					"images": [
+						{
+							"link": "http://eskorbuto.upplication.com",
+							"description": "ver web",
+							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/74f1b2b3-afb4-4561-80a5-2ba4246ed1a1.png"
+						},{
+							"link": "http://borja.upplication.com",
+							"description": "ver web",
+							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/9ab25610-a627-4d59-97a8-1c3ec50e66f6.png"
+						},{
+							"link": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/tpPEjwGi/main.html#!/",
+							"description": "ver web",
+							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/d6a9c955-cc5c-4600-80bf-c38a034cc801.png"
+						}
+					],
+					"content": [
+						"less",
+						"sass",
+						"rwd",
+						"grunt"
+					]
+				},{
+					"title": "Upplication Developer Page",
+					"description": "Web interna para el equipo de desarrollo, donde se organizan todos los links. <a href='http://www.youtube.com/watch?v=XnBDVrk5AHE'>demo</a> ",
+					"images": [
+						{
+							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/661a984d-9969-4e71-bb05-08f51b8ae031.png"
+						},{
+							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/20e9dc89-48e4-49e8-b796-4a1ea0a70da1.png"
+						},{
+							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/345673bd-28cd-48f5-b6aa-3d3e1298a22f.png"
+						}
+					],
+					"content": [
+						"css",
+						"html",
+						"rwd"
+					]
+				},{
+					"title": "Upplication webapps/apps",
+					"description": "Desarrollo / Arquitectura de las webapps/apps construidas a partir de la herramienta <a href='https://github.com/Upplication/banana'>Upplication</a>",
+					"images": [
+						{
+							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/17852962-c003-49e8-948e-df36c5eb3ec3.png"
+						},{
+							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/85e5f5cc-cece-4f0f-93f7-c9294c0d0bbb.png"
+						},{
+							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/a08dfed9-bfdc-4023-94e1-4cf4c5c3890f.png"
+						}
+					],
+					"content": [
+						"angularjs",
+						"jade",
+						"less",
+						"bootstrap",
+						"gruntjs"
+					]
+				},{
+					"title": "Banana Time!",
+					"description": "Desarrollo / Maquetación del proyecto <a href='https://github.com/Upplication/banana'>Banana Time!</a>",
+					"images": [
+						{
+							"src": "http://www.clipular.com/c?4504560911515648=-nVJPz8KDOX8toVCH1Hk_n3DhnM"
+						}
+					],
+					"content": [
+						"angularjs",
+						"jade",
+						"coffescript",
+						"gruntjs",
+						"compass"
+					]
+				},{
+					"title": "Whoru",
+					"description": "Desarrollo del proyecto <a href='https://github.com/borya09/whoru'>Whoru</a> y maquetación de <a href='https://github.com/borya09/whoru/tree/demo'>demo</a> ",
+					"images": [
+						{
+							"src": "https://storage.googleapis.com/clipular-clips/558126/6592733963616256?GoogleAccessId=clipular2012@appspot.gserviceaccount.com&Expires=1387323565&Signature=P4TYxB6BsP5cVqvPAD8KTVVehTB08986y8Om3HoqlFOEZJMp5tkpDrT1uK3OEsXQaI2AJl8ET7DJdtIQBmr4MWCKwamO1kqrAqNHtA22CpTvGQLFk9GpISXzr%2FMOpyTVgtSLC1VV8IpHrEavakaXzrz%2Ba2B7C%2BqW746d4FtjEf0%3D&md5=50037b946742e85dbb47a8222ce984d7&NOT_A_LINK"
+						}
+					],
+					"content": [
+						"angularjs",
+						"jade",
+						"coffescript",
+						"gruntjs",
+						"compass"
+					]
+				}
+			]
+		},
+		{
+			"header": "Conocimientos",
+			"title": "Conocimientos",
+			"key": "tech_skills",
+			"content": [
+				{
+					"title": "Front",
+					"content": [
+						"JS", "AngularJs", "Css3", "HTML5", "Less", "Sass", "RWD", "Coffeescript", "GruntJs", "Yeoman", "Bower", "Phonegap", "Jade", "jQuery", "Twitter Bootstrap."
+					]
+				},
+				{
+					"title": "Back",
+					"content": [
+						"NodeJs", "MongooseJs", "ExpressJs", "Grails", "Groovy", "J2EE", "Java", "Hibernate"
+					]
+				},
+				{
+					"title": "Testing",
+					"content": [
+						"Mocha", "Jasmine", "Testacular (Karma)"
+					]
+				},
+				{
+					"title": "Bases de datos",
+					"content": [
+						"MongoDB", "Oracle 10g", "SQL Server 2005", "PostgreSQL", "MySQL"
+					]
+				},
+				{
+					"title": "Herramientas",
+					"content": [
+						"Jira",
+						"Confluence",
+						"Mixpanel"
+					]
+				}
+			]
+		},
+		{
+			"header": "Experiencia",
+			"title": "Experiencia",
+			"key": "career",
+			"content": [
+				{
+					"title": "Frontend developer en Upplication",
+					"when": "2013",
+					"images": [
+						{
+							"link": "http://www.upplication.com",
+							"description": "Upplication",
+							"src": "http://upplication.com/wp-content/themes/upplication/i/upplication.png"
+						}
+					],
+					"content": [
+						"Desarrollo / Arquitectura de las webapps / apps construidas a partir de la herramienta upplication.com",
+						"Maquetación de los templates responsive disponibles para las webapps/apps",
+						"Automatización de tareas front mediante Grunt"
+					]
+				},
+				{
+					"title": "Analista / Programador en Virtual Software",
+					"from": "2008",
+					"until": "2012",
+					"images": [
+						{
+							"link": "http://www.virtualsw.com",
+							"description": "Virtualsw",
+							"src": "http://www.virtualsw.com/images/logo.png"
+						}
+					],
+					"content": [
+						"Análisis / Desarrollo (front & back) de aplicaciones web J2EE"
+					]
+				},
+				{
+					"title": "Programador Junior",
+					"when": "2007",
+					"images": [
+						{
+							"link": "http://www.mnemo.com",
+							"description": "Mnemo",
+							"src": "http://www.kabel.es/wp-content/uploads/2011/11/mnemo.png"
+						}
+					],
+					"content": [
+						"Desarrollo web del portal financiero www.bbk.es."
+					]
+				}
+			]
+		},
+		{
+			"header": "Estudios",
+			"title": "Educación Académica",
+			"key": "academic",
+			"content": [
+				{
+					"description": "<span class='academic-what'>Ingeniero Superior en Informática</span><span class='academic-where'>Univerdad de Deusto</span>",
+					"since": "2003",
+					"until": "2008"
+				},
+				{
+					"description": "<span class='academic-what'>Bachiller</span><span class='academic-where'>Colegio Vizcaya</span>",
+					"when": "2003"
+				}
+			]
+		},
+		{
+			"header": "Hobbies",
+			"title": "Hobbies",
+			"key": "hobbies",
+			"content": [
+				{
+					"description": "Web"
+				},
+				{
+					"description": "Btt"
+				},
+				{
+					"description": "Correr"
+				},
+				{
+					"description": "Potear en Bilbao"
+				},
+				{
+					"description": "Barça"
+				}
+			]
+		}
+	]
+}
