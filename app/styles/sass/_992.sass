@@ -44,25 +44,29 @@ body
   float: left
   padding-top: .7em
   padding-left: .8em
-  .wh-header-intro-name,
-  .wh-header-intro-surname1,
-  .wh-header-intro-surname2
-    position: relative
-    float: left
-    padding-right: .2em
-    color: $color-grey
-    font-family: 'Roboto', sans-serif
-    text-transform: uppercase
-    top: -100em
-  .wh-header-intro-name
-    font-weight: 600
-    font-size: 1.4em
-    text-shadow: 1px 1px #B9B9B9
-  .wh-header-intro-surname1,
-  .wh-header-intro-surname2
-    font-weight: 300
-    font-size: 1em
-    padding-top: .35em
+  position: relative
+
+.wh-header-intro-name,
+.wh-header-intro-surname1,
+.wh-header-intro-surname2
+  position: relative
+  float: left
+  padding-right: .2em
+  color: $color-grey
+  font-family: 'Roboto', sans-serif
+  text-transform: uppercase
+  top: -9999px
+.wh-header-intro-name
+  font-weight: 600
+  font-size: 1.5em
+  text-shadow: 1px 1px #B9B9B9
+.wh-header-intro-surname1,
+.wh-header-intro-surname2
+  font-weight: 300
+  font-size: .75em
+  left: 100px
+  position: absolute
+
 
 .wh-header-options
   &.select
@@ -110,8 +114,23 @@ body
   opacity: 0
   z-index: -1
 
-
+////// HEADER - WITH INTRO SCROLLED (HIDDEN)
 .intro-scrolled
+  .header-container
+    position: fixed
+    top: 0
+  .wh-header-intro-name,
+  .wh-header-intro-surname1,
+  .wh-header-intro-surname2
+    top: 0
+    +transition-property(all)
+    +transition-duration(.5s)
+
+  .wh-header-intro-surname1
+    top: 14px
+  .wh-header-intro-surname2
+    top: 25px
+
   #to-top
     z-index: 5
     position: fixed
@@ -129,22 +148,7 @@ body
       background-color: #222222
 
 
-
-////// HEADER - WITH INTRO SCROLLED (HIDDEN)
-.intro-scrolled
-  .header-container
-    position: fixed
-    top: 0
-  .wh-header-intro-name,
-  .wh-header-intro-surname1,
-  .wh-header-intro-surname2
-    top: 0
-    +transition-property(top)
-    +transition-duration(.5s)
-
-
-
-
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////// INTRO
 
 .wh-intro-fullname,
@@ -152,7 +156,8 @@ body
 .wh-intro-description
   position: fixed
   z-index: 0
-  right: $fixed-items-right
+  right: $right-fixed-items-992
+
 
 .wh-intro-fullname,
 .wh-intro-summary
@@ -162,6 +167,7 @@ body
 .wh-intro-fullname
 
   > div
+    color: #353535
     font-family: 'Roboto', sans-serif
     font-weight: 100
     font-size: 3em
@@ -174,30 +180,29 @@ body
   font-family: 'Open Sans', sans-serif
   font-weight: 700
   font-size: 2.4em
+  padding-top: 68px
 
 .wh-intro-description
   opacity: 0
-  top: 235px
   color: rgb(83, 88, 94)
   font-family: 'Roboto', sans-serif
   font-weight: 300
   font-style: italic
   font-size: .8em
+  top: 13%
+  padding-top: 130px
 
 
 ////// INTRO - WHEN LOADED
 .wh-intro-loaded
   .wh-intro-fullname,
   .wh-intro-summary
+    top: $top-fixed-items-992
     +transition-property(top)
-
-  .wh-intro-fullname
-    top: 100px
     +transition-duration(0.8s)
 
   .wh-intro-summary
-    top: 170px
-    +transition-duration(1.3s)
+    +transition-delay(0.8s)
 
   .wh-intro-description
     opacity: 1
@@ -236,8 +241,9 @@ body
     ul
       display: inline
       position: fixed
-      right: $fixed-items-right
-      top: 180px
+      right: $right-fixed-items-992
+      top: $top-fixed-items-992
+      padding-top: 82px
 
 .wh-contact
   float: left
