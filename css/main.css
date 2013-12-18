@@ -117,15 +117,46 @@ select:focus {
 }
 
 @media only screen and (min-width: 992px) {
-  /* line 3, ../../app/styles/sass/_992.sass */
+  /* line 2, ../../app/styles/sass/_992.sass */
   body {
+    height: 100%;
+    min-height: 100%;
+  }
+
+  /* line 7, ../../app/styles/sass/_992.sass */
+  .wh-background-image {
     background: white url(../images/borja_intro.jpg) top center fixed no-repeat;
     background-size: cover;
     -moz-background-size: cover;
-    font-size: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    bottom: auto;
+    top: 0;
+    left: 0;
+    right: 0;
   }
 
-  /* line 15, ../../app/styles/sass/_992.sass */
+  /* line 19, ../../app/styles/sass/_992.sass */
+  .main-container {
+    position: relative;
+  }
+
+  /* line 24, ../../app/styles/sass/_992.sass */
+  .intro-scrolled body {
+    position: relative;
+  }
+  /* line 26, ../../app/styles/sass/_992.sass */
+  .intro-scrolled .main-container {
+    position: static;
+  }
+  /* line 28, ../../app/styles/sass/_992.sass */
+  .intro-scrolled .wh-background-image {
+    position: fixed;
+    background-position-y: 0 !important;
+  }
+
+  /* line 36, ../../app/styles/sass/_992.sass */
   .header-container {
     position: absolute;
     left: 0;
@@ -138,13 +169,13 @@ select:focus {
     z-index: 2;
   }
 
-  /* line 22, ../../app/styles/sass/_992.sass */
+  /* line 43, ../../app/styles/sass/_992.sass */
   .wh-header-intro-fullname {
     float: left;
     padding-top: 0.7em;
     padding-left: 0.8em;
   }
-  /* line 26, ../../app/styles/sass/_992.sass */
+  /* line 47, ../../app/styles/sass/_992.sass */
   .wh-header-intro-fullname .wh-header-intro-name,
   .wh-header-intro-fullname .wh-header-intro-surname1,
   .wh-header-intro-fullname .wh-header-intro-surname2 {
@@ -156,13 +187,13 @@ select:focus {
     text-transform: uppercase;
     top: -100em;
   }
-  /* line 36, ../../app/styles/sass/_992.sass */
+  /* line 57, ../../app/styles/sass/_992.sass */
   .wh-header-intro-fullname .wh-header-intro-name {
     font-weight: 600;
     font-size: 1.4em;
     text-shadow: 1px 1px #b9b9b9;
   }
-  /* line 40, ../../app/styles/sass/_992.sass */
+  /* line 61, ../../app/styles/sass/_992.sass */
   .wh-header-intro-fullname .wh-header-intro-surname1,
   .wh-header-intro-fullname .wh-header-intro-surname2 {
     font-weight: 300;
@@ -170,11 +201,11 @@ select:focus {
     padding-top: 0.35em;
   }
 
-  /* line 47, ../../app/styles/sass/_992.sass */
+  /* line 68, ../../app/styles/sass/_992.sass */
   .wh-header-options.select {
     display: none;
   }
-  /* line 49, ../../app/styles/sass/_992.sass */
+  /* line 70, ../../app/styles/sass/_992.sass */
   .wh-header-options.ul {
     padding-top: 0.95em;
     text-align: center;
@@ -184,17 +215,17 @@ select:focus {
     margin-left: -40%;
   }
 
-  /* line 57, ../../app/styles/sass/_992.sass */
+  /* line 78, ../../app/styles/sass/_992.sass */
   .wh-header-option {
     display: inline;
     padding: 0 0.7em;
     text-transform: uppercase;
   }
-  /* line 61, ../../app/styles/sass/_992.sass */
+  /* line 82, ../../app/styles/sass/_992.sass */
   .wh-header-option:first-child {
     display: none;
   }
-  /* line 63, ../../app/styles/sass/_992.sass */
+  /* line 84, ../../app/styles/sass/_992.sass */
   .wh-header-option a {
     color: black;
     font-family: "Open Sans", sans-serif;
@@ -203,13 +234,13 @@ select:focus {
     color: #53585e;
   }
 
-  /* line 70, ../../app/styles/sass/_992.sass */
+  /* line 91, ../../app/styles/sass/_992.sass */
   .wh-header-locales {
     float: right;
     z-index: 3;
   }
 
-  /* line 74, ../../app/styles/sass/_992.sass */
+  /* line 95, ../../app/styles/sass/_992.sass */
   .wh-header-locale {
     float: left;
     padding: 1em 1em 0 0;
@@ -218,7 +249,7 @@ select:focus {
     -o-transition-duration: 1s;
     transition-duration: 1s;
   }
-  /* line 78, ../../app/styles/sass/_992.sass */
+  /* line 99, ../../app/styles/sass/_992.sass */
   .wh-header-locale.current {
     opacity: 1;
     -webkit-transition-property: opacity;
@@ -226,7 +257,7 @@ select:focus {
     -o-transition-property: opacity;
     transition-property: opacity;
   }
-  /* line 82, ../../app/styles/sass/_992.sass */
+  /* line 103, ../../app/styles/sass/_992.sass */
   .wh-header-locale:not(.current) {
     opacity: 0.5;
     -webkit-transition-property: opacity;
@@ -234,7 +265,7 @@ select:focus {
     -o-transition-property: opacity;
     transition-property: opacity;
   }
-  /* line 85, ../../app/styles/sass/_992.sass */
+  /* line 106, ../../app/styles/sass/_992.sass */
   .wh-header-locale img {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -243,13 +274,13 @@ select:focus {
     border-radius: 50%;
   }
 
-  /* line 88, ../../app/styles/sass/_992.sass */
+  /* line 109, ../../app/styles/sass/_992.sass */
   #to-top {
     opacity: 0;
     z-index: -1;
   }
 
-  /* line 94, ../../app/styles/sass/_992.sass */
+  /* line 115, ../../app/styles/sass/_992.sass */
   .intro-scrolled #to-top {
     z-index: 5;
     position: fixed;
@@ -271,17 +302,17 @@ select:focus {
     -o-transition: 0.2s all linear;
     transition: 0.2s all linear;
   }
-  /* line 107, ../../app/styles/sass/_992.sass */
+  /* line 128, ../../app/styles/sass/_992.sass */
   .intro-scrolled #to-top:hover {
     background-color: #222222;
   }
 
-  /* line 114, ../../app/styles/sass/_992.sass */
+  /* line 135, ../../app/styles/sass/_992.sass */
   .intro-scrolled .header-container {
     position: fixed;
     top: 0;
   }
-  /* line 117, ../../app/styles/sass/_992.sass */
+  /* line 138, ../../app/styles/sass/_992.sass */
   .intro-scrolled .wh-header-intro-name,
   .intro-scrolled .wh-header-intro-surname1,
   .intro-scrolled .wh-header-intro-surname2 {
@@ -296,7 +327,7 @@ select:focus {
     transition-duration: 0.5s;
   }
 
-  /* line 129, ../../app/styles/sass/_992.sass */
+  /* line 150, ../../app/styles/sass/_992.sass */
   .wh-intro-fullname,
   .wh-intro-summary,
   .wh-intro-description {
@@ -305,13 +336,13 @@ select:focus {
     right: 200px;
   }
 
-  /* line 136, ../../app/styles/sass/_992.sass */
+  /* line 157, ../../app/styles/sass/_992.sass */
   .wh-intro-fullname,
   .wh-intro-summary {
     top: -9999px;
   }
 
-  /* line 143, ../../app/styles/sass/_992.sass */
+  /* line 164, ../../app/styles/sass/_992.sass */
   .wh-intro-fullname > div {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
@@ -320,7 +351,7 @@ select:focus {
     padding-left: 0.3em;
   }
 
-  /* line 150, ../../app/styles/sass/_992.sass */
+  /* line 171, ../../app/styles/sass/_992.sass */
   .wh-intro-summary {
     opacity: 0.8;
     text-transform: uppercase;
@@ -329,7 +360,7 @@ select:focus {
     font-size: 2.4em;
   }
 
-  /* line 157, ../../app/styles/sass/_992.sass */
+  /* line 178, ../../app/styles/sass/_992.sass */
   .wh-intro-description {
     opacity: 0;
     top: 235px;
@@ -340,7 +371,7 @@ select:focus {
     font-size: 0.8em;
   }
 
-  /* line 169, ../../app/styles/sass/_992.sass */
+  /* line 190, ../../app/styles/sass/_992.sass */
   .wh-intro-loaded .wh-intro-fullname,
   .wh-intro-loaded .wh-intro-summary {
     -webkit-transition-property: top;
@@ -348,7 +379,7 @@ select:focus {
     -o-transition-property: top;
     transition-property: top;
   }
-  /* line 173, ../../app/styles/sass/_992.sass */
+  /* line 194, ../../app/styles/sass/_992.sass */
   .wh-intro-loaded .wh-intro-fullname {
     top: 100px;
     -webkit-transition-duration: 0.8s;
@@ -356,7 +387,7 @@ select:focus {
     -o-transition-duration: 0.8s;
     transition-duration: 0.8s;
   }
-  /* line 177, ../../app/styles/sass/_992.sass */
+  /* line 198, ../../app/styles/sass/_992.sass */
   .wh-intro-loaded .wh-intro-summary {
     top: 170px;
     -webkit-transition-duration: 1.3s;
@@ -364,7 +395,7 @@ select:focus {
     -o-transition-duration: 1.3s;
     transition-duration: 1.3s;
   }
-  /* line 181, ../../app/styles/sass/_992.sass */
+  /* line 202, ../../app/styles/sass/_992.sass */
   .wh-intro-loaded .wh-intro-description {
     opacity: 1;
     -webkit-transition-duration: 2s;
@@ -381,13 +412,13 @@ select:focus {
     transition-property: opacity;
   }
 
-  /* line 191, ../../app/styles/sass/_992.sass */
+  /* line 212, ../../app/styles/sass/_992.sass */
   .intro-scrolled .wh-intro-summary,
   .intro-scrolled .wh-intro-description {
     display: none;
   }
 
-  /* line 198, ../../app/styles/sass/_992.sass */
+  /* line 219, ../../app/styles/sass/_992.sass */
   .wh-cv {
     padding-top: 3.25em;
     position: relative;
@@ -396,12 +427,12 @@ select:focus {
     margin-bottom: 800px;
   }
 
-  /* line 210, ../../app/styles/sass/_992.sass */
+  /* line 231, ../../app/styles/sass/_992.sass */
   .wh-contacts ul {
     display: none;
   }
 
-  /* line 215, ../../app/styles/sass/_992.sass */
+  /* line 236, ../../app/styles/sass/_992.sass */
   .intro-scrolled .wh-contacts ul {
     display: inline;
     position: fixed;
@@ -409,13 +440,13 @@ select:focus {
     top: 180px;
   }
 
-  /* line 221, ../../app/styles/sass/_992.sass */
+  /* line 242, ../../app/styles/sass/_992.sass */
   .wh-contact {
     float: left;
     opacity: 0;
   }
 
-  /* line 225, ../../app/styles/sass/_992.sass */
+  /* line 246, ../../app/styles/sass/_992.sass */
   .wh-contact-icon {
     color: black;
     opacity: 0;
@@ -424,7 +455,7 @@ select:focus {
     padding-left: 0.5em;
     opacity: 0.7;
   }
-  /* line 232, ../../app/styles/sass/_992.sass */
+  /* line 253, ../../app/styles/sass/_992.sass */
   .wh-contact-icon:hover, .wh-contact-icon:not(:hover) {
     -webkit-transition-duration: 0.3s;
     -moz-transition-duration: 0.3s;
@@ -439,20 +470,20 @@ select:focus {
     -o-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
   }
-  /* line 237, ../../app/styles/sass/_992.sass */
+  /* line 258, ../../app/styles/sass/_992.sass */
   .wh-contact-icon:hover {
     opacity: 1;
   }
-  /* line 240, ../../app/styles/sass/_992.sass */
+  /* line 261, ../../app/styles/sass/_992.sass */
   .wh-contact-icon span {
     display: none;
   }
 
-  /* line 244, ../../app/styles/sass/_992.sass */
+  /* line 265, ../../app/styles/sass/_992.sass */
   .wh-contacts.when-shown.do {
     min-height: initial !important;
   }
-  /* line 247, ../../app/styles/sass/_992.sass */
+  /* line 268, ../../app/styles/sass/_992.sass */
   .wh-contacts.when-shown.do .wh-contact {
     opacity: 1;
     -webkit-transition-duration: 2.5s;
@@ -468,74 +499,67 @@ select:focus {
     -o-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
   }
-  /* line 254, ../../app/styles/sass/_992.sass */
-  .wh-contacts.when-shown.do .wh-contact:nth-last-child(1) {
-    -webkit-transition-delay: 0.25s;
-    -moz-transition-delay: 0.25s;
-    -o-transition-delay: 0.25s;
-    transition-delay: 0.25s;
-  }
-  /* line 254, ../../app/styles/sass/_992.sass */
+  /* line 275, ../../app/styles/sass/_992.sass */
   .wh-contacts.when-shown.do .wh-contact:nth-last-child(2) {
-    -webkit-transition-delay: 0.5s;
-    -moz-transition-delay: 0.5s;
-    -o-transition-delay: 0.5s;
-    transition-delay: 0.5s;
+    -webkit-transition-delay: 0.4s;
+    -moz-transition-delay: 0.4s;
+    -o-transition-delay: 0.4s;
+    transition-delay: 0.4s;
   }
-  /* line 254, ../../app/styles/sass/_992.sass */
+  /* line 275, ../../app/styles/sass/_992.sass */
   .wh-contacts.when-shown.do .wh-contact:nth-last-child(3) {
-    -webkit-transition-delay: 0.75s;
-    -moz-transition-delay: 0.75s;
-    -o-transition-delay: 0.75s;
-    transition-delay: 0.75s;
+    -webkit-transition-delay: 0.6s;
+    -moz-transition-delay: 0.6s;
+    -o-transition-delay: 0.6s;
+    transition-delay: 0.6s;
   }
-  /* line 254, ../../app/styles/sass/_992.sass */
+  /* line 275, ../../app/styles/sass/_992.sass */
   .wh-contacts.when-shown.do .wh-contact:nth-last-child(4) {
+    -webkit-transition-delay: 0.8s;
+    -moz-transition-delay: 0.8s;
+    -o-transition-delay: 0.8s;
+    transition-delay: 0.8s;
+  }
+  /* line 275, ../../app/styles/sass/_992.sass */
+  .wh-contacts.when-shown.do .wh-contact:nth-last-child(5) {
     -webkit-transition-delay: 1s;
     -moz-transition-delay: 1s;
     -o-transition-delay: 1s;
     transition-delay: 1s;
   }
-  /* line 254, ../../app/styles/sass/_992.sass */
-  .wh-contacts.when-shown.do .wh-contact:nth-last-child(5) {
-    -webkit-transition-delay: 1.25s;
-    -moz-transition-delay: 1.25s;
-    -o-transition-delay: 1.25s;
-    transition-delay: 1.25s;
-  }
-  /* line 254, ../../app/styles/sass/_992.sass */
+  /* line 275, ../../app/styles/sass/_992.sass */
   .wh-contacts.when-shown.do .wh-contact:nth-last-child(6) {
-    -webkit-transition-delay: 1.5s;
-    -moz-transition-delay: 1.5s;
-    -o-transition-delay: 1.5s;
-    transition-delay: 1.5s;
+    -webkit-transition-delay: 1.2s;
+    -moz-transition-delay: 1.2s;
+    -o-transition-delay: 1.2s;
+    transition-delay: 1.2s;
   }
-  /* line 254, ../../app/styles/sass/_992.sass */
+  /* line 275, ../../app/styles/sass/_992.sass */
   .wh-contacts.when-shown.do .wh-contact:nth-last-child(7) {
-    -webkit-transition-delay: 1.75s;
-    -moz-transition-delay: 1.75s;
-    -o-transition-delay: 1.75s;
-    transition-delay: 1.75s;
+    -webkit-transition-delay: 1.4s;
+    -moz-transition-delay: 1.4s;
+    -o-transition-delay: 1.4s;
+    transition-delay: 1.4s;
   }
-  /* line 254, ../../app/styles/sass/_992.sass */
+  /* line 275, ../../app/styles/sass/_992.sass */
   .wh-contacts.when-shown.do .wh-contact:nth-last-child(8) {
+    -webkit-transition-delay: 1.6s;
+    -moz-transition-delay: 1.6s;
+    -o-transition-delay: 1.6s;
+    transition-delay: 1.6s;
+  }
+  /* line 275, ../../app/styles/sass/_992.sass */
+  .wh-contacts.when-shown.do .wh-contact:nth-last-child(9) {
+    -webkit-transition-delay: 1.8s;
+    -moz-transition-delay: 1.8s;
+    -o-transition-delay: 1.8s;
+    transition-delay: 1.8s;
+  }
+  /* line 275, ../../app/styles/sass/_992.sass */
+  .wh-contacts.when-shown.do .wh-contact:nth-last-child(10) {
     -webkit-transition-delay: 2s;
     -moz-transition-delay: 2s;
     -o-transition-delay: 2s;
     transition-delay: 2s;
-  }
-  /* line 254, ../../app/styles/sass/_992.sass */
-  .wh-contacts.when-shown.do .wh-contact:nth-last-child(9) {
-    -webkit-transition-delay: 2.25s;
-    -moz-transition-delay: 2.25s;
-    -o-transition-delay: 2.25s;
-    transition-delay: 2.25s;
-  }
-  /* line 254, ../../app/styles/sass/_992.sass */
-  .wh-contacts.when-shown.do .wh-contact:nth-last-child(10) {
-    -webkit-transition-delay: 2.5s;
-    -moz-transition-delay: 2.5s;
-    -o-transition-delay: 2.5s;
-    transition-delay: 2.5s;
   }
 }
