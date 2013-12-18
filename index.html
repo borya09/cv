@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory-->
-    <link rel="stylesheet" href="styles/c5064004.main.css">
+    <link rel="stylesheet" href="styles/71e42394.main.css">
     <script type="text/javascript">document.write('<base href="' + document.location + '" />');</script>
   </head>
   <body>
@@ -44,7 +44,7 @@
           </div>
           <h2 class="wh-intro-summary">{{intro.summary}}</h2>
           <div ng-if="intro.image" class="wh-intro-image-wrapper"><img ng-src="{{intro.image}}" title="{{intro.fullname()}}" class="wh-intro-image"></div>
-          <p ng-if="intro.description" ng-bind-html="intro.description" class="wh-intro-description"></p>
+          <p ng-show="intro.description" ng-bind-html="intro.description" class="wh-intro-description"></p>
         </section>
         <section ng-controller="CvCtrl" ng-show="cv.parts.length" class="wh-cv">
           <article ng-repeat="part in cv.parts" id="{{part.id}}" ng-class="part.cssClass" header-current-section="" height-as-window="header" class="wh-cv-part wh-generic-section when-shown background-y-position-scroll">
@@ -96,7 +96,7 @@
     <div class="footer-container">
       <footer class="wh-footer wrapper">
         <div ng-controller="ContactsCtrl" id="{{id}}" header-current-section="" height-as-window="header" class="wh-contacts wh-generic-section when-shown">
-          <ul ng-if="contacts.length" class="wh-generic-section-content">
+          <ul ng-show="contacts.length" class="wh-generic-section-content">
             <li ng-repeat="contact in contacts" class="wh-contact"><a ng-href="{{contact.type=='phone'?'tel:':contact.type=='mail'?'mailto:':''}}{{contact.value}}" title="{{contact.value}}" data-wh-icon="{{contact.icon}}" ng-class="contact.type" class="wh-contact-icon"><span>{{contact.value}}</span></a></li>
           </ul>
         </div>
