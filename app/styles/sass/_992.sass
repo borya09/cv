@@ -1,51 +1,74 @@
 ////////////// BODY
-
 body
+  height: 100%
+  min-height: 100%
+
+
+.wh-background-image
   background: #FFFFFF url(../images/borja_intro.jpg) top center fixed no-repeat
   background-size: cover
   -moz-background-size: cover
-  font-size: 100%
+  height: 100%
+  z-index: -1
+  position: absolute
+  bottom: auto
+  top: 0
+  left: 0
+  right: 0
 
+.main-container
+  position: relative
 
+//Disable 'paralax' effect in the 'contact' section
+.intro-scrolled
+  body
+    position: relative
+  .main-container
+    position: static
+  .wh-background-image
+    position: fixed
+    background-position-y: 0!important
 
 ////////////// HEADER
 
 
-////// WITH INTRO VISIBLE
+////// HEADER - WITH INTRO VISIBLE
 .header-container
   +absolute0
   top: auto
-  height: 2.6em
+  height: 3em
   background: white
   z-index: 2
 
 .wh-header-intro-fullname
-  position: relative
-  top: -100em
   float: left
   padding-top: .7em
   padding-left: .8em
-  > div
+  .wh-header-intro-name,
+  .wh-header-intro-surname1,
+  .wh-header-intro-surname2
+    position: relative
     float: left
     padding-right: .2em
     color: $color-grey
     font-family: 'Roboto', sans-serif
-    font-weight: 300
+    text-transform: uppercase
+    top: -100em
   .wh-header-intro-name
-    font-weight: 400
-
-
-#to-top
-  right: 1em
-  position: absolute
-  opacity: 0
-
+    font-weight: 600
+    font-size: 1.4em
+    text-shadow: 1px 1px #B9B9B9
+  .wh-header-intro-surname1,
+  .wh-header-intro-surname2
+    font-weight: 300
+    font-size: 1em
+    padding-top: .35em
 
 .wh-header-options
   &.select
     display: none
   &.ul
-    padding-top: .75em
+    padding-top: .95em
     text-align: center
     position: absolute
     width: 80%
@@ -71,7 +94,7 @@ body
 
 .wh-header-locale
   float: left
-  padding: .8em .8em 0 0
+  padding: 1em 1em 0 0
   +transition-duration(1s)
   &.current
     opacity: 1
@@ -83,14 +106,38 @@ body
   img
     +border-radius(50%)
 
+#to-top
+  opacity: 0
+  z-index: -1
 
 
-////// WITH INTRO SCROLLED (HIDDEN)
+.intro-scrolled
+  #to-top
+    z-index: 5
+    position: fixed
+    right: 1em
+    bottom: 1em
+    opacity: 1
+    text-indent: -9999px
+    display: block
+    width: 2em
+    height: 2em
+    background: #515A5F url(../images/top.png) no-repeat center center
+    +border-radius(100px)
+    +transition(0.2s all linear)
+    &:hover
+      background-color: #222222
+
+
+
+////// HEADER - WITH INTRO SCROLLED (HIDDEN)
 .intro-scrolled
   .header-container
     position: fixed
     top: 0
-  .wh-header-intro-fullname
+  .wh-header-intro-name,
+  .wh-header-intro-surname1,
+  .wh-header-intro-surname2
     top: 0
     +transition-property(top)
     +transition-duration(.5s)
@@ -107,8 +154,13 @@ body
   z-index: 0
   right: $fixed-items-right
 
+.wh-intro-fullname,
+.wh-intro-summary
+  top: -9999px
+
+
 .wh-intro-fullname
-  top: 100px
+
   > div
     font-family: 'Roboto', sans-serif
     font-weight: 100
@@ -117,29 +169,55 @@ body
     padding-left: .3em
 
 .wh-intro-summary
-  top: 170px
+  opacity: .8
   text-transform: uppercase
   font-family: 'Open Sans', sans-serif
   font-weight: 700
   font-size: 2.4em
 
 .wh-intro-description
+  opacity: 0
+  top: 235px
   color: rgb(83, 88, 94)
-  top: 230px
   font-family: 'Roboto', sans-serif
   font-weight: 300
   font-style: italic
   font-size: .8em
 
-////// WITH INTRO SCROLLED (HIDDEN)
+
+////// INTRO - WHEN LOADED
+.wh-intro-loaded
+  .wh-intro-fullname,
+  .wh-intro-summary
+    +transition-property(top)
+
+  .wh-intro-fullname
+    top: 100px
+    +transition-duration(0.8s)
+
+  .wh-intro-summary
+    top: 170px
+    +transition-duration(1.3s)
+
+  .wh-intro-description
+    opacity: 1
+    +transition-duration(2s)
+    +transition-delay(1.5s)
+    +transition-property(opacity)
+
+
+
+////// INTRO - WHEN SCROLLED (HIDDEN)
 .intro-scrolled
   .wh-intro-summary,
   .wh-intro-description
     display: none
 
+
 ////////////// CV
 
 .wh-cv
+  padding-top: 3.25em
   position: relative
   background: red
   z-index: 1
@@ -149,24 +227,50 @@ body
 
 ////////////// CONTACTS
 
+.wh-contacts
+  ul
+    display: none
 
+.intro-scrolled
+  .wh-contacts
+    ul
+      display: inline
+      position: fixed
+      right: $fixed-items-right
+      top: 180px
 
 .wh-contact
-  float: right
+  float: left
+  opacity: 0
 
 .wh-contact-icon
   color: black
-  opacity: .7
+  opacity: 0
   font-size: 2em
   float: left
   padding-left: .5em
+  opacity: .7
+  &:hover,
+  &:not(:hover)
+    +transition-duration(.3s)
+    +transition-property(all)
+    +transition-timing-function(ease-out)
   &:hover
     opacity: 1
-    +transition-duration(.6s)
-    +transition-property(opacity)
-  &:not(:hover)
-    +transition-duration(.6s)
-    +transition-property(opacity)
 
   span
     display: none
+
+.wh-contacts
+  &.when-shown.do
+    min-height: initial!important
+
+    .wh-contact
+      opacity: 1
+      +transition-duration(2.5s)
+      +transition-property(opacity)
+      +transition-timing-function(ease-in)
+
+      @for $i from 2 through 10
+        &:nth-last-child(#{$i})
+          +transition-delay(#{$i*0.2}s)
