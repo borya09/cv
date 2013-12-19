@@ -165,12 +165,11 @@ body
 
 
 .wh-intro-fullname
-
+  color: #353535
+  font-family: 'Roboto', sans-serif
+  font-weight: 100
+  font-size: 3em
   > div
-    color: #353535
-    font-family: 'Roboto', sans-serif
-    font-weight: 100
-    font-size: 3em
     float: left
     padding-left: .3em
 
@@ -180,7 +179,7 @@ body
   font-family: 'Open Sans', sans-serif
   font-weight: 700
   font-size: 2.4em
-  padding-top: 68px
+  padding-top: 1.75em
 
 .wh-intro-description
   opacity: 0
@@ -190,7 +189,7 @@ body
   font-style: italic
   font-size: .8em
   top: 13%
-  padding-top: 130px
+  padding-top: 10em
 
 
 ////// INTRO - WHEN LOADED
@@ -243,7 +242,7 @@ body
       position: fixed
       right: $right-fixed-items-992
       top: $top-fixed-items-992
-      padding-top: 82px
+      padding-top: 5em
 
 .wh-contact
   float: left
@@ -269,7 +268,6 @@ body
 
 .wh-contacts
   &.when-shown.do
-    min-height: initial!important
 
     .wh-contact
       opacity: 1
@@ -280,3 +278,10 @@ body
       @for $i from 2 through 10
         &:nth-last-child(#{$i})
           +transition-delay(#{$i*0.2}s)
+
+// 992px
+@media only screen and (max-width: 1382px)
+
+  .wh-contacts
+    &.when-shown.do
+      min-height: initial!important
