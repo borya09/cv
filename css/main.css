@@ -354,27 +354,30 @@ select:focus {
     top: -9999px;
   }
 
-  /* line 169, ../../app/styles/sass/_992.sass */
-  .wh-intro-fullname > div {
+  /* line 167, ../../app/styles/sass/_992.sass */
+  .wh-intro-fullname {
     color: #353535;
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-size: 3em;
+  }
+  /* line 172, ../../app/styles/sass/_992.sass */
+  .wh-intro-fullname > div {
     float: left;
     padding-left: 0.3em;
   }
 
-  /* line 177, ../../app/styles/sass/_992.sass */
+  /* line 176, ../../app/styles/sass/_992.sass */
   .wh-intro-summary {
     opacity: 0.8;
     text-transform: uppercase;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 2.4em;
-    padding-top: 68px;
+    padding-top: 1.75em;
   }
 
-  /* line 185, ../../app/styles/sass/_992.sass */
+  /* line 184, ../../app/styles/sass/_992.sass */
   .wh-intro-description {
     opacity: 0;
     color: #53585e;
@@ -383,10 +386,10 @@ select:focus {
     font-style: italic;
     font-size: 0.8em;
     top: 13%;
-    padding-top: 130px;
+    padding-top: 10em;
   }
 
-  /* line 198, ../../app/styles/sass/_992.sass */
+  /* line 197, ../../app/styles/sass/_992.sass */
   .wh-intro-loaded .wh-intro-fullname,
   .wh-intro-loaded .wh-intro-summary {
     top: 13%;
@@ -399,14 +402,14 @@ select:focus {
     -o-transition-duration: 0.8s;
     transition-duration: 0.8s;
   }
-  /* line 204, ../../app/styles/sass/_992.sass */
+  /* line 203, ../../app/styles/sass/_992.sass */
   .wh-intro-loaded .wh-intro-summary {
     -webkit-transition-delay: 0.8s;
     -moz-transition-delay: 0.8s;
     -o-transition-delay: 0.8s;
     transition-delay: 0.8s;
   }
-  /* line 207, ../../app/styles/sass/_992.sass */
+  /* line 206, ../../app/styles/sass/_992.sass */
   .wh-intro-loaded .wh-intro-description {
     opacity: 1;
     -webkit-transition-duration: 2s;
@@ -423,13 +426,13 @@ select:focus {
     transition-property: opacity;
   }
 
-  /* line 217, ../../app/styles/sass/_992.sass */
+  /* line 216, ../../app/styles/sass/_992.sass */
   .intro-scrolled .wh-intro-summary,
   .intro-scrolled .wh-intro-description {
     display: none;
   }
 
-  /* line 224, ../../app/styles/sass/_992.sass */
+  /* line 223, ../../app/styles/sass/_992.sass */
   .wh-cv {
     padding-top: 3.25em;
     position: relative;
@@ -438,27 +441,27 @@ select:focus {
     margin-bottom: 800px;
   }
 
-  /* line 236, ../../app/styles/sass/_992.sass */
+  /* line 235, ../../app/styles/sass/_992.sass */
   .wh-contacts ul {
     display: none;
   }
 
-  /* line 241, ../../app/styles/sass/_992.sass */
+  /* line 240, ../../app/styles/sass/_992.sass */
   .intro-scrolled .wh-contacts ul {
     display: inline;
     position: fixed;
     right: 10%;
     top: 13%;
-    padding-top: 82px;
+    padding-top: 5em;
   }
 
-  /* line 248, ../../app/styles/sass/_992.sass */
+  /* line 247, ../../app/styles/sass/_992.sass */
   .wh-contact {
     float: left;
     opacity: 0;
   }
 
-  /* line 252, ../../app/styles/sass/_992.sass */
+  /* line 251, ../../app/styles/sass/_992.sass */
   .wh-contact-icon {
     color: black;
     opacity: 0;
@@ -467,7 +470,7 @@ select:focus {
     padding-left: 0.5em;
     opacity: 0.7;
   }
-  /* line 259, ../../app/styles/sass/_992.sass */
+  /* line 258, ../../app/styles/sass/_992.sass */
   .wh-contact-icon:hover, .wh-contact-icon:not(:hover) {
     -webkit-transition-duration: 0.3s;
     -moz-transition-duration: 0.3s;
@@ -482,20 +485,16 @@ select:focus {
     -o-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
   }
-  /* line 264, ../../app/styles/sass/_992.sass */
+  /* line 263, ../../app/styles/sass/_992.sass */
   .wh-contact-icon:hover {
     opacity: 1;
   }
-  /* line 267, ../../app/styles/sass/_992.sass */
+  /* line 266, ../../app/styles/sass/_992.sass */
   .wh-contact-icon span {
     display: none;
   }
 
-  /* line 271, ../../app/styles/sass/_992.sass */
-  .wh-contacts.when-shown.do {
-    min-height: initial !important;
-  }
-  /* line 274, ../../app/styles/sass/_992.sass */
+  /* line 272, ../../app/styles/sass/_992.sass */
   .wh-contacts.when-shown.do .wh-contact {
     opacity: 1;
     -webkit-transition-duration: 2.5s;
@@ -511,63 +510,63 @@ select:focus {
     -o-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
   }
-  /* line 281, ../../app/styles/sass/_992.sass */
+  /* line 279, ../../app/styles/sass/_992.sass */
   .wh-contacts.when-shown.do .wh-contact:nth-last-child(2) {
     -webkit-transition-delay: 0.4s;
     -moz-transition-delay: 0.4s;
     -o-transition-delay: 0.4s;
     transition-delay: 0.4s;
   }
-  /* line 281, ../../app/styles/sass/_992.sass */
+  /* line 279, ../../app/styles/sass/_992.sass */
   .wh-contacts.when-shown.do .wh-contact:nth-last-child(3) {
     -webkit-transition-delay: 0.6s;
     -moz-transition-delay: 0.6s;
     -o-transition-delay: 0.6s;
     transition-delay: 0.6s;
   }
-  /* line 281, ../../app/styles/sass/_992.sass */
+  /* line 279, ../../app/styles/sass/_992.sass */
   .wh-contacts.when-shown.do .wh-contact:nth-last-child(4) {
     -webkit-transition-delay: 0.8s;
     -moz-transition-delay: 0.8s;
     -o-transition-delay: 0.8s;
     transition-delay: 0.8s;
   }
-  /* line 281, ../../app/styles/sass/_992.sass */
+  /* line 279, ../../app/styles/sass/_992.sass */
   .wh-contacts.when-shown.do .wh-contact:nth-last-child(5) {
     -webkit-transition-delay: 1s;
     -moz-transition-delay: 1s;
     -o-transition-delay: 1s;
     transition-delay: 1s;
   }
-  /* line 281, ../../app/styles/sass/_992.sass */
+  /* line 279, ../../app/styles/sass/_992.sass */
   .wh-contacts.when-shown.do .wh-contact:nth-last-child(6) {
     -webkit-transition-delay: 1.2s;
     -moz-transition-delay: 1.2s;
     -o-transition-delay: 1.2s;
     transition-delay: 1.2s;
   }
-  /* line 281, ../../app/styles/sass/_992.sass */
+  /* line 279, ../../app/styles/sass/_992.sass */
   .wh-contacts.when-shown.do .wh-contact:nth-last-child(7) {
     -webkit-transition-delay: 1.4s;
     -moz-transition-delay: 1.4s;
     -o-transition-delay: 1.4s;
     transition-delay: 1.4s;
   }
-  /* line 281, ../../app/styles/sass/_992.sass */
+  /* line 279, ../../app/styles/sass/_992.sass */
   .wh-contacts.when-shown.do .wh-contact:nth-last-child(8) {
     -webkit-transition-delay: 1.6s;
     -moz-transition-delay: 1.6s;
     -o-transition-delay: 1.6s;
     transition-delay: 1.6s;
   }
-  /* line 281, ../../app/styles/sass/_992.sass */
+  /* line 279, ../../app/styles/sass/_992.sass */
   .wh-contacts.when-shown.do .wh-contact:nth-last-child(9) {
     -webkit-transition-delay: 1.8s;
     -moz-transition-delay: 1.8s;
     -o-transition-delay: 1.8s;
     transition-delay: 1.8s;
   }
-  /* line 281, ../../app/styles/sass/_992.sass */
+  /* line 279, ../../app/styles/sass/_992.sass */
   .wh-contacts.when-shown.do .wh-contact:nth-last-child(10) {
     -webkit-transition-delay: 2s;
     -moz-transition-delay: 2s;
@@ -575,13 +574,26 @@ select:focus {
     transition-delay: 2s;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1382px) {
+  /* line 286, ../../app/styles/sass/_992.sass */
+  .wh-contacts.when-shown.do {
+    min-height: initial !important;
+  }
+}
 @media only screen and (min-width: 1382px) {
   /* line 4, ../../app/styles/sass/_1382.sass */
   .wh-intro-fullname,
   .wh-intro-summary,
-  .wh-intro-description {
+  .wh-intro-description,
+  .intro-scrolled .wh-contacts ul {
     position: fixed;
     z-index: 0;
-    right: 22%;
+    right: 18%;
+  }
+
+  /* line 15, ../../app/styles/sass/_1382.sass */
+  .wh-intro,
+  .wh-contacts {
+    font-size: 120%;
   }
 }
