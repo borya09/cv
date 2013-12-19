@@ -37,18 +37,18 @@ body
   +absolute0
   top: auto
   height: 3em
-  background: white
+  background: rgba(255, 255, 255, 0.7)
   z-index: 2
 
-.wh-header-intro-fullname
+.wh-header-fullname
   float: left
   padding-top: .7em
   padding-left: .8em
   position: relative
 
-.wh-header-intro-name,
-.wh-header-intro-surname1,
-.wh-header-intro-surname2
+.wh-header-name,
+.wh-header-surname1,
+.wh-header-surname2
   position: relative
   float: left
   padding-right: .2em
@@ -56,12 +56,12 @@ body
   font-family: 'Roboto', sans-serif
   text-transform: uppercase
   top: -9999px
-.wh-header-intro-name
+.wh-header-name
   font-weight: 600
   font-size: 1.5em
   text-shadow: 1px 1px #B9B9B9
-.wh-header-intro-surname1,
-.wh-header-intro-surname2
+.wh-header-surname1,
+.wh-header-surname2
   font-weight: 300
   font-size: .75em
   left: 100px
@@ -119,16 +119,16 @@ body
   .header-container
     position: fixed
     top: 0
-  .wh-header-intro-name,
-  .wh-header-intro-surname1,
-  .wh-header-intro-surname2
+  .wh-header-name,
+  .wh-header-surname1,
+  .wh-header-surname2
     top: 0
     +transition-property(all)
     +transition-duration(.5s)
 
-  .wh-header-intro-surname1
+  .wh-header-surname1
     top: 14px
-  .wh-header-intro-surname2
+  .wh-header-surname2
     top: 25px
 
   #to-top
@@ -206,7 +206,7 @@ body
   .wh-intro-description
     opacity: 1
     +transition-duration(2s)
-    +transition-delay(1.5s)
+    +transition-delay(2.5s)
     +transition-property(opacity)
 
 
