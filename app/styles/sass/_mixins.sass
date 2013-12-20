@@ -16,5 +16,18 @@
 //  100%
 //    opacity: 0
 
+@mixin cv-section-colors($color, $html-data-attr)
+  [data-wh-current-section="#{$html-data-attr}"]
+    .wh-header-option.current
+      a
+        color: $color
+    #to-top
+      background-color: $color!important
+
+  .#{$html-data-attr}
+    .wh-generic-section-title
+      background: $color
+      box-shadow: 0px 0px 0px 3px $color
+
 
 

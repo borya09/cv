@@ -37,7 +37,7 @@ body
   +absolute0
   top: auto
   height: 3em
-  background: rgba(255, 255, 255, 0.7)
+  background: rgba(255, 255, 255, 0.9)
   z-index: 2
 
 .wh-header-fullname
@@ -57,14 +57,14 @@ body
   text-transform: uppercase
   top: -9999px
 .wh-header-name
-  font-weight: 600
-  font-size: 1.5em
+  font-weight: 700
+  font-size: 1.7em
   text-shadow: 1px 1px #B9B9B9
 .wh-header-surname1,
 .wh-header-surname2
   font-weight: 300
-  font-size: .75em
-  left: 100px
+  font-size: .7em
+  left: 108px
   position: absolute
 
 
@@ -119,6 +119,7 @@ body
   .header-container
     position: fixed
     top: 0
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.07)
   .wh-header-name,
   .wh-header-surname1,
   .wh-header-surname2
@@ -136,16 +137,16 @@ body
     position: fixed
     right: 1em
     bottom: 1em
-    opacity: 1
+    opacity: .8
     text-indent: -9999px
     display: block
     width: 2em
     height: 2em
-    background: #515A5F url(../images/top.png) no-repeat center center
+    background: url(../images/top.png) no-repeat center center
     +border-radius(100px)
     +transition(0.2s all linear)
     &:hover
-      background-color: #222222
+      opacity: 1
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -165,31 +166,40 @@ body
 
 
 .wh-intro-fullname
-  color: #353535
   font-family: 'Roboto', sans-serif
-  font-weight: 100
   font-size: 3em
-  > div
+  font-weight: 100
+  color: #353535
+  div
     float: left
     padding-left: .3em
 
 .wh-intro-summary
-  opacity: .8
-  text-transform: uppercase
   font-family: 'Open Sans', sans-serif
-  font-weight: 700
-  font-size: 2.4em
-  padding-top: 1.75em
+  text-transform: uppercase
+  font-weight: 600
+  font-size: 2em
+  opacity: .8
+  margin-top: 2.4em
+  padding: .16em .475em
+  border: 4px solid
+
+  background: rgba(0, 0, 0, 0.9)
+  color: #FFFFFF
+  border: 4px solid #FFFFFF
+  box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.9)
+
+
 
 .wh-intro-description
-  opacity: 0
-  color: rgb(83, 88, 94)
   font-family: 'Roboto', sans-serif
   font-weight: 300
   font-style: italic
   font-size: .8em
-  top: 13%
-  padding-top: 10em
+  opacity: 0
+  color: rgb(83, 88, 94)
+  margin-top: 12em
+  top: $top-fixed-items-992
 
 
 ////// INTRO - WHEN LOADED
@@ -206,7 +216,7 @@ body
   .wh-intro-description
     opacity: 1
     +transition-duration(2s)
-    +transition-delay(2.5s)
+    +transition-delay(1.5s)
     +transition-property(opacity)
 
 
@@ -218,14 +228,47 @@ body
     display: none
 
 
+////////////////////////////////////////////////////////////////////////////////////////////
+.wh-cv
+  background: #f5f5f5
+
+.wh-generic-section
+  text-align: center
+  width: 940px
+  margin: 0 auto
+
+
+.wh-generic-section-title
+  font-family: 'Open Sans', sans-serif
+  text-transform: uppercase
+  font-weight: 600
+  font-size: 1.5em
+  margin: 2em auto
+  display: inline-block
+  padding: .2em 1em
+
+  color: #FFFFFF
+  border: 4px solid #FFFFFF
+
+.wh-generic-section-content
+  text-align: left
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
 ////////////// CV
 
 .wh-cv
   padding-top: 3.25em
   position: relative
-  background: red
   z-index: 1
-  margin-bottom: 800px
+
++cv-section-colors($color-section-presentation, 'presentation')
++cv-section-colors($color-section-work, 'work')
++cv-section-colors($color-section-tech_skills, 'tech_skills')
++cv-section-colors($color-section-career, 'career')
++cv-section-colors($color-section-academic, 'academic')
++cv-section-colors($color-section-hobbies, 'hobbies')
++cv-section-colors($color-section-contacts, 'contacts')
 
 
 
@@ -242,7 +285,7 @@ body
       position: fixed
       right: $right-fixed-items-992
       top: $top-fixed-items-992
-      padding-top: 5em
+      margin-top: 5em
 
 .wh-contact
   float: left
@@ -282,6 +325,6 @@ body
 // 992px
 @media only screen and (max-width: 1382px)
 
-  .wh-contacts
-    &.when-shown.do
-      min-height: initial!important
+  //.wh-contacts
+  //  &.when-shown.do
+  //    min-height: initial!important
