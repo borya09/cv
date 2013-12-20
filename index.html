@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory-->
-    <link rel="stylesheet" href="styles/a2ef87d7.main.css">
+    <link rel="stylesheet" href="styles/34f76ff9.main.css">
     <script type="text/javascript">document.write('<base href="' + document.location + '" />');</script>
   </head>
   <body>
@@ -16,11 +16,10 @@
     <![endif]-->
     <div class="header-container">
       <header class="wh-header wrapper">
-        <h1 class="title wh-header-intro-fullname">
-          <div class="wh-header-intro-name">{{header.intro.name}}</div>
-          <div ng-if="header.intro.surname1" class="wh-header-intro-surname1">{{header.intro.surname1}}</div>
-          <div ng-if="header.intro.surname2" class="wh-header-intro-surname2">{{header.intro.surname2}}</div>
-        </h1>
+        <h1 class="title wh-header-fullname"><a href="javascript:void(0)" ng-click="smoothScroll(header.nav.init)" title="top">
+            <div class="wh-header-name">{{header.intro.name}}</div>
+            <div ng-if="header.intro.surname1" class="wh-header-surname1">{{header.intro.surname1}}</div>
+            <div ng-if="header.intro.surname2" class="wh-header-surname2">{{header.intro.surname2}}</div></a></h1>
         <nav class="wh-header-nav">
           <ul class="wh-header-options ul">
             <li ng-repeat="option in header.nav.options | filter: {hidden: false} | orderBy: 'order'" ng-class="{current: option.current}" class="wh-header-option"><a ng-click="smoothScroll(option)" href="javascript:void(0)" title="{{option.title}}">{{option.title}}</a></li>
@@ -36,7 +35,7 @@
     </div>
     <div class="main-container">
       <div class="wh-main wrapper">
-        <section ng-controller="IntroCtrl" id="{{id}}" header-current-section="" height-as-window="" ng-class="intro.name.length? &quot;wh-intro-loaded&quot; : &quot;&quot; " class="wh-intro wh-generic-section">
+        <section ng-controller="IntroCtrl" id="{{id}}" spy-current-section="" height-as-window="" ng-class="intro.name.length? &quot;wh-intro-loaded&quot; : &quot;&quot; " class="wh-intro wh-generic-section">
           <div class="wh-intro-fullname">
             <div class="wh-intro-name">{{intro.name}}</div>
             <div ng-if="intro.surname1" class="wh-intro-surname1">{{intro.surname1}}</div>
@@ -47,7 +46,7 @@
           <p ng-show="intro.description" ng-bind-html="intro.description" class="wh-intro-description"></p>
         </section>
         <section ng-controller="CvCtrl" ng-show="cv.parts.length" class="wh-cv">
-          <article ng-repeat="part in cv.parts" id="{{part.id}}" ng-class="part.cssClass" header-current-section="" height-as-window="header" class="wh-cv-part wh-generic-section when-shown background-y-position-scroll">
+          <article ng-repeat="part in cv.parts" id="{{part.id}}" ng-class="part.cssClass" spy-current-section="" height-as-window="header" class="wh-cv-part wh-generic-section when-shown background-y-position-scroll">
             <h3 ng-if="part.title" class="wh-generic-section-title">{{part.title}}</h3>
             <div class="wh-generic-section-content">
               <p ng-if="part.description" ng-bind-html="part.description" class="wh-cv-part-description"></p>
@@ -73,7 +72,7 @@
             </div>
           </article>
         </section>
-        <section ng-controller="QuestionsCtrl" id="{{id}}" ng-show="questions.length" header-current-section="" height-as-window="header" class="wh-questions wh-generic-section when-shown">
+        <section ng-controller="QuestionsCtrl" id="{{id}}" ng-show="questions.length" spy-current-section="" height-as-window="header" class="wh-questions wh-generic-section when-shown">
           <h3 class="wh-generic-section-title">{{ title }}</h3>
           <div class="wh-generic-section-content">
             <p ng-if="description" class="wh-questions-description">{{ description }}</p>
@@ -95,7 +94,7 @@
     </div>
     <div class="footer-container">
       <footer class="wh-footer wrapper">
-        <div ng-controller="ContactsCtrl" id="{{id}}" header-current-section="" height-as-window="header" class="wh-contacts wh-generic-section when-shown">
+        <div ng-controller="ContactsCtrl" id="{{id}}" spy-current-section="" height-as-window="header" class="wh-contacts wh-generic-section when-shown">
           <ul ng-show="contacts.length" class="wh-generic-section-content">
             <li ng-repeat="contact in contacts" class="wh-contact"><a ng-href="{{contact.type=='phone'?'tel:':contact.type=='mail'?'mailto:':''}}{{contact.value}}" title="{{contact.value}}" data-wh-icon="{{contact.icon}}" ng-class="contact.type" class="wh-contact-icon"><span>{{contact.value}}</span></a></li>
           </ul>
@@ -113,7 +112,7 @@
     </script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script src="bower_components/angular/angular.js"></script>
-    <script src="scripts/45f7bb09.modules.js"></script>
-    <script src="scripts/edcdb298.scripts.js"></script>
+    <script src="scripts/018ad69d.modules.js"></script>
+    <script src="scripts/77c6193d.scripts.js"></script>
   </body>
 </html>
