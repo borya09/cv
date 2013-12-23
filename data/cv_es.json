@@ -113,7 +113,7 @@
 				{
 					"title": "Front",
 					"content": [
-						"JS", "AngularJs", "Css3", "HTML5", "Less", "Sass", "RWD", "Coffeescript", "GruntJs", "Yeoman", "Bower", "Phonegap", "Jade", "jQuery", "Twitter Bootstrap."
+						"JS", "AngularJs", "Css3", "HTML5", "Less", "Sass", "RWD", "Coffeescript", "GruntJs", "Yeoman", "Bower", "Phonegap", "Jade", "jQuery", "Twitter Bootstrap"
 					]
 				},
 				{
@@ -198,7 +198,7 @@
 		},
 		{
 			"header": "Estudios",
-			"title": "Educación Académica",
+			"title": "Estudios",
 			"key": "academic",
 			"content": [
 				{

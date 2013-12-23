@@ -566,11 +566,11 @@ select:focus {
     padding: 0.1em 0.2em;
     color: white;
     border: 4px solid white;
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-    -ms-border-radius: 7px;
-    -o-border-radius: 7px;
-    border-radius: 7px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
     position: relative;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
   }
@@ -584,11 +584,11 @@ select:focus {
     top: 0;
     bottom: 0;
     border: 4px solid white;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-    border-radius: 4px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
   }
 
   /* line 262, ../../app/styles/sass/_992.sass */
@@ -596,41 +596,10 @@ select:focus {
     text-align: left;
   }
 
-  /* line 266, ../../app/styles/sass/_992.sass */
-  .wh-cv-part {
-    margin-bottom: 20em;
-  }
-  /* line 270, ../../app/styles/sass/_992.sass */
-  .wh-cv-part.presentation p {
-    letter-spacing: 3px;
-    line-height: 1em;
-    text-align: justify;
-    margin-top: 1em;
-  }
-  /* line 275, ../../app/styles/sass/_992.sass */
-  .wh-cv-part.presentation li {
-    margin-top: 0.3em;
-  }
-  /* line 277, ../../app/styles/sass/_992.sass */
-  .wh-cv-part.presentation li:before {
-    content: ">";
-    color: #ffce3c;
-    margin-right: 0.4em;
-  }
-  /* line 281, ../../app/styles/sass/_992.sass */
-  .wh-cv-part.presentation a {
-    color: #ffce3c;
-    font-weight: 400;
-  }
-  /* line 284, ../../app/styles/sass/_992.sass */
-  .wh-cv-part.presentation a:hover {
-    text-decoration: underline;
-  }
-  /* line 288, ../../app/styles/sass/_992.sass */
-  .wh-cv-part.tech_skills .wh-part-item {
+  /* line 265, ../../app/styles/sass/_992.sass */
+  .wh-part-item {
     float: left;
     background: white;
-    margin: 0 1%;
     padding: 1em;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -639,8 +608,53 @@ select:focus {
     border-radius: 3px;
     border: 1px solid #e9e9e9;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+    position: relative;
   }
-  /* line 296, ../../app/styles/sass/_992.sass */
+
+  /* line 275, ../../app/styles/sass/_992.sass */
+  .wh-cv-part-item-date {
+    padding: 0.3em 0.5em;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    border-radius: 25px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+  }
+
+  /* line 281, ../../app/styles/sass/_992.sass */
+  .wh-cv-part {
+    margin-bottom: 20em;
+  }
+  /* line 286, ../../app/styles/sass/_992.sass */
+  .wh-cv-part.presentation p {
+    text-align: justify;
+    margin-top: 1.5em;
+  }
+  /* line 289, ../../app/styles/sass/_992.sass */
+  .wh-cv-part.presentation li {
+    margin-top: 0.3em;
+  }
+  /* line 291, ../../app/styles/sass/_992.sass */
+  .wh-cv-part.presentation li:before {
+    content: ">";
+    color: #ffce3c;
+    margin-right: 0.4em;
+  }
+  /* line 295, ../../app/styles/sass/_992.sass */
+  .wh-cv-part.presentation a {
+    color: #ffce3c;
+    font-weight: 400;
+  }
+  /* line 298, ../../app/styles/sass/_992.sass */
+  .wh-cv-part.presentation a:hover {
+    text-decoration: underline;
+  }
+  /* line 303, ../../app/styles/sass/_992.sass */
+  .wh-cv-part.tech_skills .wh-part-item {
+    margin: 0 1%;
+  }
+  /* line 305, ../../app/styles/sass/_992.sass */
   .wh-cv-part.tech_skills .wh-part-item:hover {
     background: #faaf40;
     border-color: #faaf40;
@@ -653,21 +667,21 @@ select:focus {
     -o-transition-duration: 0.4s;
     transition-duration: 0.4s;
   }
-  /* line 302, ../../app/styles/sass/_992.sass */
+  /* line 311, ../../app/styles/sass/_992.sass */
   .wh-cv-part.tech_skills .wh-part-item:hover .wh-part-item-content-element {
     background: white;
     color: black;
   }
-  /* line 306, ../../app/styles/sass/_992.sass */
+  /* line 315, ../../app/styles/sass/_992.sass */
   .wh-cv-part.tech_skills .wh-part-item:first-child {
     width: 98%;
     margin-bottom: 2%;
   }
-  /* line 309, ../../app/styles/sass/_992.sass */
+  /* line 318, ../../app/styles/sass/_992.sass */
   .wh-cv-part.tech_skills .wh-part-item:not(:first-child) {
     width: 23%;
   }
-  /* line 313, ../../app/styles/sass/_992.sass */
+  /* line 322, ../../app/styles/sass/_992.sass */
   .wh-cv-part.tech_skills .wh-cv-part-item-title {
     text-align: center;
     text-transform: uppercase;
@@ -678,7 +692,7 @@ select:focus {
     font-size: 1.4em;
     font-weight: 700;
   }
-  /* line 323, ../../app/styles/sass/_992.sass */
+  /* line 332, ../../app/styles/sass/_992.sass */
   .wh-cv-part.tech_skills .wh-part-item-content-element {
     text-align: left;
     background: #faaf40;
@@ -846,13 +860,106 @@ select:focus {
   .wh-cv-part.when-shown.do .wh-part-item:nth-child(5) .wh-part-item-content-element:nth-child(3) {
     width: 48%;
   }
+  /* line 396, ../../app/styles/sass/_992.sass */
+  .wh-cv-part.academic .wh-part-item {
+    width: 44%;
+    text-align: center;
+  }
+  /* line 400, ../../app/styles/sass/_992.sass */
+  .wh-cv-part.academic .wh-part-item:hover {
+    background-size: 100%;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+  /* line 404, ../../app/styles/sass/_992.sass */
+  .wh-cv-part.academic .wh-part-item:hover .wh-cv-part-item-description {
+    opacity: 0;
+  }
+  /* line 407, ../../app/styles/sass/_992.sass */
+  .wh-cv-part.academic .wh-part-item:first-child {
+    margin-right: 56%;
+    margin-bottom: 1.5em;
+    background: url(http://blogs.deusto.es/jornadas-familia/wp-content/uploads/2012/10/mc072f.jpg) center center no-repeat;
+    background-size: 0%;
+    background-color: white;
+  }
+  /* line 413, ../../app/styles/sass/_992.sass */
+  .wh-cv-part.academic .wh-part-item:first-child:hover {
+    background-size: 100%;
+  }
+  /* line 415, ../../app/styles/sass/_992.sass */
+  .wh-cv-part.academic .wh-part-item:first-child .wh-cv-part-item-dates {
+    left: 70%;
+  }
+  /* line 418, ../../app/styles/sass/_992.sass */
+  .wh-cv-part.academic .wh-part-item:last-child {
+    margin-left: 56%;
+    background: url(http://erizbilbo.files.wordpress.com/2007/11/colegiovista-aerea1.jpg) center center no-repeat;
+    background-size: 0%;
+    background-color: white;
+  }
+  /* line 423, ../../app/styles/sass/_992.sass */
+  .wh-cv-part.academic .wh-part-item:last-child:hover {
+    background-size: 100%;
+  }
+  /* line 425, ../../app/styles/sass/_992.sass */
+  .wh-cv-part.academic .wh-part-item:last-child .wh-cv-part-item-dates {
+    right: 70%;
+  }
+  /* line 427, ../../app/styles/sass/_992.sass */
+  .wh-cv-part.academic ol {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+  }
+  /* line 431, ../../app/styles/sass/_992.sass */
+  .wh-cv-part.academic ol:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 50%;
+    border-right: 1px dashed #00768a;
+  }
+  /* line 438, ../../app/styles/sass/_992.sass */
+  .wh-cv-part.academic .wh-cv-part-item-description {
+    margin-top: -1em;
+  }
+  /* line 440, ../../app/styles/sass/_992.sass */
+  .wh-cv-part.academic .academic-what,
+  .wh-cv-part.academic .academic-where {
+    display: block;
+    margin: 1em auto;
+  }
+  /* line 444, ../../app/styles/sass/_992.sass */
+  .wh-cv-part.academic .academic-what {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.3em;
+  }
+  /* line 448, ../../app/styles/sass/_992.sass */
+  .wh-cv-part.academic .wh-cv-part-item-dates {
+    position: relative;
+    z-index: 2;
+  }
+  /* line 451, ../../app/styles/sass/_992.sass */
+  .wh-cv-part.academic .wh-cv-part-item-date {
+    color: white;
+    background: #00768a;
+  }
 
-  /* line 391, ../../app/styles/sass/_992.sass */
+  /* line 459, ../../app/styles/sass/_992.sass */
   .wh-contacts ul {
     display: none;
   }
 
-  /* line 396, ../../app/styles/sass/_992.sass */
+  /* line 464, ../../app/styles/sass/_992.sass */
   .intro-scrolled .wh-contacts ul {
     display: inline;
     position: fixed;
@@ -861,13 +968,13 @@ select:focus {
     margin-top: 5em;
   }
 
-  /* line 403, ../../app/styles/sass/_992.sass */
+  /* line 471, ../../app/styles/sass/_992.sass */
   .wh-contact {
     float: left;
     opacity: 0;
   }
 
-  /* line 407, ../../app/styles/sass/_992.sass */
+  /* line 475, ../../app/styles/sass/_992.sass */
   .wh-contact-icon {
     color: #a43566;
     opacity: 0;
@@ -876,7 +983,7 @@ select:focus {
     padding-left: 0.5em;
     opacity: 0.7;
   }
-  /* line 414, ../../app/styles/sass/_992.sass */
+  /* line 482, ../../app/styles/sass/_992.sass */
   .wh-contact-icon:hover, .wh-contact-icon:not(:hover) {
     -webkit-transition-duration: 0.3s;
     -moz-transition-duration: 0.3s;
@@ -891,16 +998,16 @@ select:focus {
     -o-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
   }
-  /* line 419, ../../app/styles/sass/_992.sass */
+  /* line 487, ../../app/styles/sass/_992.sass */
   .wh-contact-icon:hover {
     opacity: 1;
   }
-  /* line 422, ../../app/styles/sass/_992.sass */
+  /* line 490, ../../app/styles/sass/_992.sass */
   .wh-contact-icon span {
     display: none;
   }
 
-  /* line 427, ../../app/styles/sass/_992.sass */
+  /* line 495, ../../app/styles/sass/_992.sass */
   .wh-contacts.when-shown.do .wh-contact {
     opacity: 1;
     -webkit-transition-duration: 2.5s;
@@ -916,63 +1023,63 @@ select:focus {
     -o-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
   }
-  /* line 434, ../../app/styles/sass/_992.sass */
+  /* line 502, ../../app/styles/sass/_992.sass */
   .wh-contacts.when-shown.do .wh-contact:nth-last-child(2) {
     -webkit-transition-delay: 0.4s;
     -moz-transition-delay: 0.4s;
     -o-transition-delay: 0.4s;
     transition-delay: 0.4s;
   }
-  /* line 434, ../../app/styles/sass/_992.sass */
+  /* line 502, ../../app/styles/sass/_992.sass */
   .wh-contacts.when-shown.do .wh-contact:nth-last-child(3) {
     -webkit-transition-delay: 0.6s;
     -moz-transition-delay: 0.6s;
     -o-transition-delay: 0.6s;
     transition-delay: 0.6s;
   }
-  /* line 434, ../../app/styles/sass/_992.sass */
+  /* line 502, ../../app/styles/sass/_992.sass */
   .wh-contacts.when-shown.do .wh-contact:nth-last-child(4) {
     -webkit-transition-delay: 0.8s;
     -moz-transition-delay: 0.8s;
     -o-transition-delay: 0.8s;
     transition-delay: 0.8s;
   }
-  /* line 434, ../../app/styles/sass/_992.sass */
+  /* line 502, ../../app/styles/sass/_992.sass */
   .wh-contacts.when-shown.do .wh-contact:nth-last-child(5) {
     -webkit-transition-delay: 1s;
     -moz-transition-delay: 1s;
     -o-transition-delay: 1s;
     transition-delay: 1s;
   }
-  /* line 434, ../../app/styles/sass/_992.sass */
+  /* line 502, ../../app/styles/sass/_992.sass */
   .wh-contacts.when-shown.do .wh-contact:nth-last-child(6) {
     -webkit-transition-delay: 1.2s;
     -moz-transition-delay: 1.2s;
     -o-transition-delay: 1.2s;
     transition-delay: 1.2s;
   }
-  /* line 434, ../../app/styles/sass/_992.sass */
+  /* line 502, ../../app/styles/sass/_992.sass */
   .wh-contacts.when-shown.do .wh-contact:nth-last-child(7) {
     -webkit-transition-delay: 1.4s;
     -moz-transition-delay: 1.4s;
     -o-transition-delay: 1.4s;
     transition-delay: 1.4s;
   }
-  /* line 434, ../../app/styles/sass/_992.sass */
+  /* line 502, ../../app/styles/sass/_992.sass */
   .wh-contacts.when-shown.do .wh-contact:nth-last-child(8) {
     -webkit-transition-delay: 1.6s;
     -moz-transition-delay: 1.6s;
     -o-transition-delay: 1.6s;
     transition-delay: 1.6s;
   }
-  /* line 434, ../../app/styles/sass/_992.sass */
+  /* line 502, ../../app/styles/sass/_992.sass */
   .wh-contacts.when-shown.do .wh-contact:nth-last-child(9) {
     -webkit-transition-delay: 1.8s;
     -moz-transition-delay: 1.8s;
     -o-transition-delay: 1.8s;
     transition-delay: 1.8s;
   }
-  /* line 434, ../../app/styles/sass/_992.sass */
+  /* line 502, ../../app/styles/sass/_992.sass */
   .wh-contacts.when-shown.do .wh-contact:nth-last-child(10) {
     -webkit-transition-delay: 2s;
     -moz-transition-delay: 2s;
