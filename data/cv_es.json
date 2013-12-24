@@ -5,7 +5,24 @@
 			"header": "Soy",
 			"title": "Soy",
 			"key": "presentation",
-			"description": "<p>Soy Borja Andrés, bilbaíno, del Barça, y residente en Madrid.</p><p>Mis aficiones se pueden resumir en:</p><ul><li>Andar en bici (por el monte, nada de carretera)​​</li><li>Correr (por el monte, nada de carretera, aunque viviendo en ciudad está jodido)</li><li>Frikear... frikear mucho, por mi cuenta, sobre todo investigando y acudiendo a charlas, meetups, conferencias, ... nuevas tecnologías relacionadas con lo que me gusta, mi trabajo (soy un <s>yonki</s> apasionado de mi trabajo)</li></ul><p>Estudié Informática en la Universidad de Deusto (Bilbao), aunque antes de ello ya me gustaba hacer mis propias páginas web (la temática te la cuento en privado)</p><p>Cuando estaba acabando, la compatibilicé con un trabajo de desarrollador web.</p><p>Una vez que terminé (2008), decidí venirme a Madrid a buscar trabajo, con mi novía, hasta hoy ...</p><p>Primero trabajé como desarrollador web en <a href=\"http://www.virtualsw.com/\">Virtual Software</a>, haciendo cosas en back, front, base de datos, análisis,... un poco de todo. Aunque sobre todo especializandome en front.</p><p>En enero (2013) entré a formar parte del equipo de <a href=\"http://upplication.com\">Upplication</a>, como desarrollador front-end exclusivamente, con la reponsabilidad de elegir la arquitectura, frameworks, lenguajes,... a usar en esta parte; aunque cuando puedo me escapo al back en node.js o a la automatización con grunt.js, que también me interesa bastante.</p><p>Y esto es todo ... de momento.</p>"
+			"content": [
+				{
+					"description": "... Borja Andrés, bilbaíno, del Barça, y residente en Madrid."
+				},
+				{
+					"description": "Estudié Informática en la Universidad de Deusto (Bilbao), aunque antes de ello ya me gustaba hacer mis propias páginas web (la temática te la cuento en privado)​"
+				},
+				{
+					"description": "Una vez que terminé (2008), decidí venirme a Madrid a buscar trabajo, con mi novía, hasta hoy ..."
+				},
+				{
+					"description": "Primero trabajé como desarrollador web en <a href=\"http://www.virtualsw.com/\">Virtual Software</a>, haciendo cosas en back, front, base de datos, análisis,... un poco de todo. Aunque sobre todo especializandome en front."
+				},
+				{
+					"description": "En enero (2013) entré a formar parte del equipo de <a href=\"http://upplication.com\">Upplication</a>, como desarrollador front-end exclusivamente, con la reponsabilidad de elegir la arquitectura, frameworks, lenguajes,... a usar en esta parte; aunque cuando puedo me escapo al back en node.js o a la automatización con grunt.js, que también me interesa bastante"
+				}
+			]
+
 		},
 		{
 			"header": "Trabajos",
@@ -113,25 +130,19 @@
 				{
 					"title": "Front",
 					"content": [
-						"JS", "AngularJs", "Css3", "HTML5", "Less", "Sass", "RWD", "Coffeescript", "GruntJs", "Yeoman", "Bower", "Phonegap", "Jade", "jQuery", "Twitter Bootstrap"
+						"JS", "AngularJs", "Css3", "HTML5", "Less", "Sass", "RWD", "Coffeescript", "GruntJs", "Yeoman", "Bower", "Phonegap", "Jade", "jQuery"
 					]
 				},
 				{
 					"title": "Back",
 					"content": [
-						"NodeJs", "MongooseJs", "ExpressJs", "Grails", "Groovy", "J2EE", "Java", "Hibernate"
+						"NodeJs", "MongooseJs", "ExpressJs", "MongoDb", "Grails", "J2EE", "Hibernate"
 					]
 				},
 				{
 					"title": "Testing",
 					"content": [
 						"Mocha", "Jasmine", "Testacular (Karma)"
-					]
-				},
-				{
-					"title": "Bases de datos",
-					"content": [
-						"MongoDB", "Oracle 10g", "SQL Server 2005", "PostgreSQL", "MySQL"
 					]
 				},
 				{
@@ -218,21 +229,22 @@
 			"key": "hobbies",
 			"content": [
 				{
-					"description": "Web"
+					"description": "Frikear... frikear mucho, por mi cuenta, sobre todo investigando y acudiendo a charlas, meetups, conferencias, ... nuevas tecnologías relacionadas con lo que me gusta, mi trabajo (soy un <s>yonki</s> apasionado de mi trabajo)"
 				},
 				{
-					"description": "Btt"
+					"description": "Andar en bici por el monte (nada de carretera)​"
 				},
 				{
-					"description": "Correr"
+					"description": "Correr, también por el monte (nada de carretera, aunque viviendo en ciudad está complicado)"
 				},
 				{
-					"description": "Potear en Bilbao"
+					"description": "Potear por Bilbao, con mi novia, amigos, padres, ..."
 				},
 				{
-					"description": "Barça"
+					"description": "Culé. Sí, soy de Bilbao y del Barça, mi padre (típico socio del Athletic de toda la vida) sigue aun sin explicarse que hizo mal conmigo."
 				}
 			]
 		}
 	]
 }
+

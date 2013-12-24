@@ -3,10 +3,10 @@
 	"header":"me",
 	"title":"my landing page",
 	"intro":{
-		"name": "Borja",
-		"surname1": "Andrés",
-		"surname2": "Marroquín",
-		"summary": "Frontender",
+		"name": "borja",
+		"surname1": "andrés",
+		"surname2": "marroquín",
+		"summary": "front-end developer",
 		"description": "#developer #geek #bilbáino #cule #runner #biker"
 	}
 }
