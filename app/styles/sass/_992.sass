@@ -7,16 +7,28 @@ body
 
 
 .wh-background-image
-  background: #FFFFFF url(../images/borja_intro.jpg) top center fixed no-repeat
+  background: #FFFFFF url(../images/bilbao3.jpg) top fixed no-repeat
   background-size: cover
   -moz-background-size: cover
-  height: 100%
-  z-index: -1
-  position: absolute
-  bottom: auto
-  top: 0
-  left: 0
-  right: 0
+  height: 15%
+  z-index: -2
+  +absolute0
+  &:after
+    content: ''
+    +absolute0
+    z-index: -1
+    background: url(../images/pattern.png) fixed
+  &:before
+    content: ''
+    position: fixed
+    top: $top-fixed-items-992
+    height: 10em
+    bottom: auto
+    left: 0
+    right: 0
+    z-index: 0
+    background: rgba(0,0,0,.4)
+
 
 .main-container
   position: relative
@@ -29,7 +41,9 @@ body
     position: static
   .wh-background-image
     position: fixed
+    height: 100%
     background-position-y: 0!important
+
 
 ////////////// HEADER
 
@@ -110,13 +124,34 @@ body
 #to-top
   opacity: 0
   z-index: -1
+  position: fixed
+  right: .7em
+  bottom: .7em
+  overflow: hidden
+  width: 1em
+  height: 1em
+  line-height: 1em
+  font-size: 1.7em
+  +border-radius(100px)
+  +transition(0.2s all linear)
+  background: white
+  text-indent: -2.858em
+  &:hover
+    opacity: 1
+  &:after
+    padding-left: 1em
+    font-family: 'whoru-icons'
+    content: 'ç'
+    speak: none
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
 
 ////// HEADER - WITH INTRO SCROLLED (HIDDEN)
 .intro-scrolled
   .header-container
     position: fixed
     top: 0
-    box-shadow: 0px 4px 15px rgba(0,0,0,0.07)
+    +box-shadow(0px 4px 15px rgba(0,0,0,0.07))
   .wh-header-name
     top: 0
     +transition-property(all)
@@ -125,23 +160,13 @@ body
 
   #to-top
     z-index: 5
-    position: fixed
-    right: 1em
-    bottom: 1em
     opacity: .8
-    text-indent: -9999px
-    display: block
-    width: 2em
-    height: 2em
-    background: url(../images/top.png) no-repeat center center
-    +border-radius(100px)
-    +transition(0.2s all linear)
-    &:hover
-      opacity: 1
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////// INTRO
+
+
 
 .wh-intro-fullname,
 .wh-intro-summary,
@@ -149,6 +174,10 @@ body
   position: fixed
   z-index: 0
   right: $right-fixed-items-992
+  color: $color-intro-text
+  font-family: 'Roboto', sans-serif
+  text-transform: lowercase
+  color: color-intro-text
 
 
 .wh-intro-fullname,
@@ -157,35 +186,30 @@ body
 
 
 .wh-intro-fullname
-  font-family: 'Roboto', sans-serif
   font-size: 3em
   font-weight: 100
-  color: #353535
   div
     float: left
     padding-left: .3em
 
+.wh-intro-name
+  width: 3em
+  text-align: right
+
 .wh-intro-summary
-  font-family: 'Open Sans', sans-serif
-  text-transform: uppercase
-  font-weight: 700
-  font-size: 2em
+  font-weight: 100
+  font-size: 1.6em
   opacity: .8
-  margin-top: 2.4em
-
-
-
+  margin-top: 3em
 
 
 .wh-intro-description
-  font-family: 'Roboto', sans-serif
+  top: $top-fixed-items-992
   font-weight: 300
   font-style: italic
   font-size: .8em
   opacity: 0
-  color: rgb(83, 88, 94)
   margin-top: 11em
-  top: $top-fixed-items-992
 
 
 ////// INTRO - WHEN LOADED
@@ -200,7 +224,7 @@ body
     +transition-delay(0.8s)
 
   .wh-intro-description
-    opacity: 1
+    opacity: .8
     +transition-duration(2s)
     +transition-delay(1.5s)
     +transition-property(opacity)
@@ -218,9 +242,13 @@ body
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////// CV
 
+
+
+
+
 .wh-cv
   padding-top: 3.25em
-  background: $color-section-back
+  background: $color-section-presentation
   position: relative
   z-index: 1
 
@@ -235,161 +263,267 @@ body
 
 .wh-generic-section
   text-align: center
-  width: 940px
-  margin: 0 auto
 
 
 .wh-generic-section-title
   font-family: 'Open Sans', sans-serif
   text-transform: uppercase
-  font-weight: 700
+  font-weight: 300
   font-size: 3em
   margin: 1em auto
   display: inline-block
   padding: .1em .2em
   color: #FFFFFF
-  border: 4px solid #FFFFFF
-  +border-radius(7px)
   position: relative
-  box-shadow: 0px 1px 2px rgba(0,0,0,0.3)
-  &:after
-    content: ''
-    display: block
-    +absolute0
-    border: 4px solid #FFFFFF
-    +border-radius(4px)
+
+
 
 .wh-generic-section-content
   text-align: left
+  width: 960px
+  margin: 0 auto
+
+.wh-part-item
+  float: left
+  padding: 1em
+  +border-radius(5px)
+  position: relative
+
 
 
 .wh-cv-part
-  margin-bottom: 20em
-  //////////////// INTRODUCTION
-  &.presentation
-    p
-      letter-spacing: 3px
-      line-height: 1em
-      text-align: justify
-      margin-top: 1em
-    li
-      margin-top: .3em
-      &:before
-        content: '>'
-        color: $color-section-presentation
-        margin-right: .4em
+  padding-bottom: 6em
+  display: inline-block
+  width: 100%
+
+  //////////////// TWO COLS WITH INFO AND TIMELINE
+
+
+  .wh-generic-section-content
+
+    > ol
+      display: inline-block
+      width: 100%
+      position: relative
+      &:after
+        content: ''
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 50%
+        border-right: 1px dashed white
+
+  .wh-cv-part-item-title
+    font-size: 2em
+    font-weight: 600
+
+  .wh-cv-part-item-dates
+    position: relative
+    font-size: 1.5em
+    font-weight: 600
+
+  .wh-part-item
+    width: 48%
+    display: block
+    text-align: justify
+    position: relative
+    &:nth-child(odd)  //LEFT
+      margin-right: 52%
+      .wh-cv-part-item-dates
+        text-align: left
+        right: -14em
+      .wh-cv-part-item-title
+        text-align: right
+
+    &:nth-child(even)  //RIGHT
+      margin-left: 52%
+      .wh-cv-part-item-dates
+        text-align: right
+        left: -14em
+      .wh-cv-part-item-title
+        text-align: left
+
+    &:not(:last-child)
+      margin-bottom: 2.5em
+
+    .wh-cv-part-item-dates
+      top: -6px
+
+  //////////////// SOY & HOBBIES
+  &.presentation,
+  &.hobbies
+
+    .wh-part-item
+      background: none
+      +box-shadow(none)
+      font-weight: 400
+      line-height: 1.5em
+
     a
-      color: $color-section-presentation
+      color: white
       font-weight: 400
       &:hover
         text-decoration: underline
+
+
+  //////////////// SOY & HOBBIES
+  &.presentation
+    .wh-generic-section-title
+      &:before,
+      &:after
+        content: ''
+        position: absolute
+
+      &:after
+        background: url(http://upplication.com/wp-content/themes/upplication/images/flecha_precios.png) no-repeat
+        +rotate(44deg)
+        right: -4em
+        top: .7em
+        height: 3.5em
+        width: 4.5em
+        z-index: 3
+
+      &:before
+        right: -7.9em
+        top: .5em
+        height: 3.5em
+        width: 3.5em
+        +border-radius(50%)
+        z-index: 3
+        +box-shadow(inset 0px 1px 6px rgba(0,0,0,0.6))
+        background: url(../images/borja.jpg) no-repeat
+        background-size: cover
+        -moz-background-size: cover
+
+
+  //////////////// CONOCIMIENTOS
   &.tech_skills
-
     .wh-part-item
-      float: left
-      background: white
-      margin: 0 1%
-      padding: 1em
-      +border-radius(3px)
-      border: 1px solid #e9e9e9
-      box-shadow: 0px 1px 1px rgba(0,0,0,0.3)
-      &:hover
-        background: $color-section-tech_skills
-        border-color: $color-section-tech_skills
-        +transition-property(all)
-        +transition-duration(.4s)
-
+      &:nth-child(odd)
         .wh-part-item-content-element
-          background: white
-          color: black
-
-      &:first-child
-        width: 98%
-        margin-bottom: 2%
-      &:not(:first-child)
-        width: 23%
-
+          float: right
+          text-align: right
+      &:nth-child(even)
+        .wh-part-item-content-element
+          float: left
 
     .wh-cv-part-item-title
       text-align: center
       text-transform: uppercase
       margin-bottom: 1em
       font-family: 'Roboto', sans-serif
-      text-transform: uppercase
-      color: #353535
-      font-size: 1.4em
-      font-weight: 700
+      text-transform: capitalize
+      color: white
+      font-size: 1.3em
+      font-weight: 400
 
     .wh-part-item-content-element
       text-align: left
-      background: $color-section-tech_skills
+      background: lighten($color-section-tech_skills, 10%)
       color: white
       font-weight: 600
       font-size: .7em
-      margin-bottom: .4em
-      padding: .2em
-      padding-left: .5em
+      margin-bottom: 1.4em
+      padding: .4em .5em
       display: block
       text-transform: uppercase
       width: 10%
-      +border-radius(3px)
+      clear: both
+      +border-radius(5px)
       +transition-property(width)
-      +transition-duration(8s)
+      +transition-duration(3s)
       +transition-timing-function(ease-out)
-      box-shadow: 0px 1px 1px rgba(0,0,0,0.3)
-  &.when-shown.do
+      +box-shadow(0px 6px darken($color-section-tech_skills, 10%))
+      position: relative
+      &:hover
+        top: 2px
+        +box-shadow(0px 3px darken($color-section-tech_skills, 10%))
+    &.when-shown.do
+      .wh-part-item
+        &:nth-child(1) //Front
+          .wh-part-item-content-element
+            +tech_skill_bar(1, 83%) //js
+            +tech_skill_bar(2, 94%) //angularjs
+            +tech_skill_bar(3, 76%) //css3
+            +tech_skill_bar(4, 70%) //html5
+            +tech_skill_bar(5, 81%) //lees
+            +tech_skill_bar(6, 87%) //sass
+            +tech_skill_bar(7, 68%) //rwd
+            +tech_skill_bar(8, 70%) //coffee
+            +tech_skill_bar(9, 90%) //gruntjs
+            +tech_skill_bar(10, 70%) //yeoman
+            +tech_skill_bar(11, 80%) //bower
+            +tech_skill_bar(12, 57%) //phonegab
+            +tech_skill_bar(13, 77%) //jade
+            +tech_skill_bar(14, 71%) //jquery
+        &:nth-child(2) //back
+          .wh-part-item-content-element
+            +tech_skill_bar(1, 86%) //nodejs
+            +tech_skill_bar(2, 66%) //mongoosejs
+            +tech_skill_bar(3, 70%) //expressjs
+            +tech_skill_bar(4, 71%) //mongodb
+            +tech_skill_bar(5, 55%) //grails
+            +tech_skill_bar(6, 63%) //j2ee
+            +tech_skill_bar(7, 46%) //hibernate
+        &:nth-child(3) //testing
+          .wh-part-item-content-element
+            +tech_skill_bar(1, 71%) //mocha
+            +tech_skill_bar(2, 89%) //jasmine
+            +tech_skill_bar(3, 81%) //testacular
+
+        &:nth-child(4) //tools
+          .wh-part-item-content-element
+            +tech_skill_bar(1, 77%) //jira
+            +tech_skill_bar(2, 65%) //confluence
+            +tech_skill_bar(3, 48%) //mixpanel
+
+  &.academic
     .wh-part-item
-      &:nth-child(1) //Front
-        .wh-part-item-content-element
-          +tech_skill_bar(1, 83%) //js
-          +tech_skill_bar(2, 94%) //angularjs
-          +tech_skill_bar(3, 76%) //css3
-          +tech_skill_bar(4, 70%) //html5
-          +tech_skill_bar(5, 81%) //lees
-          +tech_skill_bar(6, 87%) //sass
-          +tech_skill_bar(7, 68%) //rwd
-          +tech_skill_bar(8, 70%) //coffee
-          +tech_skill_bar(9, 90%) //gruntjs
-          +tech_skill_bar(10, 70%) //yeoman
-          +tech_skill_bar(11, 80%) //bower
-          +tech_skill_bar(12, 57%) //phonegab
-          +tech_skill_bar(13, 77%) //jade
-          +tech_skill_bar(14, 71%) //jquery
-          +tech_skill_bar(15, 57%) //twitter bootstrap
-      &:nth-child(2) //back
-        .wh-part-item-content-element
-          +tech_skill_bar(1, 86%) //nodejs
-          +tech_skill_bar(2, 66%) //mongoosejs
-          +tech_skill_bar(3, 70%) //expressjs
-          +tech_skill_bar(4, 55%) //grails
-          +tech_skill_bar(5, 50%) //groovy
-          +tech_skill_bar(6, 63%) //j2ee
-          +tech_skill_bar(7, 65%) //java
-          +tech_skill_bar(8, 46%) //hibernate
-      &:nth-child(3) //testing
-        .wh-part-item-content-element
-          +tech_skill_bar(1, 71%) //mocha
-          +tech_skill_bar(2, 89%) //jasmine
-          +tech_skill_bar(3, 81%) //testacular
-      &:nth-child(4) //data bases
-        .wh-part-item-content-element
-          +tech_skill_bar(1, 71%) //mongodb
-          +tech_skill_bar(2, 80%) //oracle
-          +tech_skill_bar(3, 65%) //sql server
-          +tech_skill_bar(4, 48%) //postgresql
-          +tech_skill_bar(5, 63%) //mysql
-      &:nth-child(5) //tools
-        .wh-part-item-content-element
-          +tech_skill_bar(1, 77%) //jira
-          +tech_skill_bar(2, 65%) //confluence
-          +tech_skill_bar(3, 48%) //mixpanel
+      text-align: center
+      +box-shadow(0px 6px darken($color-section-academic, 20%))
+
+      &:hover
+        background-size: 100%
+        +transition-property(all)
+        +transition-duration(.4s)
+        .wh-cv-part-item-description
+          opacity: 0
+
+      &:first-child  //Universidad deusto
+        background: url(http://blogs.deusto.es/jornadas-familia/wp-content/uploads/2012/10/mc072f.jpg) center center no-repeat
+        background-size: 0%
+        background-color: lighten($color-section-academic, 20%)
+        &:hover
+          background-size: 100%
+
+      &:last-child  //Colegio vizcaya
+        background: url(http://erizbilbo.files.wordpress.com/2007/11/colegiovista-aerea1.jpg) center center no-repeat
+        background-size: 0%
+        background-color: lighten($color-section-academic, 20%)
+        &:hover
+          background-size: 100%
+
+    .wh-cv-part-item-description
+      margin-top: -1em
+    .academic-what,
+    .academic-where
+      display: block
+      margin: 1em auto
+    .academic-what
+      text-transform: uppercase
+      font-weight: 600
+      font-size: 1.3em
+
 
 
 ////////////// CONTACTS
+.wh-footer.wrapper
+  padding-top: 3em
 
 .wh-contacts
   ul
     display: none
+    width: inherit
 
 .intro-scrolled
   .wh-contacts
@@ -398,7 +532,7 @@ body
       position: fixed
       right: $right-fixed-items-992
       top: $top-fixed-items-992
-      margin-top: 5em
+      margin-top: 7em
 
 .wh-contact
   float: left
@@ -434,9 +568,3 @@ body
         &:nth-last-child(#{$i})
           +transition-delay(#{$i*0.2}s)
 
-// 992px
-@media only screen and (max-width: 1382px)
-
-  //.wh-contacts
-  //  &.when-shown.do
-  //    min-height: initial!important

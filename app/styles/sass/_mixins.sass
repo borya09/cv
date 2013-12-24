@@ -19,20 +19,18 @@
 @mixin cv-section-colors($color, $section-key)
   [data-wh-current-section="#{$section-key}"]
     #to-top
-      background-color: $color!important
-
+      color: $color!important
+  .wh-cv-part.#{$section-key}
+    background: $color
+    border-bottom: 5px solid darken($color, 10%)
   .wh-header-option.#{$section-key}
     &.current,
     &:hover
       a
         color: $color
-  .#{$section-key}
-    .wh-generic-section-title
-      background: $color
-      border-color: $color
 
 @mixin tech_skill_bar($pos, $width)
   &:nth-child(#{$pos})
-    width: $width
+    width: #{$width}
 
 
