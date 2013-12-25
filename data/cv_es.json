@@ -123,8 +123,8 @@
 			]
 		},
 		{
-			"header": "Conocimientos",
-			"title": "Conocimientos",
+			"header": "Habilidades",
+			"title": "Habilidades",
 			"key": "tech_skills",
 			"content": [
 				{
@@ -204,22 +204,6 @@
 					"content": [
 						"Desarrollo web del portal financiero www.bbk.es."
 					]
-				}
-			]
-		},
-		{
-			"header": "Estudios",
-			"title": "Estudios",
-			"key": "academic",
-			"content": [
-				{
-					"description": "<span class='academic-what'>Ingeniero Superior en Informática</span><span class='academic-where'>Univerdad de Deusto</span>",
-					"since": "2003",
-					"until": "2008"
-				},
-				{
-					"description": "<span class='academic-what'>Bachiller</span><span class='academic-where'>Colegio Vizcaya</span>",
-					"when": "2003"
 				}
 			]
 		},
