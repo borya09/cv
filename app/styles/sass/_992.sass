@@ -10,7 +10,7 @@ body
   background: #FFFFFF url(../images/bilbao3.jpg) top fixed no-repeat
   background-size: cover
   -moz-background-size: cover
-  height: 15%
+  height: 20%
   z-index: -2
   +absolute0
   &:after
@@ -53,12 +53,16 @@ body
   +absolute0
   top: auto
   height: 3em
-  background: rgba(255, 255, 255, 0.9)
+  background: white
   z-index: 2
+  +transition-property(all)
+  +transition-duration(.5s)
+
+
 
 .wh-header-fullname
   float: left
-  padding-top: .7em
+  padding-top: 1em
   padding-left: .8em
   position: relative
 
@@ -66,13 +70,13 @@ body
   position: relative
   float: left
   padding-right: .2em
-  color: $color-grey
+  color: $color-first-section
   font-family: 'Roboto', sans-serif
   text-transform: uppercase
   top: -9999px
   font-weight: 700
   font-size: 1.7em
-  text-shadow: 1px 1px #B9B9B9
+
 .wh-header-surname1,
 .wh-header-surname2
   position: relative
@@ -97,6 +101,8 @@ body
   &:first-child
     display: none
   a
+    +transition-property(all)
+    +transition-duration(.5s)
     color: black
     font-family: 'Open Sans', sans-serif
     font-weight: 700
@@ -109,7 +115,7 @@ body
 
 .wh-header-locale
   float: left
-  padding: 1em 1em 0 0
+  padding: 1.45em 1em 0 0
   +transition-duration(1s)
   &.current
     opacity: 1
@@ -132,12 +138,10 @@ body
   height: 1em
   line-height: 1em
   font-size: 1.7em
-  +border-radius(100px)
-  +transition(0.2s all linear)
+  +border-radius(6px)
+  +transition(0.2s opacity linear)
   background: white
   text-indent: -2.858em
-  &:hover
-    opacity: 1
   &:after
     padding-left: 1em
     font-family: 'whoru-icons'
@@ -150,18 +154,21 @@ body
 .intro-scrolled
   .header-container
     position: fixed
+    height: 4em
     top: 0
-    +box-shadow(0px 4px 15px rgba(0,0,0,0.07))
   .wh-header-name
     top: 0
     +transition-property(all)
     +transition-duration(.5s)
-
+  .wh-header-options
+    &.ul
+      padding-top: 1.4em
 
   #to-top
     z-index: 5
     opacity: .8
-
+    &:hover
+      opacity: 1
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////// INTRO
@@ -247,8 +254,8 @@ body
 
 
 .wh-cv
-  padding-top: 3.25em
-  background: $color-section-presentation
+  padding-top: 3.5em
+  background: $color-first-section
   position: relative
   z-index: 1
 
@@ -256,7 +263,6 @@ body
 +cv-section-colors($color-section-work, 'work')
 +cv-section-colors($color-section-tech_skills, 'tech_skills')
 +cv-section-colors($color-section-career, 'career')
-+cv-section-colors($color-section-academic, 'academic')
 +cv-section-colors($color-section-hobbies, 'hobbies')
 +cv-section-colors($color-section-contacts, 'contacts')
 
@@ -296,8 +302,8 @@ body
   display: inline-block
   width: 100%
 
-  //////////////// TWO COLS WITH INFO AND TIMELINE
 
+  //////////////// TWO COLS WITH INFO AND TIMELINE
 
   .wh-generic-section-content
 
@@ -375,10 +381,10 @@ body
         position: absolute
 
       &:after
-        background: url(http://upplication.com/wp-content/themes/upplication/images/flecha_precios.png) no-repeat
-        +rotate(44deg)
+        background: url(../images/arrow1.png) no-repeat
+        +rotate(49deg)
         right: -4em
-        top: .7em
+        top: 1em
         height: 3.5em
         width: 4.5em
         z-index: 3
@@ -396,7 +402,7 @@ body
         -moz-background-size: cover
 
 
-  //////////////// CONOCIMIENTOS
+  //////////////// HABILIDADES
   &.tech_skills
     .wh-part-item
       &:nth-child(odd)
@@ -418,6 +424,7 @@ body
       font-weight: 400
 
     .wh-part-item-content-element
+      position: relative
       text-align: left
       background: lighten($color-section-tech_skills, 10%)
       color: white
@@ -433,27 +440,25 @@ body
       +transition-property(width)
       +transition-duration(3s)
       +transition-timing-function(ease-out)
-      +box-shadow(0px 6px darken($color-section-tech_skills, 10%))
-      position: relative
-      &:hover
-        top: 2px
-        +box-shadow(0px 3px darken($color-section-tech_skills, 10%))
+      +bottom_shadow_and_hover_top(darken($color-section-tech_skills, 10%))
+
+
     &.when-shown.do
       .wh-part-item
         &:nth-child(1) //Front
           .wh-part-item-content-element
-            +tech_skill_bar(1, 83%) //js
+            +tech_skill_bar(1, 87%) //js
             +tech_skill_bar(2, 94%) //angularjs
             +tech_skill_bar(3, 76%) //css3
             +tech_skill_bar(4, 70%) //html5
             +tech_skill_bar(5, 81%) //lees
-            +tech_skill_bar(6, 87%) //sass
+            +tech_skill_bar(6, 84%) //sass
             +tech_skill_bar(7, 68%) //rwd
             +tech_skill_bar(8, 70%) //coffee
-            +tech_skill_bar(9, 90%) //gruntjs
+            +tech_skill_bar(9, 88%) //gruntjs
             +tech_skill_bar(10, 70%) //yeoman
             +tech_skill_bar(11, 80%) //bower
-            +tech_skill_bar(12, 57%) //phonegab
+            +tech_skill_bar(12, 57%) //phonegap
             +tech_skill_bar(13, 77%) //jade
             +tech_skill_bar(14, 71%) //jquery
         &:nth-child(2) //back
@@ -476,44 +481,6 @@ body
             +tech_skill_bar(1, 77%) //jira
             +tech_skill_bar(2, 65%) //confluence
             +tech_skill_bar(3, 48%) //mixpanel
-
-  &.academic
-    .wh-part-item
-      text-align: center
-      +box-shadow(0px 6px darken($color-section-academic, 20%))
-
-      &:hover
-        background-size: 100%
-        +transition-property(all)
-        +transition-duration(.4s)
-        .wh-cv-part-item-description
-          opacity: 0
-
-      &:first-child  //Universidad deusto
-        background: url(http://blogs.deusto.es/jornadas-familia/wp-content/uploads/2012/10/mc072f.jpg) center center no-repeat
-        background-size: 0%
-        background-color: lighten($color-section-academic, 20%)
-        &:hover
-          background-size: 100%
-
-      &:last-child  //Colegio vizcaya
-        background: url(http://erizbilbo.files.wordpress.com/2007/11/colegiovista-aerea1.jpg) center center no-repeat
-        background-size: 0%
-        background-color: lighten($color-section-academic, 20%)
-        &:hover
-          background-size: 100%
-
-    .wh-cv-part-item-description
-      margin-top: -1em
-    .academic-what,
-    .academic-where
-      display: block
-      margin: 1em auto
-    .academic-what
-      text-transform: uppercase
-      font-weight: 600
-      font-size: 1.3em
-
 
 
 ////////////// CONTACTS

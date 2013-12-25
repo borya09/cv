@@ -18,11 +18,21 @@
 
 @mixin cv-section-colors($color, $section-key)
   [data-wh-current-section="#{$section-key}"]
+
     #to-top
-      color: $color!important
+      color: $color
+      +bottom_shadow_and_hover(darken($color, 20%))
+      &:hover
+        bottom: .6em
+    .header-container
+      border-bottom: 5px solid darken($color, 10%)
+    .wh-header-name
+      color: $color
+
   .wh-cv-part.#{$section-key}
     background: $color
     border-bottom: 5px solid darken($color, 10%)
+
   .wh-header-option.#{$section-key}
     &.current,
     &:hover
@@ -33,4 +43,13 @@
   &:nth-child(#{$pos})
     width: #{$width}
 
+@mixin bottom_shadow_and_hover_top($color)
+  +bottom_shadow_and_hover($color)
+  &:hover
+    top: 2px
+
+@mixin bottom_shadow_and_hover($color)
+  +box-shadow(0px 5px $color)
+  &:hover
+    +box-shadow(0px 3px $color)
 
