@@ -10,7 +10,7 @@
 					"description": "... Borja Andrés, bilbaíno, del Barça, y residente en Madrid."
 				},
 				{
-					"description": "Estudié Informática en la Universidad de Deusto (Bilbao), aunque antes de ello ya me gustaba hacer mis propias páginas web (la temática te la cuento en privado)​"
+					"description": "Estudié Informática en la Universidad de Deusto (Bilbao), aunque antes de ello ya me gustaba hacer mis propias páginas web (la temática te la cuento en privado).​"
 				},
 				{
 					"description": "Una vez que terminé (2008), decidí venirme a Madrid a buscar trabajo, con mi novía, hasta hoy ..."
@@ -19,7 +19,7 @@
 					"description": "Primero trabajé como desarrollador web en <a href=\"http://www.virtualsw.com/\">Virtual Software</a>, haciendo cosas en back, front, base de datos, análisis,... un poco de todo. Aunque sobre todo especializandome en front."
 				},
 				{
-					"description": "En enero (2013) entré a formar parte del equipo de <a href=\"http://upplication.com\">Upplication</a>, como desarrollador front-end exclusivamente, con la reponsabilidad de elegir la arquitectura, frameworks, lenguajes,... a usar en esta parte; aunque cuando puedo me escapo al back en node.js o a la automatización con grunt.js, que también me interesa bastante"
+					"description": "En enero (2013) entré a formar parte del equipo de <a href=\"http://upplication.com\">Upplication</a>, como desarrollador front-end exclusivamente, con la reponsabilidad de elegir la arquitectura, frameworks, lenguajes,... a usar en esta parte; aunque cuando puedo me escapo al back en node.js o a la automatización con grunt.js, que también me interesa bastante."
 				}
 			]
 
@@ -42,7 +42,7 @@
 							"description": "ver web",
 							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/9ab25610-a627-4d59-97a8-1c3ec50e66f6.png"
 						},{
-							"link": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/tpPEjwGi/main.html#!/",
+							"link": "http://borjarendemodenda.upplication.com",
 							"description": "ver web",
 							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/d6a9c955-cc5c-4600-80bf-c38a034cc801.png"
 						}
@@ -50,8 +50,9 @@
 					"content": [
 						"less",
 						"sass",
+						"css3",
 						"rwd",
-						"grunt"
+						"gruntjs"
 					]
 				},{
 					"title": "Upplication Developer Page",
@@ -66,7 +67,7 @@
 						}
 					],
 					"content": [
-						"css",
+						"css3",
 						"html",
 						"rwd"
 					]
@@ -83,10 +84,12 @@
 						}
 					],
 					"content": [
+						"js",
 						"angularjs",
 						"jade",
 						"less",
 						"bootstrap",
+						"jasmine",
 						"gruntjs"
 					]
 				},{
@@ -94,7 +97,13 @@
 					"description": "Desarrollo / Maquetación del proyecto <a href='https://github.com/Upplication/banana'>Banana Time!</a>",
 					"images": [
 						{
+							"link": "http://upplication.github.io/banana/",
+							"description": "ver web",
 							"src": "http://www.clipular.com/c?4504560911515648=-nVJPz8KDOX8toVCH1Hk_n3DhnM"
+						},{
+							"link": "http://upplication.github.io/banana/",
+							"description": "ver web",
+							"src": "http://www.clipular.com/c/6122391558160384.png?k=xjoqmMBEqeftKR3EBiMjDhHz2Ps"
 						}
 					],
 					"content": [
@@ -106,10 +115,22 @@
 					]
 				},{
 					"title": "Whoru",
-					"description": "Desarrollo del proyecto <a href='https://github.com/borya09/whoru'>Whoru</a> y maquetación de <a href='https://github.com/borya09/whoru/tree/demo'>demo</a> ",
+					"description": "Desarrollo del proyecto <a href='https://github.com/borya09/whoru'>Whoru</a> y maquetación de la <a href='https://github.com/borya09/whoru/tree/demo'>demo</a> y esta página",
 					"images": [
 						{
-							"src": "https://storage.googleapis.com/clipular-clips/558126/6592733963616256?GoogleAccessId=clipular2012@appspot.gserviceaccount.com&Expires=1387323565&Signature=P4TYxB6BsP5cVqvPAD8KTVVehTB08986y8Om3HoqlFOEZJMp5tkpDrT1uK3OEsXQaI2AJl8ET7DJdtIQBmr4MWCKwamO1kqrAqNHtA22CpTvGQLFk9GpISXzr%2FMOpyTVgtSLC1VV8IpHrEavakaXzrz%2Ba2B7C%2BqW746d4FtjEf0%3D&md5=50037b946742e85dbb47a8222ce984d7&NOT_A_LINK"
+							"link": "http://borya09.github.io/whoru/",
+							"description": "ver web",
+							"src": "http://www.clipular.com/c/6592733963616256.png?k=_efSnJee7D0hOfOndyyM9kfVCDk"
+						},
+						{
+							"link": "http://borya09.github.io/whoru/",
+							"description": "ver web",
+							"src": "http://www.clipular.com/c/6201687979065344.png?k=jP6YEhQIu1uJkQub5htsOTezYAc"
+						},
+						{
+							"link": "http://borya09.github.io/whoru/",
+							"description": "ver web",
+							"src": "http://www.clipular.com/c/5819727544844288.png?k=9E_FP1a4WPFvkkRg3S_JwMQ1CiU"
 						}
 					],
 					"content": [
@@ -117,6 +138,7 @@
 						"jade",
 						"coffescript",
 						"gruntjs",
+						"jasmine",
 						"compass"
 					]
 				}
@@ -225,7 +247,7 @@
 					"description": "Potear por Bilbao, con mi novia, amigos, padres, ..."
 				},
 				{
-					"description": "Culé. Sí, soy de Bilbao y del Barça, mi padre (típico socio del Athletic de toda la vida) sigue aun sin explicarse que hizo mal conmigo."
+					"description": "Culé. Sí, soy de Bilbao y del Barça, mi padre (típico socio del Athletic de toda la vida) sigue aún sin explicarse que hizo mal conmigo."
 				}
 			]
 		}

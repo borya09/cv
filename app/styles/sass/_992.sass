@@ -8,8 +8,7 @@ body
 
 .wh-background-image
   background: #FFFFFF url(../images/bilbao3.jpg) top fixed no-repeat
-  background-size: cover
-  -moz-background-size: cover
+  +background-size(cover)
   height: 20%
   z-index: -2
   +absolute0
@@ -144,11 +143,8 @@ body
   text-indent: -2.858em
   &:after
     padding-left: 1em
-    font-family: 'whoru-icons'
-    content: 'ç'
-    speak: none
-    -webkit-font-smoothing: antialiased
-    -moz-osx-font-smoothing: grayscale
+    +whoru-icon('ç')
+
 
 ////// HEADER - WITH INTRO SCROLLED (HIDDEN)
 .intro-scrolled
@@ -292,7 +288,7 @@ body
 .wh-part-item
   float: left
   padding: 1em
-  +border-radius(5px)
+  +border-radius($border-radius-item)
   position: relative
 
 
@@ -372,7 +368,7 @@ body
         text-decoration: underline
 
 
-  //////////////// SOY & HOBBIES
+  //////////////// SOY
   &.presentation
     .wh-generic-section-title
       &:before,
@@ -394,12 +390,166 @@ body
         top: .5em
         height: 3.5em
         width: 3.5em
-        +border-radius(50%)
         z-index: 3
-        +box-shadow(inset 0px 1px 6px rgba(0,0,0,0.6))
         background: url(../images/borja.jpg) no-repeat
-        background-size: cover
-        -moz-background-size: cover
+        +border-radius(50%)
+        +box-shadow(inset 0px 1px 6px rgba(0,0,0,0.6))
+        +background-size(cover)
+
+
+  //////////////// TRABAJOS
+  &.work
+    $top-color: #1a504e
+    $middle-color: #2c8a86
+    $bottom-color: #267773
+    $red-color: #f24d35
+
+    .wh-generic-section-content > ol:after
+      display: none
+
+    .wh-part-item
+      width: 48%
+      margin: 0 1% 2% 1%
+      float: left
+      height: 24.7em
+      padding: 0
+      background: $bottom-color
+      +bottom_shadow_and_hover_top($top-color)
+      position: relative
+
+    .wh-cv-part-item-title
+      +border-top-radius($border-radius-item)
+      background: $top-color
+      color: white
+      height: 3em
+      line-height: 3em
+      font-size: 1.4em
+      font-weight: 500
+      text-align: center!important
+      padding: 0em
+      width: 100%
+
+
+    .wh-cv-part-item-images-wrapper
+      background: $middle-color
+      height: 12em
+      position: relative
+
+    .wh-cv-part-item-image
+      .desc
+        position: absolute
+        right: 30%
+        left: 30%
+        bottom: 40%
+        top: 40%
+        line-height: 2.2em
+        opacity: 0
+        text-align: center
+        color: white
+        background: rgba(26,80,78,.7)
+        +border-radius(5px)
+
+      &:hover
+        .desc
+          opacity: 1
+          +transition-duration(.3s)
+          +transition-property(opacity)
+
+
+    .wh-slider-selector
+      button
+        position: absolute
+        top: 50%
+        height: 2em
+        margin-top: -1em
+        padding: .4em .1em
+        color: white
+        background: $top-color
+        border: none
+        z-index: 9
+        cursor: pointer
+
+        &.more
+          opacity: .85
+          &:hover
+            +transition-duration(.3s)
+            +transition-property(padding)
+            opacity: 1
+        &.no-more
+          opacity: .3
+
+      span
+        display: none
+
+      .previous
+        left: -2px
+        +border-right-radius(5px)
+        &.more:hover
+          padding-left: .5em
+        &:before
+          +whoru-icon('¡')
+
+      .next
+        right: -2px
+        +border-left-radius(5px)
+        &.more:hover
+          padding-right: .5em
+        &:before
+          +whoru-icon(')')
+
+    .wh-slider-item
+      position: absolute
+      top: 0
+      bottom: 0
+      width: 100%
+      +background-size(cover)
+      +transition-property(opacity)
+      +transition-duration(.5s)
+
+      &:not(.current)
+        opacity: 0
+        z-index: -10
+
+      &.current
+        opacity: 1
+        +transition-delay(.2s)
+
+    .wh-cv-part-item-description,
+    .wh-part-item-content
+      background: $bottom-color
+      color: white
+      line-height: normal
+
+
+    .wh-cv-part-item-description
+      line-height: 1.3em
+      padding: .9em
+      a
+        color: $top-color
+        font-weight: 400
+        &:hover
+          text-decoration: underline
+
+    .wh-part-item-content
+      position: absolute
+      bottom: .6em
+      left: 0
+      right: 0
+      display: inline-block
+      font-size: .9em
+      margin-bottom: .2em
+      padding: 0 1em
+
+    .wh-part-item-content-element
+      float: right
+      background: $red-color
+      font-weight: 300
+
+      padding: .2em .6em
+      +border-radius(5px)
+      margin-bottom: .2em
+      margin-right: .2em
+
 
 
   //////////////// HABILIDADES
@@ -417,11 +567,12 @@ body
       text-align: center
       text-transform: uppercase
       margin-bottom: 1em
-      font-family: 'Roboto', sans-serif
+      font-family: 'Open Sans', sans-serif
       text-transform: capitalize
-      color: white
+      font-style: italic
+      color: black
       font-size: 1.3em
-      font-weight: 400
+      font-weight: 600
 
     .wh-part-item-content-element
       position: relative
