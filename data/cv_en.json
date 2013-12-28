@@ -2,48 +2,48 @@
 	"version": "0.0.1",
 	"parts": [
 		{
-			"header": "Soy",
-			"title": "Soy",
+			"header": "I'm",
+			"title": "I'm",
 			"key": "presentation",
 			"content": [
 				{
-					"description": "... Borja Andrés, bilbaíno, del Barça, y residente en Madrid."
+					"description": "... Borja Andrés, from bilbao, fan of Barça, and living in Madrid"
 				},
 				{
-					"description": "Estudié Informática en la Universidad de Deusto (Bilbao), aunque antes de ello ya me gustaba hacer mis propias páginas web (la temática te la cuento en privado).​"
+					"description": "I studied Computer Engineering at ‘Universidad de Deusto’ (Bilbao) but, before this, I liked to build my own web pages (I'll tell you the thematic of these in private).​"
 				},
 				{
-					"description": "Una vez que terminé (2008), decidí venirme a Madrid a buscar trabajo, con mi novía, hasta hoy ..."
+					"description": "Once I finished (2008), I decided to come to Madrid to work, with my girlfriend, until today ..."
 				},
 				{
-					"description": "Primero trabajé como desarrollador web en <a href=\"http://www.virtualsw.com/\">Virtual Software</a>, haciendo cosas en back, front, base de datos, análisis,... un poco de todo. Aunque sobre todo especializandome en front."
+					"description": "First I worked as a web developer in <a href=\"http://www.virtualsw.com/\">Virtual Software</a>, doing things in back-end, front-end, related with databases, analysis, ... a bit of everything. Although primarily specializing in front"
 				},
 				{
-					"description": "En enero (2013) entré a formar parte del equipo de <a href=\"http://upplication.com\">Upplication</a>, como desarrollador front-end exclusivamente, con la reponsabilidad de elegir la arquitectura, frameworks, lenguajes,... a usar en esta parte; aunque cuando puedo me escapo al back en node.js o a la automatización con grunt.js, que también me interesa bastante."
+					"description": "In January (2013) I joined the team of <a href=\"http://upplication.com\">Upplication</a>, as a front-end developer exclusively, with the responsability of choosing the architecture, frameworks, languages​​, ... to be used in this part but, when I can, I escape to the back-end or automation to play with nodejs or gruntjs."
 				}
 			]
 
 		},
 		{
-			"header": "Trabajos",
-			"title": "Trabajos",
+			"header": "Works",
+			"title": "Works",
 			"key": "work",
 			"content": [
 				{
 					"title": "Upplication templates",
-					"description": "Maquetación de los templates responsive disponibles para las webapps/apps.",
+					"description": "Available responsive templates for webapps / apps.",
 					"images": [
 						{
 							"link": "http://eskorbuto.upplication.com",
-							"description": "ver web",
+							"description": "view web",
 							"src": "../images/upp_templates1.png"
 						},{
 							"link": "http://borja.upplication.com",
-							"description": "ver web",
+							"description": "view web",
 							"src": "../images/upp_templates3.png"
 						},{
 							"link": "http://borjarendemodenda.upplication.com",
-							"description": "ver web",
+							"description": "view web",
 							"src": "../images/upp_templates2.png"
 						}
 					],
@@ -56,7 +56,7 @@
 					]
 				},{
 					"title": "Upplication Developer Page",
-					"description": "Web interna para el equipo de desarrollo, donde se organizan todos los links. <a href='http://www.youtube.com/watch?v=XnBDVrk5AHE'>demo</a> ",
+					"description": "Internal web for the development team, where all the links are organized. <a href='http://www.youtube.com/watch?v=XnBDVrk5AHE'>demo</a> ",
 					"images": [
 						{
 							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/661a984d-9969-4e71-bb05-08f51b8ae031.png"
@@ -73,7 +73,7 @@
 					]
 				},{
 					"title": "Upplication webapps/apps",
-					"description": "Desarrollo / Arquitectura de las webapps/apps construidas a partir de la herramienta <a href='https://github.com/Upplication/banana'>Upplication</a>",
+					"description": "Development / Architecture of the webapps / apps built with the <a href='https://github.com/Upplication/banana'>Upplication</a> tool",
 					"images": [
 						{
 							"src": "../images/upp_base1.png"
@@ -94,7 +94,7 @@
 					]
 				},{
 					"title": "Banana Time!",
-					"description": "Desarrollo / Maquetación del proyecto <a href='https://github.com/Upplication/banana'>Banana Time!</a>",
+					"description": "Development & Layout of the project <a href='https://github.com/Upplication/banana'>'Banana Time!'</a>",
 					"images": [
 						{
 							"link": "http://upplication.github.io/banana/",
@@ -115,7 +115,7 @@
 					]
 				},{
 					"title": "Whoru",
-					"description": "Desarrollo del proyecto <a href='https://github.com/borya09/whoru'>Whoru</a> y maquetación de la <a href='https://github.com/borya09/whoru/tree/demo'>demo</a> y esta página",
+					"description": "Development of the project <a href='https://github.com/borya09/whoru'>'Whoru'</a> and layout of a <a href='https://github.com/borya09/whoru/tree/demo'>demo</a> and this web",
 					"images": [
 						{
 							"link": "http://borya09.github.io/whoru/",
@@ -145,8 +145,8 @@
 			]
 		},
 		{
-			"header": "Habilidades",
-			"title": "Habilidades",
+			"header": "Technical skills",
+			"title": "Technical skills",
 			"key": "tech_skills",
 			"content": [
 				{
@@ -168,7 +168,7 @@
 					]
 				},
 				{
-					"title": "Herramientas",
+					"title": "Tools",
 					"content": [
 						"Jira",
 						"Confluence",
@@ -178,12 +178,12 @@
 			]
 		},
 		{
-			"header": "Experiencia",
-			"title": "Experiencia",
+			"header": "Career",
+			"title": "Career",
 			"key": "career",
 			"content": [
 				{
-					"title": "Desarrollador Frontend en Upplication",
+					"title": "Front-end developer in Upplication",
 					"when": "2013",
 					"images": [
 						{
@@ -193,13 +193,13 @@
 						}
 					],
 					"content": [
-						"Desarrollo / Arquitectura de las webapps / apps construidas a partir de la herramienta upplication.com",
-						"Maquetación de los templates responsive disponibles para las webapps/apps",
-						"Automatización de tareas front mediante Grunt"
+						"Development / architecture of the webapps / apps built from upplication",
+						"Layout of the available responsive templates for the webapps / apps",
+						"Automation of front-end tasks using Grunt"
 					]
 				},
 				{
-					"title": "Analista/Programador en VirtualSW",
+					"title": "Analyst/developer in VirtualSW",
 					"from": "2008",
 					"until": "2012",
 					"images": [
@@ -210,11 +210,11 @@
 						}
 					],
 					"content": [
-						"Análisis / Desarrollo (front & back) de aplicaciones web J2EE / Grails"
+						"Analysis / development (front & back) of web applications with J2EE & Grails"
 					]
 				},
 				{
-					"title": "Programador Junior en Mnemo",
+					"title": "Junior developer in Mnemo",
 					"when": "2007",
 					"images": [
 						{
@@ -224,7 +224,7 @@
 						}
 					],
 					"content": [
-						"Desarrollo web del portal financiero www.bbk.es."
+						"Junior Programmer at the computer consultant 'mnemo', working as a web developer at 'Informática Euskadi', developing the financial web portal of the BBK bank."
 					]
 				}
 			]
