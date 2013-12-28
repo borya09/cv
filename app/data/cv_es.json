@@ -36,15 +36,15 @@
 						{
 							"link": "http://eskorbuto.upplication.com",
 							"description": "ver web",
-							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/74f1b2b3-afb4-4561-80a5-2ba4246ed1a1.png"
+							"src": "../images/upp_templates1.png"
 						},{
 							"link": "http://borja.upplication.com",
 							"description": "ver web",
-							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/9ab25610-a627-4d59-97a8-1c3ec50e66f6.png"
+							"src": "../images/upp_templates3.png"
 						},{
 							"link": "http://borjarendemodenda.upplication.com",
 							"description": "ver web",
-							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/d6a9c955-cc5c-4600-80bf-c38a034cc801.png"
+							"src": "../images/upp_templates2.png"
 						}
 					],
 					"content": [
@@ -76,7 +76,7 @@
 					"description": "Desarrollo / Arquitectura de las webapps/apps construidas a partir de la herramienta <a href='https://github.com/Upplication/banana'>Upplication</a>",
 					"images": [
 						{
-							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/17852962-c003-49e8-948e-df36c5eb3ec3.png"
+							"src": "../images/upp_base1.png"
 						},{
 							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/85e5f5cc-cece-4f0f-93f7-c9294c0d0bbb.png"
 						},{
@@ -99,11 +99,11 @@
 						{
 							"link": "http://upplication.github.io/banana/",
 							"description": "ver web",
-							"src": "http://www.clipular.com/c?4504560911515648=-nVJPz8KDOX8toVCH1Hk_n3DhnM"
+							"src": "../images/banana2.jpg"
 						},{
 							"link": "http://upplication.github.io/banana/",
 							"description": "ver web",
-							"src": "http://www.clipular.com/c/6122391558160384.png?k=xjoqmMBEqeftKR3EBiMjDhHz2Ps"
+							"src": "../images/banana.jpg"
 						}
 					],
 					"content": [
@@ -189,7 +189,7 @@
 						{
 							"link": "http://www.upplication.com",
 							"description": "Upplication",
-							"src": "http://upplication.com/wp-content/themes/upplication/i/upplication.png"
+							"src": "../images/upplication.png"
 						}
 					],
 					"content": [
@@ -199,14 +199,14 @@
 					]
 				},
 				{
-					"title": "Analista/Porgramador en VirtualSW",
+					"title": "Analista/Programador en VirtualSW",
 					"from": "2008",
 					"until": "2012",
 					"images": [
 						{
 							"link": "http://www.virtualsw.com",
 							"description": "Virtualsw",
-							"src": "http://www.virtualsw.com/images/logo.png"
+							"src": "../images/virtualsw.png"
 						}
 					],
 					"content": [
@@ -220,7 +220,7 @@
 						{
 							"link": "http://www.mnemo.com",
 							"description": "Mnemo",
-							"src": "http://www.kabel.es/wp-content/uploads/2011/11/mnemo.png"
+							"src": "../images/mnemo.jpg"
 						}
 					],
 					"content": [
