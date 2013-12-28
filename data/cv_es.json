@@ -183,7 +183,7 @@
 			"key": "career",
 			"content": [
 				{
-					"title": "Frontend developer en Upplication",
+					"title": "Desarrollador Frontend en Upplication",
 					"when": "2013",
 					"images": [
 						{
@@ -199,7 +199,7 @@
 					]
 				},
 				{
-					"title": "Analista / Programador en Virtual Software",
+					"title": "Analista/Porgramador en VirtualSW",
 					"from": "2008",
 					"until": "2012",
 					"images": [
@@ -210,11 +210,11 @@
 						}
 					],
 					"content": [
-						"Análisis / Desarrollo (front & back) de aplicaciones web J2EE"
+						"Análisis / Desarrollo (front & back) de aplicaciones web J2EE / Grails"
 					]
 				},
 				{
-					"title": "Programador Junior",
+					"title": "Programador Junior en Mnemo",
 					"when": "2007",
 					"images": [
 						{
