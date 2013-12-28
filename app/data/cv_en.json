@@ -1,0 +1,256 @@
+{
+	"version": "0.0.1",
+	"parts": [
+		{
+			"header": "I'm",
+			"title": "I'm",
+			"key": "presentation",
+			"content": [
+				{
+					"description": "... Borja Andrés, from bilbao, fan of Barça, and living in Madrid"
+				},
+				{
+					"description": "I studied Computer Engineering at ‘Universidad de Deusto’ (Bilbao) but, before this, I liked to build my own web pages (I'll tell you the thematic of these in private).​"
+				},
+				{
+					"description": "Once I finished (2008), I decided to come to Madrid to work, with my girlfriend, until today ..."
+				},
+				{
+					"description": "First I worked as a web developer in <a href=\"http://www.virtualsw.com/\">Virtual Software</a>, doing things in back-end, front-end, related with databases, analysis, ... a bit of everything. Although primarily specializing in front"
+				},
+				{
+					"description": "In January (2013) I joined the team of <a href=\"http://upplication.com\">Upplication</a>, as a front-end developer exclusively, with the responsability of choosing the architecture, frameworks, languages​​, ... to be used in this part but, when I can, I escape to the back-end or automation to play with nodejs or gruntjs."
+				}
+			]
+
+		},
+		{
+			"header": "Works",
+			"title": "Works",
+			"key": "work",
+			"content": [
+				{
+					"title": "Upplication templates",
+					"description": "Available responsive templates for webapps / apps.",
+					"images": [
+						{
+							"link": "http://eskorbuto.upplication.com",
+							"description": "view web",
+							"src": "../images/upp_templates1.png"
+						},{
+							"link": "http://borja.upplication.com",
+							"description": "view web",
+							"src": "../images/upp_templates3.png"
+						},{
+							"link": "http://borjarendemodenda.upplication.com",
+							"description": "view web",
+							"src": "../images/upp_templates2.png"
+						}
+					],
+					"content": [
+						"less",
+						"sass",
+						"css3",
+						"rwd",
+						"gruntjs"
+					]
+				},{
+					"title": "Upplication Developer Page",
+					"description": "Internal web for the development team, where all the links are organized. <a href='http://www.youtube.com/watch?v=XnBDVrk5AHE'>demo</a> ",
+					"images": [
+						{
+							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/661a984d-9969-4e71-bb05-08f51b8ae031.png"
+						},{
+							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/20e9dc89-48e4-49e8-b796-4a1ea0a70da1.png"
+						},{
+							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/345673bd-28cd-48f5-b6aa-3d3e1298a22f.png"
+						}
+					],
+					"content": [
+						"css3",
+						"html",
+						"rwd"
+					]
+				},{
+					"title": "Upplication webapps/apps",
+					"description": "Development / Architecture of the webapps / apps built with the <a href='https://github.com/Upplication/banana'>Upplication</a> tool",
+					"images": [
+						{
+							"src": "../images/upp_base1.png"
+						},{
+							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/85e5f5cc-cece-4f0f-93f7-c9294c0d0bbb.png"
+						},{
+							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/a08dfed9-bfdc-4023-94e1-4cf4c5c3890f.png"
+						}
+					],
+					"content": [
+						"js",
+						"angularjs",
+						"jade",
+						"less",
+						"bootstrap",
+						"jasmine",
+						"gruntjs"
+					]
+				},{
+					"title": "Banana Time!",
+					"description": "Development & Layout of the project <a href='https://github.com/Upplication/banana'>'Banana Time!'</a>",
+					"images": [
+						{
+							"link": "http://upplication.github.io/banana/",
+							"description": "ver web",
+							"src": "../images/banana2.jpg"
+						},{
+							"link": "http://upplication.github.io/banana/",
+							"description": "ver web",
+							"src": "../images/banana.jpg"
+						}
+					],
+					"content": [
+						"angularjs",
+						"jade",
+						"coffescript",
+						"gruntjs",
+						"compass"
+					]
+				},{
+					"title": "Whoru",
+					"description": "Development of the project <a href='https://github.com/borya09/whoru'>'Whoru'</a> and layout of a <a href='https://github.com/borya09/whoru/tree/demo'>demo</a> and this web",
+					"images": [
+						{
+							"link": "http://borya09.github.io/whoru/",
+							"description": "ver web",
+							"src": "http://www.clipular.com/c/6592733963616256.png?k=_efSnJee7D0hOfOndyyM9kfVCDk"
+						},
+						{
+							"link": "http://borya09.github.io/whoru/",
+							"description": "ver web",
+							"src": "http://www.clipular.com/c/6201687979065344.png?k=jP6YEhQIu1uJkQub5htsOTezYAc"
+						},
+						{
+							"link": "http://borya09.github.io/whoru/",
+							"description": "ver web",
+							"src": "http://www.clipular.com/c/5819727544844288.png?k=9E_FP1a4WPFvkkRg3S_JwMQ1CiU"
+						}
+					],
+					"content": [
+						"angularjs",
+						"jade",
+						"coffescript",
+						"gruntjs",
+						"jasmine",
+						"compass"
+					]
+				}
+			]
+		},
+		{
+			"header": "Technical skills",
+			"title": "Technical skills",
+			"key": "tech_skills",
+			"content": [
+				{
+					"title": "Front",
+					"content": [
+						"JS", "AngularJs", "Css3", "HTML5", "Less", "Sass", "RWD", "Coffeescript", "GruntJs", "Yeoman", "Bower", "Phonegap", "Jade", "jQuery"
+					]
+				},
+				{
+					"title": "Back",
+					"content": [
+						"NodeJs", "MongooseJs", "ExpressJs", "MongoDb", "Grails", "J2EE", "Hibernate"
+					]
+				},
+				{
+					"title": "Testing",
+					"content": [
+						"Mocha", "Jasmine", "Testacular (Karma)"
+					]
+				},
+				{
+					"title": "Tools",
+					"content": [
+						"Jira",
+						"Confluence",
+						"Mixpanel"
+					]
+				}
+			]
+		},
+		{
+			"header": "Career",
+			"title": "Career",
+			"key": "career",
+			"content": [
+				{
+					"title": "Front-end developer in Upplication",
+					"when": "2013",
+					"images": [
+						{
+							"link": "http://www.upplication.com",
+							"description": "Upplication",
+							"src": "../images/upplication.png"
+						}
+					],
+					"content": [
+						"Development / architecture of the webapps / apps built from upplication",
+						"Layout of the available responsive templates for the webapps / apps",
+						"Automation of front-end tasks using Grunt"
+					]
+				},
+				{
+					"title": "Analyst/developer in VirtualSW",
+					"from": "2008",
+					"until": "2012",
+					"images": [
+						{
+							"link": "http://www.virtualsw.com",
+							"description": "Virtualsw",
+							"src": "../images/virtualsw.png"
+						}
+					],
+					"content": [
+						"Analysis / development (front & back) of web applications with J2EE & Grails"
+					]
+				},
+				{
+					"title": "Junior developer in Mnemo",
+					"when": "2007",
+					"images": [
+						{
+							"link": "http://www.mnemo.com",
+							"description": "Mnemo",
+							"src": "../images/mnemo.jpg"
+						}
+					],
+					"content": [
+						"Junior Programmer at the computer consultant 'mnemo', working as a web developer at 'Informática Euskadi', developing the financial web portal of the BBK bank."
+					]
+				}
+			]
+		},
+		{
+			"header": "Hobbies",
+			"title": "Hobbies",
+			"key": "hobbies",
+			"content": [
+				{
+					"description": "Frikear... frikear mucho, por mi cuenta, sobre todo investigando y acudiendo a charlas, meetups, conferencias, ... nuevas tecnologías relacionadas con lo que me gusta, mi trabajo (soy un <s>yonki</s> apasionado de mi trabajo)"
+				},
+				{
+					"description": "Andar en bici por el monte (nada de carretera)​"
+				},
+				{
+					"description": "Correr, también por el monte (nada de carretera, aunque viviendo en ciudad está complicado)"
+				},
+				{
+					"description": "Potear por Bilbao, con mi novia, amigos, padres, ..."
+				},
+				{
+					"description": "Culé. Sí, soy de Bilbao y del Barça, mi padre (típico socio del Athletic de toda la vida) sigue aún sin explicarse que hizo mal conmigo."
+				}
+			]
+		}
+	]
+}
+
