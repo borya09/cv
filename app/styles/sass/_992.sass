@@ -348,29 +348,29 @@ body
   &.presentation,
   &.hobbies
     .wh-generic-section-title
-      &:before
+      &:before,
+      &:after
         content: ''
         position: absolute
         z-index: 3
-        +border-radius(50%)
+      &:before
         +box-shadow(inset 0px 2px 10px rgba(0,0,0,0.7))
         +background-size(cover!important)
+
 
   //////////////// SOY
   &.presentation
     .wh-generic-section-title
       &:after
-        content: ''
-        position: absolute
         background: url(../images/arrow1.png) no-repeat
         +rotate(49deg)
         right: -4em
         top: 1em
         height: 3.5em
         width: 4.5em
-        z-index: 3
 
       &:before
+        +border-radius(50%)
         right: -7.9em
         top: .5em
         height: 3.5em
@@ -382,12 +382,22 @@ body
   &.hobbies
     .wh-generic-section-title
       &:before
+        +border-radius(50px)
         right: -4.5em
-        top: 1.5em
-        height: 4em
-        width: 4em
+        top: 1.8em
+        height: 3.5em
+        width: 3.5em
         background: url(../images/borja_bike.png) no-repeat
 
+      &:after
+        background: url(../images/arrow2.png) no-repeat
+        background-size: 70%
+        +rotate(-13deg)
+        right: -.4em
+        top: 1.3em
+        height: 2em
+        width: 2em
+        opacity: .9
 
   //////////////// TRABAJOS & EXPERIENCIA
   &.work,
