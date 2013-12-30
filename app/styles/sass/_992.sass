@@ -505,44 +505,33 @@ body
     .wh-slider-selector
       button
         position: absolute
-        top: 50%
-        height: 3em
-        margin: 0
-        margin-top: -1.5em
-        padding: .4em .3em
-        color: white
-        background: $top-color
+        top: 0
+        bottom: 0
+        color: rgba(60,60,60, 0.5)
+        background: none
         border: none
         z-index: 9
-        cursor: pointer
+        font-size: 2.4em
+        padding: 0 .2em
+        margin: 0
+        font-family: 'arial'
 
         &.more
-          opacity: .85
+          cursor: pointer
           &:hover
-            +transition-duration(.3s)
-            +transition-property(padding)
-            opacity: 1
+            background: rgba(145, 145, 145, 0.20)
+            +transition-duration(.25s)
+            +transition-property(background)
+
         &.no-more
           opacity: .3
 
-      span
-        display: none
-
       .previous
         left: 0
-        +border-right-radius(5px)
-        &.more:hover
-          padding-left: .5em
-        &:before
-          +whoru-icon('¡')
 
       .next
         right: 0
-        +border-left-radius(5px)
-        &.more:hover
-          padding-right: .5em
-        &:before
-          +whoru-icon(')')
+
 
     .wh-cv-part-item-image
       +transition-property(opacity)
@@ -557,7 +546,7 @@ body
         +transition-delay(.2s)
 
       .desc
-        background: rgba(26,80,78,.7)
+        background: rgba(0, 0, 0, .5)
 
     .wh-cv-part-item-description,
     .wh-part-item-content
