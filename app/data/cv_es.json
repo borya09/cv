@@ -22,7 +22,6 @@
 					"description": "En enero (2013) entré a formar parte del equipo de <a href=\"http://upplication.com\">Upplication</a>, como desarrollador front-end exclusivamente, con la reponsabilidad de elegir la arquitectura, frameworks, lenguajes,... a usar en esta parte; aunque cuando puedo me escapo al back en node.js o a la automatización con grunt.js, que también me interesa bastante."
 				}
 			]
-
 		},
 		{
 			"header": "Trabajos",
@@ -36,15 +35,15 @@
 						{
 							"link": "http://eskorbuto.upplication.com",
 							"description": "ver web",
-							"src": "../images/upp_templates1.png"
+							"src": "images/upp_templates1.png"
 						},{
 							"link": "http://borja.upplication.com",
 							"description": "ver web",
-							"src": "../images/upp_templates3.png"
+							"src": "images/upp_templates3.png"
 						},{
 							"link": "http://borjarendemodenda.upplication.com",
 							"description": "ver web",
-							"src": "../images/upp_templates2.png"
+							"src": "images/upp_templates2.png"
 						}
 					],
 					"content": [
@@ -76,7 +75,7 @@
 					"description": "Desarrollo / Arquitectura de las webapps/apps construidas a partir de la herramienta <a href='https://github.com/Upplication/banana'>Upplication</a>",
 					"images": [
 						{
-							"src": "../images/upp_base1.png"
+							"src": "images/upp_base1.png"
 						},{
 							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/85e5f5cc-cece-4f0f-93f7-c9294c0d0bbb.png"
 						},{
@@ -99,11 +98,11 @@
 						{
 							"link": "http://upplication.github.io/banana/",
 							"description": "ver web",
-							"src": "../images/banana2.jpg"
+							"src": "images/banana2.jpg"
 						},{
 							"link": "http://upplication.github.io/banana/",
 							"description": "ver web",
-							"src": "../images/banana.jpg"
+							"src": "images/banana.jpg"
 						}
 					],
 					"content": [
@@ -189,7 +188,7 @@
 						{
 							"link": "http://www.upplication.com",
 							"description": "Upplication",
-							"src": "../images/upplication.png"
+							"src": "images/upplication.png"
 						}
 					],
 					"content": [
@@ -206,7 +205,7 @@
 						{
 							"link": "http://www.virtualsw.com",
 							"description": "Virtualsw",
-							"src": "../images/virtualsw.png"
+							"src": "images/virtualsw.png"
 						}
 					],
 					"content": [
@@ -220,7 +219,7 @@
 						{
 							"link": "http://www.mnemo.com",
 							"description": "Mnemo",
-							"src": "../images/mnemo.jpg"
+							"src": "images/mnemo.jpg"
 						}
 					],
 					"content": [
