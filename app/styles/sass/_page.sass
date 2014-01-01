@@ -1,0 +1,717 @@
+////////////// BODY
+body
+  height: 100%
+  min-height: 100%
+  font-family: 'Roboto', sans-serif
+  font-weight: 300
+
+
+.wh-background-image
+  background: #FFFFFF url(../images/bilbao3.jpg) top fixed no-repeat
+  +background-size(cover)
+  height: 20%
+  z-index: -2
+  +absolute0
+  &:after
+    content: ''
+    +absolute0
+    z-index: -1
+    background: url(../images/pattern.png) fixed
+  &:before
+    content: ''
+    position: fixed
+    top: $top-fixed-items
+    height: 6em
+    bottom: auto
+    left: 0
+    right: 0
+    z-index: 0
+    background: rgba(0,0,0,.4)
+
+
+.main-container
+  position: relative
+
+//Disable 'paralax' effect in the 'contact' section
+.intro-scrolled
+  body
+    position: relative
+  .main-container
+    position: static
+  .wh-background-image
+    position: fixed
+    height: 100%
+    background-position-y: 0!important
+    &:before
+      height: 0
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////// HEADER
+
+
+////// HEADER - WITH INTRO VISIBLE
+.header-container
+  +absolute0
+  top: auto
+  height: 3em
+  background: white
+  z-index: 2
+  +transition-property(all)
+  +transition-duration(.5s)
+
+
+.wh-header-fullname
+  float: left
+  padding-top: 1em
+  padding-left: .8em
+  position: relative
+  width: 0
+
+.wh-header-name
+  position: relative
+  float: left
+  padding-right: .2em
+  color: $color-first-section
+  font-family: 'Roboto', sans-serif
+  text-transform: uppercase
+  top: -9999px
+  font-weight: 700
+  font-size: 1.7em
+
+.wh-header-surname1,
+.wh-header-surname2
+  position: relative
+  top: -9999px
+
+
+.wh-header-options
+
+  &.select
+    margin-top: .55em
+    width: 50%
+    max-width: 10em
+    display: inline-block
+    float: right
+    margin-right: .6em
+    +border-radius(6px)
+    position: relative
+    border: 2px solid $color-intro-text
+    +transition-property(all)
+    +transition-duration(.5s)
+
+    select
+
+      font-family: inherit
+      color: $color-intro-text
+      text-align: center
+      width: 100%
+      font-size: .875em
+      font-weight: 500
+      text-transform: uppercase
+      cursor: pointer
+      padding: 0.125em
+      -webkit-appearance: none
+      background: none
+      border: none
+      +transition-property(all)
+      +transition-duration(.5s)
+
+    &:before,
+    &:after
+      pointer-events: none
+      position: absolute
+
+    &:before
+      content: ''
+      right: 0.125em
+      width: 1.3em
+      top: 0.125em
+      bottom: 0.125em
+      background: white
+
+    &:after
+      font-family: 'arial'
+      content: '›'
+      color: $color-intro-text
+      font-size: 1.7em
+      +rotate(90deg)
+      right: .2em
+      top: 0em
+      +transition-property(all)
+      +transition-duration(.5s)
+
+
+
+  &.ul
+    display: none
+
+
+.wh-header-option
+  display: inline
+  padding: 0 0.7em
+  text-transform: uppercase
+  &:first-child
+    display: none
+  a
+    +transition-property(all)
+    +transition-duration(.5s)
+    color: black
+    font-family: 'Open Sans', sans-serif
+    font-weight: 700
+    font-size: .8em
+    color: rgb(83, 88, 94)
+
+.wh-header-locales
+  float: left
+  z-index: 3
+
+.wh-header-locale
+  float: left
+  padding: 1em 1em 0 0
+  +transition-duration(1s)
+  &.current
+    opacity: 1
+    +transition-property(opacity)
+
+  &:not(.current)
+    opacity: .5
+    +transition-property(opacity)
+  img
+    +border-radius(50%)
+
+#to-top
+  opacity: 0
+  z-index: -1
+  position: fixed
+  right: .7em
+  bottom: .7em
+  overflow: hidden
+  width: 1em
+  height: 1em
+  line-height: 1em
+  font-size: 1.7em
+  +border-radius(6px)
+  +transition(0.2s opacity linear)
+  background: white
+  text-indent: -2.858em
+  &:after
+    padding-left: 1em
+    +whoru-icon('ç')
+
+
+////// HEADER - WITH INTRO SCROLLED (HIDDEN)
+.intro-scrolled
+  .header-container
+    position: fixed
+    height: 4em
+    top: 0
+  .wh-header-name
+    top: 0
+    +transition-property(all)
+    +transition-duration(.5s)
+  .wh-header-options.select
+    margin-top: .9em
+
+  .wh-header-locales
+    display: none
+
+  #to-top
+    z-index: 5
+    opacity: .8
+    &:hover
+      opacity: 1
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////// INTRO
+.wh-intro-fullname,
+.wh-intro-summary,
+.wh-intro-description
+  position: fixed
+  z-index: 0
+  right: $right-fixed-items
+  color: $color-intro-text
+  font-family: 'Roboto', sans-serif
+  text-transform: lowercase
+  color: color-intro-text
+
+
+
+.wh-intro-fullname,
+.wh-intro-summary
+  top: -9999px
+
+
+.wh-intro-fullname
+  font-size: 1.5em
+  font-weight: 300
+  div
+    float: left
+    padding-left: .3em
+
+.wh-intro-name
+  width: 3em
+  text-align: right
+
+.wh-intro-summary
+  font-weight: 300
+  font-size: 1em
+  opacity: .8
+  margin-top: 2.8em
+
+
+.wh-intro-description
+  top: $top-fixed-items
+  font-weight: 300
+  font-style: italic
+  font-size: .7em
+  opacity: 0
+  margin-top: 7.2em
+
+
+////// INTRO - WHEN LOADED
+.wh-intro-loaded
+  .wh-intro-fullname,
+  .wh-intro-summary
+    top: $top-fixed-items
+    +transition-property(top)
+    +transition-duration(0.8s)
+
+  .wh-intro-summary
+    +transition-delay(0.8s)
+
+  .wh-intro-description
+    opacity: .8
+    +transition-duration(2s)
+    +transition-delay(1.5s)
+    +transition-property(opacity)
+
+
+
+////// INTRO - WHEN SCROLLED (HIDDEN)
+.intro-scrolled
+  .wh-intro-fullname,
+  .wh-intro-summary,
+  .wh-intro-description
+    display: none
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////// CV
+
+
+.wh-cv
+  padding-top: 3.5em
+  background: $color-first-section
+  position: relative
+  z-index: 1
+
++cv-section-colors($color-section-presentation, 'presentation')
++cv-section-colors($color-section-work, 'work')
++cv-section-colors($color-section-tech_skills, 'tech_skills')
++cv-section-colors($color-section-career, 'career')
++cv-section-colors($color-section-hobbies, 'hobbies')
++cv-section-colors($color-section-contacts, 'contacts')
+
+
+.wh-generic-section
+  text-align: center
+
+
+.wh-generic-section-title
+  font-family: 'Open Sans', sans-serif
+  text-transform: uppercase
+  font-weight: 300
+  font-size: 2.5em
+  margin: 1em auto
+  display: inline-block
+  padding: .1em .2em
+  color: #FFFFFF
+  position: relative
+
+
+
+.wh-generic-section-content
+  text-align: left
+  width: 100%
+  max-width: 500px
+  margin: 0 auto
+
+
+
+.wh-part-item
+  float: left
+  padding: 1em
+  +border-radius($border-radius-item)
+  position: relative
+  width: 100%
+  display: block
+  text-align: justify
+  +box-shadow(none)
+  font-weight: 400
+  line-height: 1.5em
+
+  a
+    color: white
+    font-weight: 400
+    &:hover
+      text-decoration: underline
+
+
+
+  &:not(:last-child)
+    margin-bottom: 2.5em
+
+.wh-cv-part-item-title
+  font-size: 1.4em
+  font-weight: 500
+
+
+.wh-cv-part
+  padding: 0 .8em 6em .8em
+  display: inline-block
+  width: 100%
+
+
+
+
+
+  //////////////// TRABAJOS & EXPERIENCIA
+  &.work,
+  &.career
+    .wh-part-item
+      float: left
+      padding: 0
+      position: relative
+
+    .wh-cv-part-item-title
+      +border-top-radius($border-radius-item)
+      color: white
+      height: 3em
+      line-height: 3em
+      font-size: 1.4em
+      font-weight: 300
+      text-align: center!important
+      padding: 0em
+      width: 100%
+
+    .wh-cv-part-item-images-wrapper
+      height: 12em
+      position: relative
+
+    .wh-cv-part-item-image
+      position: absolute
+      top: 0
+      bottom: 0
+      width: 100%
+      +background-size(cover)
+
+      .desc
+        position: absolute
+        right: 30%
+        left: 30%
+        bottom: 40%
+        top: 40%
+        line-height: 2.2em
+        opacity: 0
+        font-weight: 300
+        text-align: center
+        color: white
+        +border-radius(5px)
+
+      &:hover
+        .desc
+          opacity: 1
+          +transition-duration(.3s)
+          +transition-property(opacity)
+
+    .wh-cv-part-item-description,
+    .wh-part-item-content
+      color: white
+      line-height: normal
+
+    .wh-cv-part-item-description
+      line-height: 1.3em
+      padding: .9em
+      font-weight: 300
+      a
+        font-weight: 400
+        &:hover
+          text-decoration: underline
+
+    .wh-part-item-content
+      bottom: .6em
+      left: 0
+      right: 0
+      display: inline-block
+      font-size: .9em
+      margin-bottom: .2em
+      padding: 0 1em
+
+    .wh-part-item-content-element
+      font-weight: 300
+      padding: .2em .6em
+      +border-radius(5px)
+      margin-bottom: .2em
+      margin-right: .2em
+
+
+  //////////////// TRABAJOS
+  &.work
+    $top-color: #1a504e
+    $middle-color: #2c8a86
+    $bottom-color: #267773
+    $red-color: #f24d35
+
+    .wh-generic-section-content > ol:after
+      display: none
+
+    .wh-part-item
+      height: 24.7em
+      width: 100%
+      margin: 0 auto 1em auto
+      background: $bottom-color
+      +bottom_shadow_and_hover_top($top-color)
+
+    .wh-cv-part-item-title
+      background: $top-color
+
+    .wh-cv-part-item-images-wrapper
+      background: $middle-color
+
+    .wh-slider-selector
+      button
+        position: absolute
+        top: 0
+        bottom: 0
+        color: rgba(60,60,60, 0.5)
+        background: none
+        border: none
+        z-index: 9
+        font-size: 2.4em
+        padding: 0 .2em
+        margin: 0
+        font-family: 'arial'
+
+        &.more
+          cursor: pointer
+          &:hover
+            background: rgba(145, 145, 145, 0.20)
+            +transition-duration(.25s)
+            +transition-property(background)
+
+        &.no-more
+          opacity: .3
+
+      .previous
+        left: 0
+
+      .next
+        right: 0
+
+
+    .wh-cv-part-item-image
+      +transition-property(opacity)
+      +transition-duration(.5s)
+
+      &:not(.current)
+        opacity: 0
+        z-index: -10
+
+      &.current
+        opacity: 1
+        +transition-delay(.2s)
+
+      .desc
+        background: rgba(0, 0, 0, .5)
+
+    .wh-cv-part-item-description,
+    .wh-part-item-content
+      background: $bottom-color
+
+    .wh-part-item-content
+      position: absolute
+
+    .wh-cv-part-item-description
+      a
+        color: black
+
+    .wh-part-item-content-element
+      background: $red-color
+      float: right
+
+  //////////////// EXPERIENCIA
+  &.career
+    $top-color: #090909
+    $middle-color: white
+    $bottom-color: #262626
+
+    .wh-part-item
+      background: $bottom-color
+      +bottom_shadow_and_hover_top($top-color)
+      &:nth-child(odd)
+        .wh-cv-part-item-dates
+          right: .3em
+      &:nth-child(even)
+        .wh-cv-part-item-dates
+          left: .3em
+
+    .wh-cv-part-item-title
+      background: $top-color
+
+    .wh-cv-part-item-images-wrapper
+      background: $middle-color
+      .desc
+        background: rgba(0, 0, 0, 0.75)
+
+    .wh-cv-part-item-image
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 60%
+
+    .wh-cv-part-item-dates
+      position: absolute
+      top: 5.5em
+      z-index: 999
+      font-size: .8em
+
+    .wh-cv-part-item-date
+      background: $color-section-career
+      padding: .1em .4em
+      +border-radius(5px)
+      & + .wh-cv-part-item-date
+        margin-left: .3em
+        position: relative
+        &:before
+          content: "-"
+          position: absolute
+          left: -0.2em
+          font-size: 3em
+          top: -.13em
+          color:  $color-section-career
+
+    .wh-part-item-content-element
+      padding: 0
+      font-size: 1.1em
+      margin: 1em 0
+
+  //////////////// HABILIDADES
+  &.tech_skills
+    .wh-part-item
+      &:nth-child(odd)
+        .wh-cv-part-item-title,
+        .wh-part-item-content-element
+          float: right
+          text-align: right
+      &:nth-child(even)
+        .wh-cv-part-item-title,
+        .wh-part-item-content-element
+          float: left
+          text-align: left
+
+    .wh-cv-part-item-title
+      text-transform: uppercase
+      margin-bottom: 1em
+      font-family: 'Open Sans', sans-serif
+      text-transform: capitalize
+      font-style: italic
+      color: black
+      font-size: 1.3em
+      font-weight: 600
+
+    .wh-part-item-content-element
+      position: relative
+      text-align: left
+      background: lighten($color-section-tech_skills, 10%)
+      color: white
+      font-weight: 600
+      font-size: .7em
+      margin-bottom: 1.4em
+      padding: .4em .5em
+      display: block
+      text-transform: uppercase
+      width: 10%
+      clear: both
+      +border-radius(5px)
+      +transition-property(width)
+      +transition-duration(3s)
+      +transition-timing-function(ease-out)
+      +bottom_shadow_and_hover_top(darken($color-section-tech_skills, 10%))
+
+
+    &.when-shown.do
+      .wh-part-item
+        &:nth-child(1) //Front
+          .wh-part-item-content-element
+            +tech_skill_bar(1, 87%) //js
+            +tech_skill_bar(2, 94%) //angularjs
+            +tech_skill_bar(3, 76%) //css3
+            +tech_skill_bar(4, 70%) //html5
+            +tech_skill_bar(5, 81%) //lees
+            +tech_skill_bar(6, 84%) //sass
+            +tech_skill_bar(7, 68%) //rwd
+            +tech_skill_bar(8, 70%) //coffee
+            +tech_skill_bar(9, 88%) //gruntjs
+            +tech_skill_bar(10, 70%) //yeoman
+            +tech_skill_bar(11, 80%) //bower
+            +tech_skill_bar(12, 57%) //phonegap
+            +tech_skill_bar(13, 77%) //jade
+            +tech_skill_bar(14, 71%) //jquery
+        &:nth-child(2) //back
+          .wh-part-item-content-element
+            +tech_skill_bar(1, 86%) //nodejs
+            +tech_skill_bar(2, 66%) //mongoosejs
+            +tech_skill_bar(3, 70%) //expressjs
+            +tech_skill_bar(4, 71%) //mongodb
+            +tech_skill_bar(5, 55%) //grails
+            +tech_skill_bar(6, 63%) //j2ee
+            +tech_skill_bar(7, 46%) //hibernate
+        &:nth-child(3) //testing
+          .wh-part-item-content-element
+            +tech_skill_bar(1, 71%) //mocha
+            +tech_skill_bar(2, 89%) //jasmine
+            +tech_skill_bar(3, 81%) //testacular
+
+        &:nth-child(4) //tools
+          .wh-part-item-content-element
+            +tech_skill_bar(1, 77%) //jira
+            +tech_skill_bar(2, 65%) //confluence
+            +tech_skill_bar(3, 48%) //mixpanel
+
+
+////////////// CONTACTS
+.wh-footer.wrapper
+  padding-top: 3em
+
+.wh-contacts
+  ul
+    display: none
+    width: inherit
+
+.intro-scrolled
+  .wh-contacts
+    ul
+      display: inline-block
+      margin-top: 2em
+
+.wh-contact
+  float: none
+  opacity: 1
+
+
+.wh-contact-icon
+  opacity: .7
+  color: $color-section-contacts
+  font-size: 2em
+  float: left
+  padding-bottom: .3em
+
+  span
+    display: none
+

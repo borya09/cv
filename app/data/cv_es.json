@@ -16,7 +16,7 @@
 					"description": "Una vez que terminé (2008), decidí venirme a Madrid a buscar trabajo, con mi novía, hasta hoy ..."
 				},
 				{
-					"description": "Primero trabajé como desarrollador web en <a href=\"http://www.virtualsw.com/\">Virtual Software</a>, haciendo cosas en back, front, base de datos, análisis,... un poco de todo. Aunque sobre todo especializandome en front."
+					"description": "Primero trabajé como desarrollador web en <a href=\"http://www.virtualsw.com/\">Virtual Software</a>, haciendo cosas en back, front, base de datos, análisis,... un poco de todo. Aunque sobre todo especializándome en front."
 				},
 				{
 					"description": "En enero (2013) entré a formar parte del equipo de <a href=\"http://upplication.com\">Upplication</a>, como desarrollador front-end exclusivamente, con la reponsabilidad de elegir la arquitectura, frameworks, lenguajes,... a usar en esta parte; aunque cuando puedo me escapo al back en node.js o a la automatización con grunt.js, que también me interesa bastante."
@@ -119,17 +119,17 @@
 						{
 							"link": "http://borya09.github.io/whoru/",
 							"description": "ver web",
-							"src": "http://www.clipular.com/c/6592733963616256.png?k=_efSnJee7D0hOfOndyyM9kfVCDk"
+							"src": "images/whoru1.jpg"
 						},
 						{
 							"link": "http://borya09.github.io/whoru/",
 							"description": "ver web",
-							"src": "http://www.clipular.com/c/6201687979065344.png?k=jP6YEhQIu1uJkQub5htsOTezYAc"
+							"src": "images/whoru2.png"
 						},
 						{
 							"link": "http://borya09.github.io/whoru/",
 							"description": "ver web",
-							"src": "http://www.clipular.com/c/5819727544844288.png?k=9E_FP1a4WPFvkkRg3S_JwMQ1CiU"
+							"src": "images/whoru3.png"
 						}
 					],
 					"content": [

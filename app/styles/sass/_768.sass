@@ -1,0 +1,84 @@
+.wh-background-image
+  &:before
+    top: $top-fixed-items-768
+    height: 10em
+
+.intro-scrolled
+  .wh-background-image
+    &:before
+      height: 10em
+      top: $top-fixed-items-nointro-768
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////// INTRO
+.wh-intro-fullname,
+.wh-intro-summary,
+.wh-intro-description
+  right: $right-fixed-items-768
+
+.wh-intro-fullname
+  font-size: 3em
+  font-weight: 100
+.wh-intro-summary
+  font-size: 1.6em
+  font-weight: 100
+  margin-top: 3em
+.wh-intro-description
+  top: $top-fixed-items-768
+  font-size: .8em
+  margin-top: 11em
+
+////// INTRO - WHEN LOADED
+.wh-intro-loaded
+  .wh-intro-fullname,
+  .wh-intro-summary
+    top: $top-fixed-items-768
+
+
+////// INTRO - WHEN SCROLLED (HIDDEN)
+.intro-scrolled
+  .wh-intro-fullname
+    display: inline-block
+    top: $top-fixed-items-nointro-768
+
+////////////// CONTACTS
+.intro-scrolled
+  .wh-contacts
+    ul
+      display: inline
+      position: fixed
+      top: $top-fixed-items-nointro-768
+      right: $right-fixed-items-768
+      margin-top: 7em
+      padding-top: 0
+
+.wh-contact
+  float: left
+  opacity: 0
+  padding-bottom: 0
+  padding-left: .5em
+
+
+.wh-contacts
+  &.when-shown.do
+    .wh-contact
+      opacity: 1
+      +transition-duration(2.5s)
+      +transition-property(opacity)
+      +transition-timing-function(ease-in)
+
+      @for $i from 2 through 10
+        &:nth-last-child(#{$i})
+          +transition-delay(#{$i*0.2}s)
+
+
+.wh-contact-icon
+  opacity: .7
+  &:hover,
+  &:not(:hover)
+    +transition-duration(.3s)
+    +transition-property(all)
+    +transition-timing-function(ease-out)
+  &:hover
+    opacity: 1
+

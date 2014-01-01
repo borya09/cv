@@ -98,11 +98,11 @@
 					"images": [
 						{
 							"link": "http://upplication.github.io/banana/",
-							"description": "ver web",
+							"description": "view web",
 							"src": "images/banana2.jpg"
 						},{
 							"link": "http://upplication.github.io/banana/",
-							"description": "ver web",
+							"description": "view web",
 							"src": "images/banana.jpg"
 						}
 					],
@@ -119,18 +119,18 @@
 					"images": [
 						{
 							"link": "http://borya09.github.io/whoru/",
-							"description": "ver web",
-							"src": "http://www.clipular.com/c/6592733963616256.png?k=_efSnJee7D0hOfOndyyM9kfVCDk"
+							"description": "view web",
+							"src": "images/whoru1.jpg"
 						},
 						{
 							"link": "http://borya09.github.io/whoru/",
-							"description": "ver web",
-							"src": "http://www.clipular.com/c/6201687979065344.png?k=jP6YEhQIu1uJkQub5htsOTezYAc"
+							"description": "view web",
+							"src": "images/whoru2.png"
 						},
 						{
 							"link": "http://borya09.github.io/whoru/",
-							"description": "ver web",
-							"src": "http://www.clipular.com/c/5819727544844288.png?k=9E_FP1a4WPFvkkRg3S_JwMQ1CiU"
+							"description": "view web",
+							"src": "images/whoru3.png"
 						}
 					],
 					"content": [
