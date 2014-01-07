@@ -7,7 +7,7 @@ body
 
 
 .wh-background-image
-  background: #FFFFFF url(../images/bilbao3.jpg) top fixed no-repeat
+  background: #FFFFFF url(../images/bilbao3_mini.jpg) top fixed no-repeat
   +background-size(cover)
   height: 20%
   z-index: -2
@@ -238,12 +238,9 @@ body
   text-transform: lowercase
   color: color-intro-text
 
-
-
 .wh-intro-fullname,
 .wh-intro-summary
   top: -9999px
-
 
 .wh-intro-fullname
   font-size: 1.5em
@@ -297,7 +294,8 @@ body
   .wh-intro-summary,
   .wh-intro-description
     display: none
-
+    +transition-property(none)
+    +transition-duration(0s)
 
 
 
