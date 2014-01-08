@@ -9,9 +9,14 @@ body
 .wh-background-image
   background: #FFFFFF url(../images/bilbao3_mini.jpg) top fixed no-repeat
   +background-size(cover)
-  height: 20%
+  height: 100%
   z-index: -2
-  +absolute0
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  position: fixed
+
   &:after
     content: ''
     +absolute0
@@ -19,18 +24,18 @@ body
     background: url(../images/pattern.png) fixed
   &:before
     content: ''
-    position: fixed
+    position: relative
+    display: block
     top: $top-fixed-items
     height: 6em
     bottom: auto
-    left: 0
-    right: 0
     z-index: 0
     background: rgba(0,0,0,.4)
 
-
 .main-container
   position: relative
+
+
 
 //Disable 'paralax' effect in the 'contact' section
 .intro-scrolled
@@ -311,8 +316,8 @@ body
   z-index: 1
 
 +cv-section-colors($color-section-presentation, 'presentation')
-+cv-section-colors($color-section-work, 'work')
-+cv-section-colors($color-section-tech_skills, 'tech_skills')
++cv-section-colors($color-section-work, 'work', $darken: 20%)
++cv-section-colors($color-section-tech_skills, 'tech_skills', $top-darken: 20%)
 +cv-section-colors($color-section-career, 'career')
 +cv-section-colors($color-section-hobbies, 'hobbies')
 +cv-section-colors($color-section-contacts, 'contacts')
@@ -333,14 +338,11 @@ body
   color: #FFFFFF
   position: relative
 
-
-
 .wh-generic-section-content
   text-align: left
   width: 100%
   max-width: 500px
   margin: 0 auto
-
 
 
 .wh-part-item
@@ -553,12 +555,6 @@ body
     .wh-part-item
       background: $bottom-color
       +bottom_shadow_and_hover_top($top-color)
-      &:nth-child(odd)
-        .wh-cv-part-item-dates
-          right: .3em
-      &:nth-child(even)
-        .wh-cv-part-item-dates
-          left: .3em
 
     .wh-cv-part-item-title
       background: $top-color
@@ -576,6 +572,7 @@ body
     .wh-cv-part-item-dates
       position: absolute
       top: 5.5em
+      right: .3em
       z-index: 999
       font-size: .8em
 
@@ -613,6 +610,43 @@ body
           float: left
           text-align: left
 
+      &:nth-child(1) //Front
+        .wh-part-item-content-element
+          +tech_skill_bar(1, 87%) //js
+          +tech_skill_bar(2, 94%) //angularjs
+          +tech_skill_bar(3, 76%) //css3
+          +tech_skill_bar(4, 70%) //html5
+          +tech_skill_bar(5, 81%) //lees
+          +tech_skill_bar(6, 84%) //sass
+          +tech_skill_bar(7, 68%) //rwd
+          +tech_skill_bar(8, 70%) //coffee
+          +tech_skill_bar(9, 88%) //gruntjs
+          +tech_skill_bar(10, 70%) //yeoman
+          +tech_skill_bar(11, 80%) //bower
+          +tech_skill_bar(12, 57%) //phonegap
+          +tech_skill_bar(13, 77%) //jade
+          +tech_skill_bar(14, 71%) //jquery
+      &:nth-child(2) //back
+        .wh-part-item-content-element
+          +tech_skill_bar(1, 86%) //nodejs
+          +tech_skill_bar(2, 66%) //mongoosejs
+          +tech_skill_bar(3, 70%) //expressjs
+          +tech_skill_bar(4, 71%) //mongodb
+          +tech_skill_bar(5, 55%) //grails
+          +tech_skill_bar(6, 63%) //j2ee
+          +tech_skill_bar(7, 46%) //hibernate
+      &:nth-child(3) //testing
+        .wh-part-item-content-element
+          +tech_skill_bar(1, 71%) //mocha
+          +tech_skill_bar(2, 89%) //jasmine
+          +tech_skill_bar(3, 81%) //testacular
+
+      &:nth-child(4) //tools
+        .wh-part-item-content-element
+          +tech_skill_bar(1, 77%) //jira
+          +tech_skill_bar(2, 65%) //confluence
+          +tech_skill_bar(3, 48%) //mixpanel
+
     .wh-cv-part-item-title
       text-transform: uppercase
       margin-bottom: 1em
@@ -634,7 +668,7 @@ body
       padding: .4em .5em
       display: block
       text-transform: uppercase
-      width: 10%
+
       clear: both
       +border-radius(5px)
       +transition-property(width)
@@ -643,44 +677,6 @@ body
       +bottom_shadow_and_hover_top(darken($color-section-tech_skills, 10%))
 
 
-    &.when-shown.do
-      .wh-part-item
-        &:nth-child(1) //Front
-          .wh-part-item-content-element
-            +tech_skill_bar(1, 87%) //js
-            +tech_skill_bar(2, 94%) //angularjs
-            +tech_skill_bar(3, 76%) //css3
-            +tech_skill_bar(4, 70%) //html5
-            +tech_skill_bar(5, 81%) //lees
-            +tech_skill_bar(6, 84%) //sass
-            +tech_skill_bar(7, 68%) //rwd
-            +tech_skill_bar(8, 70%) //coffee
-            +tech_skill_bar(9, 88%) //gruntjs
-            +tech_skill_bar(10, 70%) //yeoman
-            +tech_skill_bar(11, 80%) //bower
-            +tech_skill_bar(12, 57%) //phonegap
-            +tech_skill_bar(13, 77%) //jade
-            +tech_skill_bar(14, 71%) //jquery
-        &:nth-child(2) //back
-          .wh-part-item-content-element
-            +tech_skill_bar(1, 86%) //nodejs
-            +tech_skill_bar(2, 66%) //mongoosejs
-            +tech_skill_bar(3, 70%) //expressjs
-            +tech_skill_bar(4, 71%) //mongodb
-            +tech_skill_bar(5, 55%) //grails
-            +tech_skill_bar(6, 63%) //j2ee
-            +tech_skill_bar(7, 46%) //hibernate
-        &:nth-child(3) //testing
-          .wh-part-item-content-element
-            +tech_skill_bar(1, 71%) //mocha
-            +tech_skill_bar(2, 89%) //jasmine
-            +tech_skill_bar(3, 81%) //testacular
-
-        &:nth-child(4) //tools
-          .wh-part-item-content-element
-            +tech_skill_bar(1, 77%) //jira
-            +tech_skill_bar(2, 65%) //confluence
-            +tech_skill_bar(3, 48%) //mixpanel
 
 
 ////////////// CONTACTS
@@ -696,7 +692,7 @@ body
   .wh-contacts
     ul
       display: inline-block
-      margin-top: 2em
+      margin-top: 3em
 
 .wh-contact
   float: none
@@ -708,7 +704,7 @@ body
   color: $color-section-contacts
   font-size: 2em
   float: left
-  padding-bottom: .3em
+  padding-bottom: .5em
 
   span
     display: none

@@ -16,34 +16,39 @@
 //  100%
 //    opacity: 0
 
-@mixin cv-section-colors($color, $section-key)
+@mixin cv-section-colors($color, $section-key, $darken: 10%, $top-darken: $darken)
+
+  $darken-color: darken($color, $darken)
+  $top-darken-color: darken($color, $top-darken)
+
   [data-wh-current-section="#{$section-key}"]
 
     #to-top
-      color: $color
-      +bottom_shadow_and_hover(darken($color, 20%))
+
+      color: $top-darken-color
+      +bottom_shadow_and_hover($top-darken-color)
       &:hover
         bottom: .6em
     .header-container
-      border-bottom: 5px solid darken($color, 10%)
+      border-bottom: 5px solid $darken-color
     .wh-header-name
-      color: $color
+      color: $darken-color
     .wh-header-options.select
-      border-color: $color
+      border-color: $darken-color
       select
-        color: $color
+        color: $darken-color
       &:after
-        color: $color
+        color: $darken-color
 
   .wh-cv-part.#{$section-key}
     background: $color
-    border-bottom: 5px solid darken($color, 10%)
+    border-bottom: 5px solid $darken-color
 
   .wh-header-option.#{$section-key}
     &.current,
     &:hover
       a
-        color: $color
+        color: $darken-color
 
 @mixin tech_skill_bar($pos, $width)
   &:nth-child(#{$pos})

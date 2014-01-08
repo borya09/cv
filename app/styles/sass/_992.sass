@@ -1,5 +1,13 @@
 .wh-background-image
   background-url: '../images/bilbao3.jpg'
+  height: 20%
+  background-position-y: inherit!important
+  +absolute0
+  &:before
+    position: fixed
+    left: 0
+    right: 0
+    top: $top-fixed-items-768
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////// HEADER
@@ -99,6 +107,18 @@
         width: 3.5em
         background: url(../images/borja.jpg) no-repeat
 
+  //////////////// EXPERIENCIA
+  &.career
+    .wh-part-item
+      &:nth-child(even)
+        .wh-cv-part-item-dates
+          left: .3em
+
+  //////////////// HABILIDADES
+  &.tech_skills
+    &.when-shown:not(.do)
+      .wh-part-item-content-element
+        width: 10%!important
 
   //////////////// HOBBIES
   &.hobbies
