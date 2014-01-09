@@ -58,11 +58,17 @@
 					"description": "Web interna para el equipo de desarrollo, donde se organizan todos los links. <a href='http://www.youtube.com/watch?v=XnBDVrk5AHE'>demo</a> ",
 					"images": [
 						{
-							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/661a984d-9969-4e71-bb05-08f51b8ae031.png"
+							"link": "images/upp_landing1.png",
+							"description": "ver imagen",
+							"src": "images/upp_landing1.png"
 						},{
-							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/20e9dc89-48e4-49e8-b796-4a1ea0a70da1.png"
+							"link": "images/upp_landing2.png",
+							"description": "ver imagen",
+							"src": "images/upp_landing2.png"
 						},{
-							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/345673bd-28cd-48f5-b6aa-3d3e1298a22f.png"
+							"link": "images/upp_landing3.png",
+							"description": "ver imagen",
+							"src": "images/upp_landing3.png"
 						}
 					],
 					"content": [
@@ -75,11 +81,17 @@
 					"description": "Desarrollo / Arquitectura de las webapps/apps construidas a partir de la herramienta <a href='https://github.com/Upplication/banana'>Upplication</a>",
 					"images": [
 						{
+							"link": "images/upp_base1.png",
+							"description": "ver imagen",
 							"src": "images/upp_base1.png"
 						},{
-							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/85e5f5cc-cece-4f0f-93f7-c9294c0d0bbb.png"
+							"link": "images/upp_base2.png",
+							"description": "ver imagen",
+							"src": "images/upp_base2.png"
 						},{
-							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/a08dfed9-bfdc-4023-94e1-4cf4c5c3890f.png"
+							"link": "images/upp_base3.png",
+							"description": "ver imagen",
+							"src": "images/upp_base3.png"
 						}
 					],
 					"content": [
@@ -93,15 +105,15 @@
 					]
 				},{
 					"title": "Banana Time!",
-					"description": "Desarrollo / Maquetación del proyecto <a href='https://github.com/Upplication/banana'>Banana Time!</a>",
+					"description": "Desarrollo / Maquetación del proyecto <a href='http://upplication.github.io/banana/'>Banana Time!</a> <a href='https://github.com/Upplication/banana'>[src]</a>",
 					"images": [
 						{
-							"link": "http://upplication.github.io/banana/",
-							"description": "ver web",
+							"link": "images/banana2.jpg",
+							"description": "ver imagen",
 							"src": "images/banana2.jpg"
 						},{
-							"link": "http://upplication.github.io/banana/",
-							"description": "ver web",
+							"link": "images/banana.jpg",
+							"description": "ver imagen",
 							"src": "images/banana.jpg"
 						}
 					],
@@ -114,21 +126,21 @@
 					]
 				},{
 					"title": "Whoru",
-					"description": "Desarrollo del proyecto <a href='https://github.com/borya09/whoru'>Whoru</a> y maquetación de la <a href='https://github.com/borya09/whoru/tree/demo'>demo</a> y esta página",
+					"description": "Desarrollo del proyecto <a href='https://github.com/borya09/whoru'>Whoru</a> y maquetación de la <a href='http://borya09.github.io/whoru/'>demo</a> y esta página",
 					"images": [
 						{
-							"link": "http://borya09.github.io/whoru/",
-							"description": "ver web",
+							"link": "images/whoru1.jpg",
+							"description": "ver imagen",
 							"src": "images/whoru1.jpg"
 						},
 						{
-							"link": "http://borya09.github.io/whoru/",
-							"description": "ver web",
+							"link": "images/whoru2.png",
+							"description": "ver imagen",
 							"src": "images/whoru2.png"
 						},
 						{
-							"link": "http://borya09.github.io/whoru/",
-							"description": "ver web",
+							"link": "images/whoru3.png",
+							"description": "ver imagen",
 							"src": "images/whoru3.png"
 						}
 					],
@@ -182,12 +194,12 @@
 			"key": "career",
 			"content": [
 				{
-					"title": "Desarrollador Frontend en Upplication",
+					"title": "Desarrollador Front en Upplication",
 					"when": "2013",
 					"images": [
 						{
 							"link": "http://www.upplication.com",
-							"description": "Upplication",
+							"description": "Ir a Upplication",
 							"src": "images/upplication.png"
 						}
 					],
@@ -204,7 +216,7 @@
 					"images": [
 						{
 							"link": "http://www.virtualsw.com",
-							"description": "Virtualsw",
+							"description": "Ir a Virtualsw",
 							"src": "images/virtualsw.png"
 						}
 					],
@@ -218,7 +230,7 @@
 					"images": [
 						{
 							"link": "http://www.mnemo.com",
-							"description": "Mnemo",
+							"description": "Ir a Mnemo",
 							"src": "images/mnemo.jpg"
 						}
 					],
