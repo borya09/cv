@@ -3,9 +3,14 @@
 	"header":"contact",
 	"contacts": [
 		{
-			"type": "web",
-			"value": "http://borja.upplication.com",
-			"icon": "Z"
+			"type": "phone",
+			"value": "+34679699965",
+			"icon": "U"
+		},
+		{
+			"type": "mail",
+			"value": "borya09@gmail.com",
+			"icon": "1"
 		},
 		{
 			"type": "web",
@@ -38,14 +43,9 @@
 			"icon": "b"
 		},
 		{
-			"type": "phone",
-			"value": "+34679699965",
-			"icon": "U"
-		},
-		{
-			"type": "mail",
-			"value": "borya09@gmail.com",
-			"icon": "1"
+			"type": "web",
+			"value": "http://borja.upplication.com",
+			"icon": "Z"
 		}
 	]
 }
