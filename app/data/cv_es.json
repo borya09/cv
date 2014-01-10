@@ -220,9 +220,8 @@
 							"src": "images/virtualsw.png"
 						}
 					],
-					"content": [
-						"Análisis / Desarrollo (front & back) de aplicaciones web J2EE / Grails"
-					]
+					"description": "Análisis / Desarrollo (front & back) de aplicaciones web J2EE / Grails"
+
 				},
 				{
 					"title": "Programador Junior en Mnemo",
@@ -234,9 +233,8 @@
 							"src": "images/mnemo.jpg"
 						}
 					],
-					"content": [
-						"Desarrollo web del portal financiero www.bbk.es."
-					]
+					"description": "Desarrollo web del portal financiero <a href='http://www.bbk.es'>www.bbk.es</a>"
+
 				}
 			]
 		},

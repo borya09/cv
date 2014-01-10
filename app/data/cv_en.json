@@ -221,9 +221,7 @@
 							"src": "images/virtualsw.png"
 						}
 					],
-					"content": [
-						"Analysis / development (front & back) of web applications with J2EE & Grails"
-					]
+					"description": "Analysis / development (front & back) of web applications with J2EE & Grails"
 				},
 				{
 					"title": "Junior developer in Mnemo",
@@ -235,9 +233,7 @@
 							"src": "images/mnemo.jpg"
 						}
 					],
-					"content": [
-						"Development of the financial web portal www.bbk.es"
-					]
+					"description": "Development of the financial web portal <a href='http://www.bbk.es'>www.bbk.es</a>"
 				}
 			]
 		},

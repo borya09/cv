@@ -71,3 +71,10 @@
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
 
+@mixin aHover($color, $backcolor)
+  a
+    padding: 0 .3em
+    &:hover
+      text-decoration: none
+      background: $backcolor
+      color: $color

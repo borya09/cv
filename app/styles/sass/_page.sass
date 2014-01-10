@@ -381,6 +381,10 @@ body
 
 
 
+  //////////////// PRESENTATION
+  &.presentation
+    +aHover(white, black)
+
   //////////////// TRABAJOS & EXPERIENCIA
   &.work,
   &.career
@@ -501,7 +505,11 @@ body
         &.more
           cursor: pointer
           &:hover
-            background: rgba(145, 145, 145, 0.20)
+            background: rgba(145, 145, 145, .2)
+            background: linear-gradient(top, rgba(145, 145, 145, .04) 0, rgba(145, 145, 145, .2) 50%, rgba(145, 145, 145, .04) 100%)
+            background: -moz-linear-gradient(top, rgba(145, 145, 145, .04) 0, rgba(145, 145, 145, .2) 50%, rgba(145, 145, 145, .04) 100%)
+            background: -webkit-linear-gradient(top, rgba(145, 145, 145, .04) 0, rgba(145, 145, 145, .2) 50%, rgba(145, 145, 145, .04) 100%)
+
             +transition-duration(.25s)
             +transition-property(background)
 
@@ -540,6 +548,7 @@ body
     .wh-cv-part-item-description
       a
         color: black
+      +aHover(white, black)
 
     .wh-part-item-content-element
       background: $red-color
@@ -594,6 +603,11 @@ body
       padding: 0
       font-size: 1.1em
       margin: 1em 0
+
+    .wh-cv-part-item-description
+      a
+        color: darken($color-section-career, 10%)
+      +aHover(black, darken($color-section-career, 10%))
 
   //////////////// HABILIDADES
   &.tech_skills
