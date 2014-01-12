@@ -7,7 +7,7 @@
 			"key": "presentation",
 			"content": [
 				{
-					"description": "... Borja Andrés, bilbaíno, del Barça, y residente en Madrid."
+					"description": "... Borja Andrés, bilbaíno, del Barça, y residente en Madrid"
 				},
 				{
 					"description": "Estudié Informática en la Universidad de Deusto (Bilbao), aunque antes de ello ya me gustaba hacer mis propias páginas web (la temática te la cuento en privado).​"
@@ -35,15 +35,15 @@
 						{
 							"link": "http://eskorbuto.upplication.com",
 							"description": "ver web",
-							"src": "images/upp_templates1.png"
+							"src": "images/upp_templates2c.jpg"
 						},{
 							"link": "http://borja.upplication.com",
 							"description": "ver web",
-							"src": "images/upp_templates3.png"
+							"src": "images/upp_templates1c.jpg"
 						},{
 							"link": "http://borjarendemodenda.upplication.com",
 							"description": "ver web",
-							"src": "images/upp_templates2.png"
+							"src": "images/upp_templates3b.jpg"
 						}
 					],
 					"content": [
@@ -58,17 +58,17 @@
 					"description": "Web interna para el equipo de desarrollo, donde se organizan todos los links. <a href='http://www.youtube.com/watch?v=XnBDVrk5AHE'>demo</a> ",
 					"images": [
 						{
-							"link": "images/upp_landing1.png",
+							"link": "images/upp_landing1_big.jpg",
 							"description": "ver imagen",
-							"src": "images/upp_landing1.png"
+							"src": "images/upp_landing1.jpg"
 						},{
-							"link": "images/upp_landing2.png",
+							"link": "images/upp_landing2_big.jpg",
 							"description": "ver imagen",
-							"src": "images/upp_landing2.png"
+							"src": "images/upp_landing2.jpg"
 						},{
-							"link": "images/upp_landing3.png",
+							"link": "images/upp_landing3_big.jpg",
 							"description": "ver imagen",
-							"src": "images/upp_landing3.png"
+							"src": "images/upp_landing3.jpg"
 						}
 					],
 					"content": [
@@ -78,20 +78,20 @@
 					]
 				},{
 					"title": "Upplication webapps/apps",
-					"description": "Desarrollo / Arquitectura de las webapps/apps construidas a partir de la herramienta <a href='https://github.com/Upplication/banana'>Upplication</a>",
+					"description": "Desarrollo / Arquitectura de las webapps/apps construidas a partir de la herramienta <a href='http://www.upplication.com'>Upplication</a>",
 					"images": [
 						{
-							"link": "images/upp_base1.png",
+							"link": "images/upp_base1_big.jpg",
 							"description": "ver imagen",
-							"src": "images/upp_base1.png"
+							"src": "images/upp_base1.jpg"
 						},{
-							"link": "images/upp_base2.png",
+							"link": "images/upp_base2_big.jpg",
 							"description": "ver imagen",
-							"src": "images/upp_base2.png"
+							"src": "images/upp_base2.jpg"
 						},{
-							"link": "images/upp_base3.png",
+							"link": "images/upp_base3_big.jpg",
 							"description": "ver imagen",
-							"src": "images/upp_base3.png"
+							"src": "images/upp_base3.jpg"
 						}
 					],
 					"content": [
@@ -108,13 +108,13 @@
 					"description": "Desarrollo / Maquetación del proyecto <a href='http://upplication.github.io/banana/'>Banana Time!</a> <a href='https://github.com/Upplication/banana'>[src]</a>",
 					"images": [
 						{
-							"link": "images/banana2.jpg",
+							"link": "images/banana2_big.jpg",
 							"description": "ver imagen",
 							"src": "images/banana2.jpg"
 						},{
-							"link": "images/banana.jpg",
+							"link": "images/banana1_big.jpg",
 							"description": "ver imagen",
-							"src": "images/banana.jpg"
+							"src": "images/banana1.jpg"
 						}
 					],
 					"content": [
@@ -129,19 +129,19 @@
 					"description": "Desarrollo del proyecto <a href='https://github.com/borya09/whoru'>Whoru</a> y maquetación de la <a href='http://borya09.github.io/whoru/'>demo</a> y esta página",
 					"images": [
 						{
-							"link": "images/whoru1.jpg",
+							"link": "images/whoru1_big.jpg",
 							"description": "ver imagen",
 							"src": "images/whoru1.jpg"
 						},
 						{
-							"link": "images/whoru2.png",
+							"link": "images/whoru2_big.jpg",
 							"description": "ver imagen",
-							"src": "images/whoru2.png"
+							"src": "images/whoru2.jpg"
 						},
 						{
-							"link": "images/whoru3.png",
+							"link": "images/whoru3_big.jpg",
 							"description": "ver imagen",
-							"src": "images/whoru3.png"
+							"src": "images/whoru3.jpg"
 						}
 					],
 					"content": [
