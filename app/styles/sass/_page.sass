@@ -75,14 +75,14 @@ body
   width: 0
 
 .wh-header-name
+  font-family: 'Raleway', sans-serif
+  font-weight: 900
   position: relative
   float: left
   padding-right: .2em
   color: $color-first-section
-  font-family: 'Roboto', sans-serif
   text-transform: uppercase
   top: -9999px
-  font-weight: 700
   font-size: 1.7em
 
 .wh-header-surname1,
@@ -162,8 +162,9 @@ body
     +transition-property(all)
     +transition-duration(.5s)
     color: black
-    font-family: 'Open Sans', sans-serif
-    font-weight: 700
+    font-family: 'Raleway', sans-serif
+    font-weight: 900
+    letter-spacing: .05em
     font-size: .8em
     color: rgb(83, 88, 94)
 
@@ -326,12 +327,13 @@ body
 
 
 .wh-generic-section-title
-  font-family: 'Open Sans', sans-serif
+  font-family: 'Raleway', sans-serif
   text-transform: uppercase
-  font-weight: 300
+  font-weight: 900
   font-size: 2.5em
   margin: 1em auto
   display: inline-block
+  letter-spacing: .1em
   padding: .1em .2em
   color: #FFFFFF
   position: relative
@@ -660,9 +662,7 @@ body
           +tech_skill_bar(3, 48%) //mixpanel
 
     .wh-cv-part-item-title
-      text-transform: uppercase
       margin-bottom: 1em
-      font-family: 'Open Sans', sans-serif
       text-transform: capitalize
       font-style: italic
       color: black
