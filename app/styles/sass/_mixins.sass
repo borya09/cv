@@ -24,7 +24,6 @@
   [data-wh-current-section="#{$section-key}"]
 
     #to-top
-
       color: $top-darken-color
       +bottom_shadow_and_hover($top-darken-color)
       &:hover
@@ -43,6 +42,10 @@
   .wh-cv-part.#{$section-key}
     background: $color
     border-bottom: 5px solid $darken-color
+
+  .#{$section-key}
+    .wh-generic-section-title
+      text-shadow: 0px 5px 0px $darken-color
 
   .wh-header-option.#{$section-key}
     &.current,
