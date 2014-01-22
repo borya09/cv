@@ -14,6 +14,11 @@
 		},
 		{
 			"type": "web",
+			"value": "https://github.com/borya09/",
+			"icon": "t"
+		},
+		{
+			"type": "web",
 			"value": "http://www.linkedin.com/in/borjaandres",
 			"icon": "G"
 		},
@@ -23,8 +28,8 @@
 			"icon": "3"
 		},
 		{
-			"type": "mail",
-			"value": "borya09@hotmail.com",
+			"type": "web",
+			"value": "skype:borya09?chat",
 			"icon": "F"
 		},
 		{
@@ -34,8 +39,8 @@
 		},
 		{
 			"type": "web",
-			"value": "https://github.com/borya09/",
-			"icon": "t"
+			"value": "http://www.endomondo.com/profile/3047593",
+			"icon": "%"
 		},
 		{
 			"type": "web",
