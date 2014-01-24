@@ -1,6 +1,6 @@
 
 'use strict'
-((angular) ->
+do (angular = angular) ->
 
   angular.module('whoruApp')
     .directive('whSliderSelector', ->
@@ -8,58 +8,52 @@
         restrict: 'C',
         replace: false
         scope:{
-          list:'='
+          item:'='
         },
         controller: ['$scope', ($scope) ->
-
-          list = $scope.list
+          item = $scope.item
+          images = item.images
           currentPos = 0
 
-          $scope.morePrev = false
-          $scope.moreNext = true
+          item.morePrev = false
+          item.moreNext = true
 
           setCurrent = ->
-            item = list[currentPos]
-            item.current = true if item
+            currentItem = images[currentPos]
+            currentItem.current = true if currentItem
 
           removeCurrent = ->
-            item = list[currentPos]
-            item.current = false if item
+            currentItem = images[currentPos]
+            currentItem.current = false if currentItem
 
 
           setIfMore = ->
-
-            $scope.morePrev = currentPos > 0
-            $scope.moreNext = currentPos < (list.length - 1)
-
+            item.morePrev = currentPos > 0
+            item.moreNext = currentPos < (images.length - 1)
 
 
-          $scope.previous = ->
+          item.previous = ->
             do removeCurrent
             currentPos-- if currentPos > 0
             do setIfMore
             do setCurrent
 
-
-          $scope.next = ->
+          item.next = ->
             do removeCurrent
-            currentPos++ if currentPos < (list.length - 1)
+            currentPos++ if currentPos < (images.length - 1)
             do setIfMore
             do setCurrent
-
 
           do setCurrent
           do setIfMore
         ]
         template: '''
-          <button class="previous" ng-class="morePrev? 'more' : 'no-more' " ng-click="previous()">
+          <button class="previous" ng-class="item.morePrev? 'more' : 'no-more' " ng-click="item.previous()">
             <span>‹</span>
           </button>
-          <button class="next" ng-class="moreNext? 'more' : 'no-more' " ng-click="next()">
+          <button class="next" ng-class="item.moreNext? 'more' : 'no-more' " ng-click="item.next()">
             <span>›</span>
           </button>
         '''
       }
     )
-
-) angular

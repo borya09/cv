@@ -72,6 +72,9 @@
     .wh-cv-part-item-title
       text-align: left
 
+
+
+
 .wh-cv-part
 
   //////////////// SOY & HOBBIES
@@ -147,3 +150,20 @@
       width: 47%
       margin: 0 1.5% 2% 1.5%
 
+  &.career,
+  &.work
+    .wh-cv-part-item-image
+      .desc
+        font-size: 100%
+        right: 30%
+        left: 30%
+        bottom: 40%
+        top: 40%
+        line-height: 2.2em
+        padding: 0
+        opacity: 0
+      &:hover
+        .desc
+          opacity: 1
+          +transition-duration(.3s)
+          +transition-property(opacity)

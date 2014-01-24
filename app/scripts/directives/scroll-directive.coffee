@@ -3,7 +3,7 @@
 
 # TODO: TEST
 
-((angular, $) ->
+do (angular = angular, $ = $) ->
 
   angular.module('whoruApp')
     .directive 'body', () ->
@@ -124,4 +124,3 @@
       link: (scope, elem, attrs, affix) ->
         affix.addBackgroundYPositionScrollSpied elem
 
-) angular, $

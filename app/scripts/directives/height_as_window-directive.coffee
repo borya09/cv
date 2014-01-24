@@ -3,7 +3,7 @@
 
 
 # TODO: TEST
-((angular, $) ->
+do (angular = angular, $ = $) ->
 
   angular.module('whoruApp')
     .directive 'heightAsWindow', ($window) ->
@@ -28,4 +28,3 @@
 
         do setHeight
 
-) angular, $
