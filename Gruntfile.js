@@ -284,7 +284,7 @@ module.exports = function (grunt) {
 							'*.{ico,png,txt}',
 							'.htaccess',
 							'bower_components/**/*',
-							'images/{,*/}*.{gif,jpg,webp}',
+							'images/{,*/}*.{gif,jpg,png,webp}',
 							'styles/fonts/**/*',
 							'data/*.json'
 						]
@@ -328,8 +328,8 @@ module.exports = function (grunt) {
 			dist: [
 				'coffee',
 				'copy:styles',
-				//'imagemin',
-				//'svgmin',
+				/*'imagemin',
+				'svgmin',*/
 				'htmlmin',
 				'compass'
 			]
