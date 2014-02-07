@@ -7,19 +7,19 @@
 			"key": "presentation",
 			"content": [
 				{
-					"description": "... Borja Andrés, from bilbao, fan of Barça, and living in Madrid"
+					"description": "... Borja Andrés, from bilbao, fan of Barça, and currently living in Madrid"
 				},
 				{
-					"description": "I studied Computer Engineering at ‘Universidad de Deusto’ (Bilbao) but, before this, I liked to build my own web pages (I'll tell you the thematic of these in private).​"
+					"description": "I studied Computer Engineering at ‘Universidad de Deusto’ (Bilbao) but before this, I have always had an interest in building my own web pages."
 				},
 				{
-					"description": "Once I finished (2008), I decided to come to Madrid to work, with my girlfriend, until today ..."
+					"description": "Once I finished my degree in 2008, I moved to Madrid for work and I have been here ever since."
 				},
 				{
-					"description": "First I worked as a web developer in <a href=\"http://www.virtualsw.com/\">Virtual Software</a>, doing things in back-end, front-end, related with databases, analysis, ... a bit of everything. Although primarily specializing in front"
+					"description": "My first job was working as a web developer in <a href=\"http://www.virtualsw.com/\">Virtual Software</a>, developing various items in back-end, front-end, related with databases, analysis, ... a bit of everything really. Although primarily specializing in front."
 				},
 				{
-					"description": "In January (2013) I joined the team of <a href=\"http://upplication.com\">Upplication</a>, as a front-end developer exclusively, with the responsability of choosing the architecture, frameworks, languages​​, ... to be used in this part but, when I can, I escape to the back-end or automation to play with nodejs or gruntjs."
+					"description": "In January 2013 I joined the team at <a href=\"http://upplication.com\">Upplication</a>, exclusively as a front-end developer , with the responsibility of choosing the architecture, frameworks, languages, etc to be used in this part but, when I can, I escape to the back-end or automation to play with nodejs or gruntjs"
 				}
 			]
 
@@ -106,7 +106,7 @@
 					]
 				},{
 					"title": "Banana Time!",
-					"description": "Development & Layout of the project <a href='http://upplication.github.io/banana/'>Banana Time!</a> <a href='https://github.com/Upplication/banana'>[src]</a>",
+					"description": "Development / Layout of the project <a href='http://upplication.github.io/banana/'>Banana Time!</a> <a href='https://github.com/Upplication/banana'>[src]</a>",
 					"images": [
 						{
 							"link": "images/banana2_big.jpg",
@@ -243,16 +243,16 @@
 			"key": "hobbies",
 			"content": [
 				{
-					"description": "Learn a lot about new technologies, specially investigating by myself or attending to meetups, conferences, ..."
+					"description": "Learning about new technologies, especially through personal study or attending conferences, ..."
 				},
 				{
-					"description": "Cycling & running on trails"
+					"description": "Off-road cyclying and road running."
 				},
 				{
-					"description": "Drink some beers in Bilbao with my girlfriend, friends, parents..."
+					"description": "Drinking beers and socialising in Bilbao with my girlfriend, friends and parents... "
 				},
 				{
-					"description": "Barça fan. I'm from bilbao and fan of Barça. Mi father (former supporter of Athletic) still doesn't know what did he do badly with me."
+					"description": "Barça fan. I'm from bilbao and a fan of Barça. Mi father (former supporter of Athletic) still doesn't know what he did badly with me."
 				}
 			]
 		}
