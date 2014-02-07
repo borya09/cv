@@ -3,26 +3,28 @@
 
 
 # TODO: TEST
-angular.module('whoruApp')
-  .directive 'heightAsWindow', ($window) ->
-    restrict: 'A'
-    link: (scope, elem, attrs) ->
+do (angular = angular, $ = $) ->
 
-      $$window = $ $window
-      $header = $ '.header-container'
+  angular.module('whoruApp')
+    .directive 'heightAsWindow', ($window) ->
+      restrict: 'A'
+      link: (scope, elem, attrs) ->
 
-      includeHeader = attrs['heightAsWindow'] is 'header'
+        $$window = $ $window
+        $header = $ '.header-container'
 
-      setHeight = ->
-        height = $$window.height()
+        includeHeader = attrs['heightAsWindow'] is 'header'
 
-        if includeHeader
-          height -= ($header.height() - 10)
+        setHeight = ->
+          height = $$window.height()
 
-        elem.css('min-height', height)
+          if includeHeader
+            height -= ($header.height() - 10)
 
-      $$window.resize ->
+          elem.css('min-height', height)
+
+        $$window.resize ->
+          do setHeight
+
         do setHeight
-
-      do setHeight
 

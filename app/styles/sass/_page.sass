@@ -419,22 +419,18 @@ body
 
       .desc
         position: absolute
-        right: 30%
-        left: 30%
-        bottom: 40%
-        top: 40%
-        line-height: 2.2em
-        opacity: 0
+        right: .5em
+        left: auto
+        bottom: .5em
+        top: auto
+        padding: .3em .8em
+        opacity: 1
         font-weight: 300
         text-align: center
         color: white
+        font-size: 70%
         +border-radius(5px)
 
-      &:hover
-        .desc
-          opacity: 1
-          +transition-duration(.3s)
-          +transition-property(opacity)
 
     .wh-cv-part-item-description,
     .wh-part-item-content
@@ -507,11 +503,9 @@ body
         &.more
           cursor: pointer
           &:hover
-            background: rgba(145, 145, 145, .2)
-            background: linear-gradient(top, rgba(145, 145, 145, .04) 0, rgba(145, 145, 145, .2) 50%, rgba(145, 145, 145, .04) 100%)
-            background: -moz-linear-gradient(top, rgba(145, 145, 145, .04) 0, rgba(145, 145, 145, .2) 50%, rgba(145, 145, 145, .04) 100%)
-            background: -webkit-linear-gradient(top, rgba(145, 145, 145, .04) 0, rgba(145, 145, 145, .2) 50%, rgba(145, 145, 145, .04) 100%)
-
+            $base-color: rgba(145, 145, 145, .2)
+            background: $base-color
+            +backGradient(top, rgba(145, 145, 145, .04) 0, $base-color 50%, rgba(145, 145, 145, .04) 100%)
             +transition-duration(.25s)
             +transition-property(background)
 

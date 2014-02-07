@@ -17,12 +17,11 @@ section.wh-cv(ng-controller="CvCtrl", ng-show='cv.parts.length')
                         span.wh-cv-part-item-date.from(ng-if='item.from') {{item.from}}
                         span.wh-cv-part-item-date.until(ng-if='item.until') {{item.until}}
 
-
                     .wh-cv-part-item-images-wrapper.wh-slider(ng-if='item.images')
 
-                        .wh-slider-selector(ng-if='item.images.length > 1', data-list='item.images')
+                        .wh-slider-selector(ng-if='item.images.length > 1', data-item='item')
 
-                        ul.wh-cv-part-item-images.wh-slider-list
+                        ul.wh-cv-part-item-images.wh-slider-list(class="nonDraggable", ng-swipe-right="item.previous()", ng-swipe-left="item.next()")
 
                             li.wh-cv-part-item-image.wh-slider-item(ng-repeat='image in item.images', ng-class='image.current || $parent.item.images.length == 1? "current" : "" ', ng-style="{'background-image':'url('+image.src+')'}")
                                 a(ng-if="image.link", ng-href="{{image.link}}", title="{{image.link}}", target="_blank")

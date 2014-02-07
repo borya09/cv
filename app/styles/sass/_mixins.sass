@@ -81,3 +81,8 @@
       text-decoration: none
       background: $backcolor
       color: $color
+
+@mixin backGradient($gradient...)
+  background: #{'linear-gradient('+$gradient+')'} //without applying style as string, it fails -> tries to use some mixin?
+  background: -moz-linear-gradient($gradient)
+  background: -webkit-linear-gradient($gradient)
