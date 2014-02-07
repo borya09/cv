@@ -6,8 +6,7 @@
     <title>Borja Andrés - Frontender</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory-->
-    <link rel="stylesheet" href="styles/5f95e579.main.css">
+    <link rel="stylesheet" href="styles/34dfc66f.main.css">
     <script type="text/javascript">document.write('<base href="' + document.location + '" />');</script>
   </head>
   <body>
@@ -42,7 +41,8 @@
             <div ng-if="intro.surname2" class="wh-intro-surname2">{{intro.surname2}}</div>
           </div>
           <h2 class="wh-intro-summary">{{intro.summary}}</h2>
-          <div ng-if="intro.image" class="wh-intro-image-wrapper"><img ng-src="{{intro.image}}" title="{{intro.fullname()}}" class="wh-intro-image"></div>
+          <!--.wh-intro-image-wrapper(ng-if="intro.image")<img ng-src="{{intro.image}}" title="{{intro.fullname()}}" class="wh-intro-image">
+          -->
           <p ng-show="intro.description" ng-bind-html="intro.description" class="wh-intro-description"></p>
         </section>
         <section ng-controller="CvCtrl" ng-show="cv.parts.length" class="wh-cv">
@@ -55,9 +55,9 @@
                   <h4 ng-if="item.title" class="wh-cv-part-item-title">{{item.title}}</h4>
                   <div ng-if="item.when || item.from || item.until" class="wh-cv-part-item-dates"><span ng-if="item.when" class="wh-cv-part-item-date when">{{item.when}}</span><span ng-if="item.from" class="wh-cv-part-item-date from">{{item.from}}</span><span ng-if="item.until" class="wh-cv-part-item-date until">{{item.until}}</span></div>
                   <div ng-if="item.images" class="wh-cv-part-item-images-wrapper wh-slider">
-                    <div ng-if="item.images.length &gt; 1" data-list="item.images" class="wh-slider-selector"></div>
-                    <ul class="wh-cv-part-item-images wh-slider-list">
-                      <li ng-repeat="image in item.images" ng-class="image.current || $parent.item.images.length == 1? &quot;current&quot; : &quot;&quot; " style="background-image:url({{image.src}})" class="wh-cv-part-item-image wh-slider-item"><a ng-if="image.link" ng-href="{{image.link}}" title="{{image.link}}" target="_blank">
+                    <div ng-if="item.images.length &gt; 1" data-item="item" class="wh-slider-selector"></div>
+                    <ul ng-swipe-right="item.previous()" ng-swipe-left="item.next()" class="wh-cv-part-item-images wh-slider-list nonDraggable">
+                      <li ng-repeat="image in item.images" ng-class="image.current || $parent.item.images.length == 1? &quot;current&quot; : &quot;&quot; " ng-style="{'background-image':'url('+image.src+')'}" class="wh-cv-part-item-image wh-slider-item"><a ng-if="image.link" ng-href="{{image.link}}" title="{{image.link}}" target="_blank">
                           <h5 ng-if="image.description" class="desc">{{image.description}}</h5></a>
                         <h5 ng-if="!image.link &amp;&amp; image.description" class="desc">{{image.description}}</h5>
                       </li>
@@ -72,23 +72,6 @@
             </div>
           </article>
         </section>
-        <section ng-controller="QuestionsCtrl" id="{{id}}" ng-show="questions.length" spy-current-section="" height-as-window="header" class="wh-questions wh-generic-section when-shown">
-          <h3 class="wh-generic-section-title">{{ title }}</h3>
-          <div class="wh-generic-section-content">
-            <p ng-if="description" class="wh-questions-description">{{ description }}</p>
-            <ol>
-              <li ng-repeat="question in questions" class="wh-question">
-                <h4 class="wh-question-statement">{{ question.question }}</h4>
-                <ol>
-                  <li ng-repeat="option in question.options" class="wh-question-option">
-                    <input type="{{question.type}}" id="{{option.id}}" name="{{option.name}}" ng-model="option.checked" ng-change="questionsSubmit()">
-                    <label for="{{option.id}}">{{option.title}}</label>
-                  </li>
-                </ol>
-              </li>
-            </ol>
-          </div>
-        </section>
       </div>
       <div class="wh-background-image background-y-position-scroll"></div>
     </div>
@@ -96,7 +79,7 @@
       <footer class="wh-footer wrapper">
         <div ng-controller="ContactsCtrl" id="{{id}}" spy-current-section="" height-as-window="header" class="wh-contacts wh-generic-section when-shown">
           <ul ng-show="contacts.length" class="wh-generic-section-content">
-            <li ng-repeat="contact in contacts" class="wh-contact"><a ng-href="{{contact.type=='phone'?'tel:':contact.type=='mail'?'mailto:':''}}{{contact.value}}" title="{{contact.value}}" data-wh-icon="{{contact.icon}}" ng-class="contact.type" class="wh-contact-icon"><span>{{contact.value}}</span></a></li>
+            <li ng-repeat="contact in contacts" class="wh-contact"><a target="_blank" ng-href="{{contact.type=='phone'?'tel:':contact.type=='mail'?'mailto:':''}}{{contact.value}}" title="{{contact.value}}" data-wh-icon="{{contact.icon}}" ng-class="contact.type" class="wh-contact-icon"><span>{{contact.value}}</span></a></li>
           </ul>
         </div>
       </footer>
@@ -108,10 +91,20 @@
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-46789871-1', 'borjaandres.com');
       ga('send', 'pageview');
+      
     </script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="scripts/018ad69d.modules.js"></script>
-    <script src="scripts/755bbd31.scripts.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+      window.jQuery || document.write('<script src="bower_components/jquery/jquery.min.js"><\/script>')
+      
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js"></script>
+    <script type="text/javascript">
+      window.angular || document.write('<script src="bower_components/angular/angular.min.js"><\/script>')
+      
+      
+    </script>
+    <script src="scripts/ba894151.modules.js"></script>
+    <script src="scripts/86955ac1.scripts.js"></script>
   </body>
 </html>

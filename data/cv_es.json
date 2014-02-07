@@ -13,13 +13,13 @@
 					"description": "Estudié Informática en la Universidad de Deusto (Bilbao), aunque antes de ello ya me gustaba hacer mis propias páginas web (la temática te la cuento en privado).​"
 				},
 				{
-					"description": "Una vez que terminé (2008), decidí venirme a Madrid a buscar trabajo, con mi novía, hasta hoy ..."
+					"description": "Una vez terminé en el 2008, decidí venirme a Madrid a buscar trabajo, con mi novia, hasta hoy ..."
 				},
 				{
 					"description": "Primero trabajé como desarrollador web en <a href=\"http://www.virtualsw.com/\">Virtual Software</a>, haciendo cosas en back, front, base de datos, análisis,... un poco de todo. Aunque sobre todo especializándome en front."
 				},
 				{
-					"description": "En enero (2013) entré a formar parte del equipo de <a href=\"http://upplication.com\">Upplication</a>, como desarrollador front-end exclusivamente, con la reponsabilidad de elegir la arquitectura, frameworks, lenguajes,... a usar en esta parte; aunque cuando puedo me escapo al back en node.js o a la automatización con grunt.js, que también me interesa bastante."
+					"description": "En enero del 2013 entré a formar parte del equipo de <a href=\"http://upplication.com\">Upplication</a>, como desarrollador front-end exclusivamente, con la reponsabilidad de elegir la arquitectura, frameworks, lenguajes,... a usar en esta parte; aunque cuando puedo me escapo al back en node.js o a la automatización con grunt.js, que también me interesa bastante."
 				}
 			]
 		},
@@ -35,15 +35,15 @@
 						{
 							"link": "http://eskorbuto.upplication.com",
 							"description": "ver web",
-							"src": "images/upp_templates1.png"
+							"src": "images/upp_templates2c.jpg"
 						},{
 							"link": "http://borja.upplication.com",
 							"description": "ver web",
-							"src": "images/upp_templates3.png"
+							"src": "images/upp_templates1c.jpg"
 						},{
 							"link": "http://borjarendemodenda.upplication.com",
 							"description": "ver web",
-							"src": "images/upp_templates2.png"
+							"src": "images/upp_templates3b.jpg"
 						}
 					],
 					"content": [
@@ -58,11 +58,17 @@
 					"description": "Web interna para el equipo de desarrollo, donde se organizan todos los links. <a href='http://www.youtube.com/watch?v=XnBDVrk5AHE'>demo</a> ",
 					"images": [
 						{
-							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/661a984d-9969-4e71-bb05-08f51b8ae031.png"
+							"link": "images/upp_landing1_big.jpg",
+							"description": "ver imagen",
+							"src": "images/upp_landing1.jpg"
 						},{
-							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/20e9dc89-48e4-49e8-b796-4a1ea0a70da1.png"
+							"link": "images/upp_landing2_big.jpg",
+							"description": "ver imagen",
+							"src": "images/upp_landing2.jpg"
 						},{
-							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/345673bd-28cd-48f5-b6aa-3d3e1298a22f.png"
+							"link": "images/upp_landing3_big.jpg",
+							"description": "ver imagen",
+							"src": "images/upp_landing3.jpg"
 						}
 					],
 					"content": [
@@ -72,14 +78,20 @@
 					]
 				},{
 					"title": "Upplication webapps/apps",
-					"description": "Desarrollo / Arquitectura de las webapps/apps construidas a partir de la herramienta <a href='https://github.com/Upplication/banana'>Upplication</a>",
+					"description": "Desarrollo / Arquitectura de las webapps/apps construidas a partir de la herramienta <a href='http://www.upplication.com'>Upplication</a>",
 					"images": [
 						{
-							"src": "images/upp_base1.png"
+							"link": "images/upp_base1_big.jpg",
+							"description": "ver imagen",
+							"src": "images/upp_base1.jpg"
 						},{
-							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/85e5f5cc-cece-4f0f-93f7-c9294c0d0bbb.png"
+							"link": "images/upp_base2_big.jpg",
+							"description": "ver imagen",
+							"src": "images/upp_base2.jpg"
 						},{
-							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/a08dfed9-bfdc-4023-94e1-4cf4c5c3890f.png"
+							"link": "images/upp_base3_big.jpg",
+							"description": "ver imagen",
+							"src": "images/upp_base3.jpg"
 						}
 					],
 					"content": [
@@ -93,16 +105,16 @@
 					]
 				},{
 					"title": "Banana Time!",
-					"description": "Desarrollo / Maquetación del proyecto <a href='https://github.com/Upplication/banana'>Banana Time!</a>",
+					"description": "Desarrollo / Maquetación del proyecto <a href='http://upplication.github.io/banana/'>Banana Time!</a> <a href='https://github.com/Upplication/banana'>[src]</a>",
 					"images": [
 						{
-							"link": "http://upplication.github.io/banana/",
-							"description": "ver web",
+							"link": "images/banana2_big.jpg",
+							"description": "ver imagen",
 							"src": "images/banana2.jpg"
 						},{
-							"link": "http://upplication.github.io/banana/",
-							"description": "ver web",
-							"src": "images/banana.jpg"
+							"link": "images/banana1_big.jpg",
+							"description": "ver imagen",
+							"src": "images/banana1.jpg"
 						}
 					],
 					"content": [
@@ -114,22 +126,22 @@
 					]
 				},{
 					"title": "Whoru",
-					"description": "Desarrollo del proyecto <a href='https://github.com/borya09/whoru'>Whoru</a> y maquetación de la <a href='https://github.com/borya09/whoru/tree/demo'>demo</a> y esta página",
+					"description": "Desarrollo del proyecto <a href='https://github.com/borya09/whoru'>Whoru</a> y maquetación de la <a href='http://borya09.github.io/whoru/'>demo</a> y esta página",
 					"images": [
 						{
-							"link": "http://borya09.github.io/whoru/",
-							"description": "ver web",
+							"link": "images/whoru1_big.jpg",
+							"description": "ver imagen",
 							"src": "images/whoru1.jpg"
 						},
 						{
-							"link": "http://borya09.github.io/whoru/",
-							"description": "ver web",
-							"src": "images/whoru2.png"
+							"link": "images/whoru2_big.jpg",
+							"description": "ver imagen",
+							"src": "images/whoru2.jpg"
 						},
 						{
-							"link": "http://borya09.github.io/whoru/",
-							"description": "ver web",
-							"src": "images/whoru3.png"
+							"link": "images/whoru3_big.jpg",
+							"description": "ver imagen",
+							"src": "images/whoru3.jpg"
 						}
 					],
 					"content": [
@@ -182,12 +194,12 @@
 			"key": "career",
 			"content": [
 				{
-					"title": "Desarrollador Frontend en Upplication",
+					"title": "Desarrollador Front en Upplication",
 					"when": "2013",
 					"images": [
 						{
 							"link": "http://www.upplication.com",
-							"description": "Upplication",
+							"description": "Ir a Upplication",
 							"src": "images/upplication.png"
 						}
 					],
@@ -204,13 +216,12 @@
 					"images": [
 						{
 							"link": "http://www.virtualsw.com",
-							"description": "Virtualsw",
+							"description": "Ir a Virtualsw",
 							"src": "images/virtualsw.png"
 						}
 					],
-					"content": [
-						"Análisis / Desarrollo (front & back) de aplicaciones web J2EE / Grails"
-					]
+					"description": "Análisis / Desarrollo (front & back) de aplicaciones web J2EE / Grails"
+
 				},
 				{
 					"title": "Programador Junior en Mnemo",
@@ -218,13 +229,12 @@
 					"images": [
 						{
 							"link": "http://www.mnemo.com",
-							"description": "Mnemo",
+							"description": "Ir a Mnemo",
 							"src": "images/mnemo.jpg"
 						}
 					],
-					"content": [
-						"Desarrollo web del portal financiero www.bbk.es."
-					]
+					"description": "Desarrollo web del portal financiero <a href='http://www.bbk.es'>www.bbk.es</a>"
+
 				}
 			]
 		},
@@ -243,7 +253,7 @@
 					"description": "Potear por Bilbao con mi novia, amigos, padres, ..."
 				},
 				{
-					"description": "Culé. Sí, soy de Bilbao y del Barça, mi padre (típico socio del Athletic de toda la vida) sigue aún sin explicarse que hizo mal conmigo."
+					"description": "Culé. Sí, soy de Bilbao y del Barça. Mi padre (típico socio del Athletic de toda la vida) sigue aún sin explicarse que hizo mal conmigo."
 				}
 			]
 		}

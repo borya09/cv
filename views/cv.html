@@ -8,9 +8,9 @@
           <h4 ng-if="item.title" class="wh-cv-part-item-title">{{item.title}}</h4>
           <div ng-if="item.when || item.from || item.until" class="wh-cv-part-item-dates"><span ng-if="item.when" class="wh-cv-part-item-date when">{{item.when}}</span><span ng-if="item.from" class="wh-cv-part-item-date from">{{item.from}}</span><span ng-if="item.until" class="wh-cv-part-item-date until">{{item.until}}</span></div>
           <div ng-if="item.images" class="wh-cv-part-item-images-wrapper wh-slider">
-            <div ng-if="item.images.length &gt; 1" data-list="item.images" class="wh-slider-selector"></div>
-            <ul class="wh-cv-part-item-images wh-slider-list">
-              <li ng-repeat="image in item.images" ng-class="image.current || $parent.item.images.length == 1? &quot;current&quot; : &quot;&quot; " style="background-image:url({{image.src}})" class="wh-cv-part-item-image wh-slider-item"><a ng-if="image.link" ng-href="{{image.link}}" title="{{image.link}}" target="_blank">
+            <div ng-if="item.images.length &gt; 1" data-item="item" class="wh-slider-selector"></div>
+            <ul ng-swipe-right="item.previous()" ng-swipe-left="item.next()" class="wh-cv-part-item-images wh-slider-list nonDraggable">
+              <li ng-repeat="image in item.images" ng-class="image.current || $parent.item.images.length == 1? &quot;current&quot; : &quot;&quot; " ng-style="{'background-image':'url('+image.src+')'}" class="wh-cv-part-item-image wh-slider-item"><a ng-if="image.link" ng-href="{{image.link}}" title="{{image.link}}" target="_blank">
                   <h5 ng-if="image.description" class="desc">{{image.description}}</h5></a>
                 <h5 ng-if="!image.link &amp;&amp; image.description" class="desc">{{image.description}}</h5>
               </li>

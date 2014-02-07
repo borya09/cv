@@ -7,19 +7,19 @@
 			"key": "presentation",
 			"content": [
 				{
-					"description": "... Borja Andrés, from bilbao, fan of Barça, and living in Madrid"
+					"description": "... Borja Andrés, from bilbao, fan of Barça, and currently living in Madrid"
 				},
 				{
-					"description": "I studied Computer Engineering at ‘Universidad de Deusto’ (Bilbao) but, before this, I liked to build my own web pages (I'll tell you the thematic of these in private).​"
+					"description": "I studied Computer Engineering at ‘Universidad de Deusto’ (Bilbao) but before this, I have always had an interest in building my own web pages."
 				},
 				{
-					"description": "Once I finished (2008), I decided to come to Madrid to work, with my girlfriend, until today ..."
+					"description": "Once I finished my degree in 2008, I moved to Madrid for work and I have been here ever since."
 				},
 				{
-					"description": "First I worked as a web developer in <a href=\"http://www.virtualsw.com/\">Virtual Software</a>, doing things in back-end, front-end, related with databases, analysis, ... a bit of everything. Although primarily specializing in front"
+					"description": "My first job was working as a web developer in <a href=\"http://www.virtualsw.com/\">Virtual Software</a>, developing various items in back-end, front-end, related with databases, analysis, ... a bit of everything really. Although primarily specializing in front."
 				},
 				{
-					"description": "In January (2013) I joined the team of <a href=\"http://upplication.com\">Upplication</a>, as a front-end developer exclusively, with the responsability of choosing the architecture, frameworks, languages​​, ... to be used in this part but, when I can, I escape to the back-end or automation to play with nodejs or gruntjs."
+					"description": "In January 2013 I joined the team at <a href=\"http://upplication.com\">Upplication</a>, exclusively as a front-end developer , with the responsibility of choosing the architecture, frameworks, languages, etc to be used in this part but, when I can, I escape to the back-end or automation to play with nodejs or gruntjs"
 				}
 			]
 
@@ -36,15 +36,15 @@
 						{
 							"link": "http://eskorbuto.upplication.com",
 							"description": "view web",
-							"src": "images/upp_templates1.png"
+							"src": "images/upp_templates2c.jpg"
 						},{
 							"link": "http://borja.upplication.com",
 							"description": "view web",
-							"src": "images/upp_templates3.png"
+							"src": "images/upp_templates1c.jpg"
 						},{
 							"link": "http://borjarendemodenda.upplication.com",
 							"description": "view web",
-							"src": "images/upp_templates2.png"
+							"src": "images/upp_templates3b.jpg"
 						}
 					],
 					"content": [
@@ -59,11 +59,17 @@
 					"description": "Internal web for the development team, where all the links are organized. <a href='http://www.youtube.com/watch?v=XnBDVrk5AHE'>demo</a> ",
 					"images": [
 						{
-							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/661a984d-9969-4e71-bb05-08f51b8ae031.png"
+							"link": "images/upp_landing1_big.jpg",
+							"description": "view image",
+							"src": "images/upp_landing1.jpg"
 						},{
-							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/20e9dc89-48e4-49e8-b796-4a1ea0a70da1.png"
+							"link": "images/upp_landing2_big.jpg",
+							"description": "view image",
+							"src": "images/upp_landing2.jpg"
 						},{
-							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/345673bd-28cd-48f5-b6aa-3d3e1298a22f.png"
+							"link": "images/upp_landing3_big.jpg",
+							"description": "view image",
+							"src": "images/upp_landing3.jpg"
 						}
 					],
 					"content": [
@@ -73,14 +79,20 @@
 					]
 				},{
 					"title": "Upplication webapps/apps",
-					"description": "Development / Architecture of the webapps / apps built with the <a href='https://github.com/Upplication/banana'>Upplication</a> tool",
+					"description": "Development / Architecture of the webapps / apps built with the <a href='http://www.upplication.com'>Upplication</a> tool",
 					"images": [
 						{
-							"src": "images/upp_base1.png"
+							"link": "images/upp_base1_big.jpg",
+							"description": "view image",
+							"src": "images/upp_base1.jpg"
 						},{
-							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/85e5f5cc-cece-4f0f-93f7-c9294c0d0bbb.png"
+							"link": "images/upp_base2_big.jpg",
+							"description": "view image",
+							"src": "images/upp_base2.jpg"
 						},{
-							"src": "http://s3-eu-west-1.amazonaws.com/app.upplication.com/webapp/yyxFOrUd/img/product/a08dfed9-bfdc-4023-94e1-4cf4c5c3890f.png"
+							"link": "images/upp_base3_big.jpg",
+							"description": "view image",
+							"src": "images/upp_base3.jpg"
 						}
 					],
 					"content": [
@@ -94,16 +106,16 @@
 					]
 				},{
 					"title": "Banana Time!",
-					"description": "Development & Layout of the project <a href='https://github.com/Upplication/banana'>'Banana Time!'</a>",
+					"description": "Development / Layout of the project <a href='http://upplication.github.io/banana/'>Banana Time!</a> <a href='https://github.com/Upplication/banana'>[src]</a>",
 					"images": [
 						{
-							"link": "http://upplication.github.io/banana/",
-							"description": "view web",
+							"link": "images/banana2_big.jpg",
+							"description":  "view image",
 							"src": "images/banana2.jpg"
 						},{
-							"link": "http://upplication.github.io/banana/",
-							"description": "view web",
-							"src": "images/banana.jpg"
+							"link": "images/banana1_big.jpg",
+							"description":  "view image",
+							"src": "images/banana1.jpg"
 						}
 					],
 					"content": [
@@ -115,22 +127,22 @@
 					]
 				},{
 					"title": "Whoru",
-					"description": "Development of the project <a href='https://github.com/borya09/whoru'>'Whoru'</a> and layout of a <a href='https://github.com/borya09/whoru/tree/demo'>demo</a> and this web",
+					"description": "Development of the project <a href='https://github.com/borya09/whoru'>'Whoru'</a> and layout of a <a href='http://borya09.github.io/whoru/'>demo</a> and this web",
 					"images": [
 						{
-							"link": "http://borya09.github.io/whoru/",
-							"description": "view web",
+							"link": "images/whoru1_big.jpg",
+							"description": "view image",
 							"src": "images/whoru1.jpg"
 						},
 						{
-							"link": "http://borya09.github.io/whoru/",
-							"description": "view web",
-							"src": "images/whoru2.png"
+							"link": "images/whoru2_big.jpg",
+							"description": "view image",
+							"src": "images/whoru2.jpg"
 						},
 						{
-							"link": "http://borya09.github.io/whoru/",
-							"description": "view web",
-							"src": "images/whoru3.png"
+							"link": "images/whoru3_big.jpg",
+							"description": "view image",
+							"src": "images/whoru3.jpg"
 						}
 					],
 					"content": [
@@ -188,7 +200,7 @@
 					"images": [
 						{
 							"link": "http://www.upplication.com",
-							"description": "Upplication",
+							"description": "Go to Upplication",
 							"src": "images/upplication.png"
 						}
 					],
@@ -205,13 +217,11 @@
 					"images": [
 						{
 							"link": "http://www.virtualsw.com",
-							"description": "Virtualsw",
+							"description": "Go to Virtualsw",
 							"src": "images/virtualsw.png"
 						}
 					],
-					"content": [
-						"Analysis / development (front & back) of web applications with J2EE & Grails"
-					]
+					"description": "Analysis / development (front & back) of web applications with J2EE & Grails"
 				},
 				{
 					"title": "Junior developer in Mnemo",
@@ -219,13 +229,11 @@
 					"images": [
 						{
 							"link": "http://www.mnemo.com",
-							"description": "Mnemo",
+							"description": "Go to Mnemo",
 							"src": "images/mnemo.jpg"
 						}
 					],
-					"content": [
-						"Junior Programmer at the computer consultant 'mnemo', working as a web developer at 'Informática Euskadi', developing the financial web portal of the BBK bank."
-					]
+					"description": "Development of the financial web portal <a href='http://www.bbk.es'>www.bbk.es</a>"
 				}
 			]
 		},
@@ -235,16 +243,16 @@
 			"key": "hobbies",
 			"content": [
 				{
-					"description": "Learn a lot about new technologies, specially investigating by myself or attending to meetups, conferences, ..."
+					"description": "Learning about new technologies, especially through personal study or attending conferences, ..."
 				},
 				{
-					"description": "Cycling & running on trails"
+					"description": "Off-road cyclying and road running."
 				},
 				{
-					"description": "Drink some beers in Bilbao with my girlfriend, friends, parents..."
+					"description": "Drinking beers and socialising in Bilbao with my girlfriend, friends and parents... "
 				},
 				{
-					"description": "Barça fan. I'm from bilbao and fan of Barça. Mi father (former supporter of Athletic) still doesn't know what did he do badly with me."
+					"description": "Barça fan. I'm from bilbao and a fan of Barça. Mi father (former supporter of Athletic) still doesn't know what he did badly with me."
 				}
 			]
 		}

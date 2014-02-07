@@ -3,9 +3,19 @@
 	"header":"contact",
 	"contacts": [
 		{
+			"type": "phone",
+			"value": "+34679699965",
+			"icon": "U"
+		},
+		{
+			"type": "mail",
+			"value": "borya09@gmail.com",
+			"icon": "1"
+		},
+		{
 			"type": "web",
-			"value": "http://borja.upplication.com",
-			"icon": "Z"
+			"value": "https://github.com/borya09/",
+			"icon": "t"
 		},
 		{
 			"type": "web",
@@ -18,8 +28,8 @@
 			"icon": "3"
 		},
 		{
-			"type": "mail",
-			"value": "borya09@hotmail.com",
+			"type": "web",
+			"value": "skype:borya09?chat",
 			"icon": "F"
 		},
 		{
@@ -29,8 +39,8 @@
 		},
 		{
 			"type": "web",
-			"value": "https://github.com/borya09/",
-			"icon": "t"
+			"value": "http://www.endomondo.com/profile/3047593",
+			"icon": "%"
 		},
 		{
 			"type": "web",
@@ -38,14 +48,9 @@
 			"icon": "b"
 		},
 		{
-			"type": "phone",
-			"value": "+34679699965",
-			"icon": "U"
-		},
-		{
-			"type": "mail",
-			"value": "borya09@gmail.com",
-			"icon": "1"
+			"type": "web",
+			"value": "http://borja.upplication.com",
+			"icon": "Z"
 		}
 	]
 }
