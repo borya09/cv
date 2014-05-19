@@ -20,6 +20,9 @@
 				},
 				{
 					"description": "In January 2013 I joined the team at <a href=\"http://upplication.com\">Upplication</a>, exclusively as a front-end developer , with the responsibility of choosing the architecture, frameworks, languages, etc to be used in this part but, when I can, I escape to the back-end or automation to play with nodejs or gruntjs"
+				},
+				{
+					"description": "At the present time, I am working for <a href=\"http://www.plainconcepts.com\">Plain Concepts</a>, as a .NET Full Stack developer"
 				}
 			]
 
@@ -170,13 +173,13 @@
 				{
 					"title": "Back",
 					"content": [
-						"NodeJs", "MongooseJs", "ExpressJs", "MongoDb", "Grails", "J2EE", "Hibernate"
+						"NodeJs", "MongooseJs", "ExpressJs", "MongoDB", "Grails", "J2EE", "Hibernate" "ASP.NET MVC", "Entity Framework"
 					]
 				},
 				{
 					"title": "Testing",
 					"content": [
-						"Mocha", "Jasmine", "Testacular (Karma)"
+						"Mocha", "Jasmine", "Testacular (Karma)", "moq"
 					]
 				},
 				{
@@ -184,7 +187,8 @@
 					"content": [
 						"Jira",
 						"Confluence",
-						"Mixpanel"
+						"Mixpanel",
+                        "Team Foundation Server"
 					]
 				}
 			]
@@ -194,9 +198,24 @@
 			"title": "Career",
 			"key": "career",
 			"content": [
+                {
+                    "title": "Full-stack developer in Plain Concepts",
+                    "when": "2014",
+                    "images": [
+                        {
+                            "link": "http://www.plainconcepts.com",
+                            "description": "Go to Plainconcepts",
+                            "src": "images/plainconcepts.png"
+                        }
+                    ],
+                    "content": [
+                        "Development / Layout of web applications in .NET"
+                    ]
+                },
 				{
 					"title": "Front-end developer in Upplication",
 					"when": "2013",
+                    "until": "2014",
 					"images": [
 						{
 							"link": "http://www.upplication.com",

@@ -20,7 +20,10 @@
 				},
 				{
 					"description": "En enero del 2013 entré a formar parte del equipo de <a href=\"http://upplication.com\">Upplication</a>, como desarrollador front-end exclusivamente, con la reponsabilidad de elegir la arquitectura, frameworks, lenguajes,... a usar en esta parte; aunque cuando puedo me escapo al back en node.js o a la automatización con grunt.js, que también me interesa bastante."
-				}
+				},
+                {
+                    "description": "Actualmente, trabajo para<a href=\"http://www.plainconcepts.com\">Plain Concepts</a>, como desarrollador Full Stack en .NET"
+                }
 			]
 		},
 		{
@@ -169,13 +172,13 @@
 				{
 					"title": "Back",
 					"content": [
-						"NodeJs", "MongooseJs", "ExpressJs", "MongoDb", "Grails", "J2EE", "Hibernate"
+						"NodeJs", "MongooseJs", "ExpressJs", "MongoDB", "Grails", "J2EE", "Hibernate", "ASP.NET MVC", "Entity Framework"
 					]
 				},
 				{
 					"title": "Testing",
 					"content": [
-						"Mocha", "Jasmine", "Testacular (Karma)"
+						"Mocha", "Jasmine", "Testacular (Karma)", "moq"
 					]
 				},
 				{
@@ -183,7 +186,8 @@
 					"content": [
 						"Jira",
 						"Confluence",
-						"Mixpanel"
+						"Mixpanel",
+                        "Team Foundation Server"
 					]
 				}
 			]
@@ -194,8 +198,23 @@
 			"key": "career",
 			"content": [
 				{
+					"title": "Desarrollador full-stack en Plain Concepts",
+					"when": "2014",
+					"images": [
+						{
+							"link": "http://www.plainconcepts.com",
+							"description": "Ir a Plainconcepts",
+							"src": "images/plainconcepts.png"
+						}
+					],
+					"content": [
+						"Desarrollo / Maquetación de aplicaciones web en .NET"
+					]
+				},
+                {
 					"title": "Desarrollador Front en Upplication",
 					"when": "2013",
+                    "until": "2014",
 					"images": [
 						{
 							"link": "http://www.upplication.com",
